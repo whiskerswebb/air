@@ -62,22 +62,8 @@
   endif
 
   assign slideshow_controls_style = block_settings.slideshow_controls_style
-  # Use a counter instead of dots when there are many images to avoid cropping/overflow.
-  if slideshow_controls_style == 'dots' and selected_product.media.size > 15
-    assign slideshow_controls_style = 'counter'
-  endif
-
   assign render_slideshow_arrows = false
-
-  if selected_product.media.size <= 1
-    assign slideshow_class = 'product-media-gallery__slideshow--single-media slideshow--single-media'
-  else
-    assign slideshow_class = ''
-
-    if media_presentation == 'carousel'
-      assign render_slideshow_arrows = true
-    endif
-  endif
+  assign slideshow_class = ''
 
   if slideshow_controls_style == 'thumbnails'
     assign pagination_position = block_settings.thumbnail_position
@@ -118,11 +104,26 @@
   else
     assign sorted_media = selected_product.media
   endif
+
+  assign gallery_item_count = sorted_media.size
+
+  # Use a counter instead of dots when there are many images to avoid cropping/overflow.
+  if slideshow_controls_style == 'dots' and gallery_item_count > 15
+    assign slideshow_controls_style = 'counter'
+  endif
+
+  if gallery_item_count <= 1
+    assign slideshow_class = 'product-media-gallery__slideshow--single-media slideshow--single-media'
+    assign render_slideshow_arrows = false
+  elsif media_presentation == 'carousel'
+    assign render_slideshow_arrows = true
+  endif
+
   assign has_image_drop = sorted_media | has: 'media_type', 'image'
 
   # Determine if we're in single column mode (carousel or grid with one column)
   assign is_single_column = false
-  if media_presentation == 'carousel' or sorted_media.size == 1 or media_presentation == 'grid' and block_settings.media_columns == 'one'
+  if media_presentation == 'carousel' or gallery_item_count == 1 or media_presentation == 'grid' and block_settings.media_columns == 'one'
     assign is_single_column = true
   endif
 
@@ -396,15 +397,16 @@
           media_fit: block_settings.media_fit,
         %}
       {% endfor %}
+
     {% endcapture %}
 
-    {% if sorted_media.size > 1 %}
+    {% if gallery_item_count > 1 %}
       {% capture controls %}
         {% if render_slideshow_controls %}
           {%- render 'slideshow-controls',
             class: slideshow_controls_class,
             style: slideshow_controls_style,
-            item_count: sorted_media.size,
+            item_count: gallery_item_count,
             thumbnails: sorted_media,
             controls_on_media: controls_on_media,
             pagination_position: pagination_position,
@@ -417,7 +419,7 @@
           {%- render 'slideshow-controls',
             class: 'desktop:hidden media-gallery__mobile-controls',
             style: block_settings.slideshow_mobile_controls_style,
-            item_count: sorted_media.size,
+            item_count: gallery_item_count,
             thumbnails: sorted_media,
             controls_on_media: mobile_controls_on_media,
             pagination_position: 'center',
@@ -438,7 +440,7 @@
       ref: 'slideshow',
       class: slideshow_class,
       slides: slides,
-      slide_count: sorted_media.size,
+      slide_count: gallery_item_count,
       slideshow_arrows: slideshow_arrows,
       arrows_position: icons_position,
       controls: controls
@@ -873,7 +875,7 @@
   /* Mobile thumbnails styling */
   @media screen and (max-width: 749px) {
     .media-gallery__mobile-controls[thumbnails] {
-      --thumbnail-width: 44px;
+      --thumbnail-width: 52px;
     }
 
     .media-gallery__mobile-controls[thumbnails] .slideshow-controls__thumbnail {

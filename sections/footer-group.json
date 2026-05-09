@@ -95,11 +95,38 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "text_sisterStores": {
+              "type": "text",
+              "name": "Sister Stores",
+              "settings": {
+                "text": "<p><a href=\"/pages/sister-stores\">Sister Stores</a></p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-primary--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "menu_k94JXn",
-            "menu_CY8HUp"
+            "menu_CY8HUp",
+            "text_sisterStores"
           ]
         },
         "email_signup_t3aAfi": {

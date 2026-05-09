@@ -327,7 +327,15 @@
   {{ media_slot_2 }}
 
   {% if media_count == 0 %}
-    {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+    <img
+      src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
+      alt="Fresh and tidy home interior"
+      class="hero__media"
+      width="1866"
+      height="1200"
+      loading="eager"
+      fetchpriority="{{ fetch_priority }}"
+    >
   {%- endif -%}
 {% endcapture %}
 
@@ -359,7 +367,14 @@
     }}
   {% endif %}
   {% if media_count == 0 %}
-    {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+    <img
+      src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
+      alt=""
+      class="hero__media"
+      width="1866"
+      height="1200"
+      loading="lazy"
+    >
   {% endif %}
 {% endcapture %}
 
@@ -443,7 +458,14 @@
             }}
         {% endif %}
         {% if media_count == 0 %}
-          {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__media' }}
+          <img
+            src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
+            alt=""
+            class="hero__media"
+            width="1866"
+            height="1200"
+            loading="lazy"
+          >
         {% endif %}
       {% endif %}
     {% endif %}

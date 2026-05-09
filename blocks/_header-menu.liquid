@@ -318,6 +318,8 @@
 
   .menu-list__link-title {
     padding-inline: calc(var(--gap-xl) / 2);
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
   }
   [slot='overflow'] .menu-list__link-title {
     padding-inline: 0;
@@ -522,10 +524,11 @@
   .mega-menu__link--parent {
     font-family: var(--menu-parent-font-family);
     font-style: var(--menu-parent-font-style);
-    font-weight: var(--menu-parent-font-weight);
+    font-weight: var(--font-weight-semibold, var(--menu-parent-font-weight));
     font-size: var(--menu-parent-font-size);
     line-height: var(--menu-parent-font-line-height);
-    text-transform: var(--menu-parent-font-case);
+    text-transform: capitalize;
+    letter-spacing: 0.04em;
     color: var(--menu-parent-font-color);
 
     &:hover {

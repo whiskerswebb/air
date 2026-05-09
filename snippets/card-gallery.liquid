@@ -94,7 +94,12 @@
       assign other_media = product.media | reject: 'src', product.featured_media
       assign media_list_to_show = product.featured_media | concat: other_media
 
-      if product.media.size > 2 and generic_media_size > 0
+      # The first product media is a flat color placeholder for this build, so we start from the next image.
+      if media_list_to_show.size > 1
+        assign media_list_to_show = media_list_to_show | slice: 1, media_list_to_show.size
+      endif
+
+      if media_list_to_show.size > 2 and generic_media_size > 0
         assign show_arrows = true
       endif
 

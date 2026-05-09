@@ -15,7 +15,7 @@
   >
     <button
       on:click="#search-modal/showDialog"
-      class="button-unstyled header-actions__action{% if display_style == 'text' %} header-actions__text-style{% endif %}"
+      class="button-unstyled header-actions__action{% if display_style == 'text' %} header-actions__text-style{% else %} header-actions__action--stacked{% endif %}"
       aria-label="{{ 'content.search_input_label' | t }}"
       aria-haspopup="dialog"
     >
@@ -26,6 +26,10 @@
       <span class="svg-wrapper {% if display_style != 'icon' %}desktop:hidden{% endif %}">
         {{ 'icon-search.svg' | inline_asset_content }}
       </span>
+
+      {% if display_style == 'icon' %}
+        <span class="header-actions__icon-label mobile:hidden">{{ 'content.search' | t }}</span>
+      {% endif %}
     </button>
   </search-button>
 {% endunless %}
@@ -40,6 +44,10 @@
 
   @media screen and (max-width: 749px) {
     .search-action--hidden-on-drawer {
+      display: none;
+    }
+
+    .search-action--hide-mobile {
       display: none;
     }
   }
@@ -63,6 +71,12 @@
   .header__column--right .search-action {
     @media screen and (min-width: 750px) {
       margin-inline: calc(var(--gap-md) * -1) calc(var(--gap-xs) * -1);
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .header__column--right .search-action:has(.header-actions__action--stacked) {
+      margin-inline: 0;
     }
   }
 

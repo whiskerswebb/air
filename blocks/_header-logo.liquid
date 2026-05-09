@@ -56,14 +56,26 @@
     class="header-logo__image-container header-logo__image-container--original"
     data-testid="header-logo"
   >
-    {% render 'image',
-      image: settings.logo,
-      class: 'header-logo__image',
-      height: settings.logo_height,
-      alt_text_fallback: alt_text_fallback,
-      text_fallback: brand_name,
-      style: logo_style
-    %}
+    {% if settings.logo != blank %}
+      {% render 'image',
+        image: settings.logo,
+        class: 'header-logo__image',
+        height: settings.logo_height,
+        alt_text_fallback: alt_text_fallback,
+        text_fallback: brand_name,
+        style: logo_style
+      %}
+    {% else %}
+      <img
+        src="{{ 'freshspace-logo.svg' | asset_url }}"
+        alt="{{ alt_text_fallback }}"
+        class="header-logo__image"
+        width="140"
+        height="{{ settings.logo_height }}"
+        loading="eager"
+        style="--header-logo-image-width: 140px; --header-logo-image-width-mobile: 122px; --header-logo-image-height: {{ settings.logo_height }}px; --header-logo-image-height-mobile: {{ settings.logo_height_mobile }}px;"
+      >
+    {% endif %}
   </span>
 
   {% if use_inverse_logo %}
