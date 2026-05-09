@@ -50,6 +50,8 @@
   endif
 
   if menu_content_type == 'featured_collections'
+    assign collection_handles = ''
+
     if parent_link.type == 'collection_link'
       assign collection_handles = parent_link.object.handle | append: ','
     elsif parent_link.type == 'catalog_link' or parent_link.type == 'collections_link'
@@ -59,6 +61,10 @@
     for collection_link in collection_links
       assign collection_handles = collection_handles | append: collection_link.object.handle | append: ','
     endfor
+
+    if collection_handles == blank
+      assign menu_content_type = 'text'
+    endif
   endif
 
   if menu_content_type == 'featured_products'
@@ -244,6 +250,40 @@
     assign max_featured_collections_tablet = 1
     assign max_menu_columns_tablet = max_menu_columns_tablet | minus: max_collection_columns_tablet
   endif
+
+  if menu_content_type == 'text'
+    assign menu_context_key = parent_link.handle | default: parent_link.title | handleize
+
+    case menu_context_key
+      when 'pet-areas', 'pets'
+        assign default_featured_collection_handles = 'pet-areas,best-sellers,refills' | split: ','
+      when 'bathroom', 'bath'
+        assign default_featured_collection_handles = 'bathroom,starter-kits,refills' | split: ','
+      when 'car', 'auto'
+        assign default_featured_collection_handles = 'car,bundles,best-sellers' | split: ','
+      when 'small-spaces', 'small-space', 'closets', 'closet'
+        assign default_featured_collection_handles = 'small-spaces,bundles,starter-kits' | split: ','
+      else
+        assign default_featured_collection_handles = 'best-sellers,starter-kits,refills' | split: ','
+    endcase
+
+    assign default_featured_collections_count = 0
+
+    for default_collection_handle in default_featured_collection_handles
+      assign default_collection = collections[default_collection_handle]
+
+      if default_collection != blank
+        assign default_featured_collections_count = default_featured_collections_count | plus: 1
+      endif
+    endfor
+
+    if default_featured_collections_count > 0
+      assign max_collection_columns = default_featured_collections_count | at_most: 3
+      assign max_collection_columns_tablet = default_featured_collections_count | at_most: 2
+      assign max_menu_columns = max_menu_columns | minus: max_collection_columns | at_least: 2
+      assign max_menu_columns_tablet = max_menu_columns_tablet | minus: max_collection_columns_tablet | at_least: 2
+    endif
+  endif
 %}
 
 {% style %}
@@ -342,4 +382,39 @@
         {% endfor %}
       </ul>
     </span>
+  {% when 'text' %}
+    {%- capture image_sizes -%}
+      {%- render 'util-mega-menu-img-sizes-attr',
+        menu_content_type: 'featured_collections',
+        settings: settings
+      -%}
+    {%- endcapture -%}
+
+    {% if default_featured_collections_count > 0 %}
+      <span
+        class="mega-menu__content"
+        style="--menu-content-columns-desktop: {{ max_collection_columns }}; --menu-content-columns-tablet: {{ max_collection_columns_tablet }}; --resource-card-corner-radius: {{ image_border_radius }}px;"
+      >
+        <ul
+          class="mega-menu__content-list mega-menu__content-list--collections list-unstyled"
+          style="--menu-content-columns-desktop: {{ max_collection_columns }}; --menu-content-columns-tablet: {{ max_collection_columns_tablet }};"
+        >
+          {% for default_collection_handle in default_featured_collection_handles limit: 3 %}
+            {% assign default_collection = collections[default_collection_handle] %}
+
+            {% if default_collection != blank %}
+              <li class="mega-menu__content-list-item{% if forloop.index > max_collection_columns_tablet %} mega-menu__content-list-item--hidden-tablet{% endif %}">
+                {% render 'resource-card',
+                  resource: default_collection,
+                  resource_type: 'collection',
+                  style: 'overlay',
+                  image_aspect_ratio: content_aspect_ratio,
+                  image_sizes: image_sizes
+                %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </span>
+    {% endif %}
 {% endcase %}

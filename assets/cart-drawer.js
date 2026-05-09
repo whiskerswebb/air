@@ -1,5 +1,5 @@
 import { DialogComponent, DialogOpenEvent, DialogCloseEvent } from '@theme/dialog';
-import { CartAddEvent } from '@theme/events';
+import { CartAddEvent, ThemeEvents } from '@theme/events';
 import { isMobileBreakpoint } from '@theme/utilities';
 
 /**
@@ -22,8 +22,13 @@ class CartDrawerComponent extends DialogComponent {
     super.connectedCallback();
     document.addEventListener(CartAddEvent.eventName, this.#handleCartAdd);
     this.addEventListener(DialogOpenEvent.eventName, this.#updateStickyState);
+    this.addEventListener(DialogOpenEvent.eventName, this.#syncUpsellNavStates);
     this.addEventListener(DialogOpenEvent.eventName, this.#handleHistoryOpen);
     this.addEventListener(DialogCloseEvent.eventName, this.#handleHistoryClose);
+    this.addEventListener('click', this.#onUpsellNavClick);
+    this.addEventListener('scroll', this.#onUpsellRailScroll, true);
+    this.addEventListener('submit', this.#onUpsellSubmit, true);
+    document.addEventListener(ThemeEvents.cartError, this.#clearUpsellLoading);
 
     if (history.state?.cartDrawerOpen) {
       history.replaceState(null, '');
@@ -34,8 +39,13 @@ class CartDrawerComponent extends DialogComponent {
     super.disconnectedCallback();
     document.removeEventListener(CartAddEvent.eventName, this.#handleCartAdd);
     this.removeEventListener(DialogOpenEvent.eventName, this.#updateStickyState);
+    this.removeEventListener(DialogOpenEvent.eventName, this.#syncUpsellNavStates);
     this.removeEventListener(DialogOpenEvent.eventName, this.#handleHistoryOpen);
     this.removeEventListener(DialogCloseEvent.eventName, this.#handleHistoryClose);
+    this.removeEventListener('click', this.#onUpsellNavClick);
+    this.removeEventListener('scroll', this.#onUpsellRailScroll, true);
+    this.removeEventListener('submit', this.#onUpsellSubmit, true);
+    document.removeEventListener(ThemeEvents.cartError, this.#clearUpsellLoading);
     this.#historyAbortController?.abort();
   }
 
@@ -70,6 +80,8 @@ class CartDrawerComponent extends DialogComponent {
    * @param {CustomEvent<{ resource?: { item_count?: number } }>} event
    */
   #handleCartAdd = (event) => {
+    this.#clearUpsellLoading();
+
     if (this.hasAttribute('auto-open')) {
       this.showDialog();
     }
@@ -123,6 +135,88 @@ class CartDrawerComponent extends DialogComponent {
     const summaryHeight = summary.getBoundingClientRect().height;
     const ratio = summaryHeight / drawerHeight;
     dialog.setAttribute('cart-summary-sticky', ratio > this.#summaryThreshold ? 'false' : 'true');
+  }
+
+  /**
+   * @param {MouseEvent} event
+   */
+  #onUpsellNavClick = (event) => {
+    const button = event.target instanceof Element ? event.target.closest('[data-upsell-nav]') : null;
+    if (!(button instanceof HTMLButtonElement)) return;
+
+    const rail = this.#getUpsellRail(button.dataset.upsellRailId);
+    if (!rail) return;
+
+    const direction = button.dataset.upsellNav === 'next' ? 1 : -1;
+    const scrollStep = Math.max(rail.clientWidth * 0.86, 220);
+    rail.scrollBy({ left: direction * scrollStep, behavior: 'smooth' });
+
+    window.setTimeout(() => this.#updateUpsellNavState(rail), 350);
+  };
+
+  /**
+   * @param {Event} event
+   */
+  #onUpsellRailScroll = (event) => {
+    if (!(event.target instanceof HTMLElement) || !event.target.matches('[data-upsell-rail]')) return;
+    this.#updateUpsellNavState(event.target);
+  };
+
+  /**
+   * @param {SubmitEvent} event
+   */
+  #onUpsellSubmit = (event) => {
+    const form = event.target;
+    if (!(form instanceof HTMLFormElement) || !form.closest('.cart-drawer__upsell-form')) return;
+
+    const submitButton = form.querySelector('.cart-drawer__upsell-button');
+    if (!(submitButton instanceof HTMLButtonElement) || submitButton.disabled) return;
+
+    submitButton.dataset.loading = 'true';
+    submitButton.disabled = true;
+  };
+
+  #clearUpsellLoading = () => {
+    this.querySelectorAll('.cart-drawer__upsell-button[data-loading="true"]').forEach((button) => {
+      if (!(button instanceof HTMLButtonElement)) return;
+
+      button.disabled = false;
+      button.removeAttribute('data-loading');
+    });
+  };
+
+  #syncUpsellNavStates = () => {
+    window.requestAnimationFrame(() => {
+      this.querySelectorAll('[data-upsell-rail]').forEach((rail) => {
+        if (rail instanceof HTMLElement) this.#updateUpsellNavState(rail);
+      });
+    });
+  };
+
+  /**
+   * @param {string | undefined} railId
+   * @returns {HTMLElement | null}
+   */
+  #getUpsellRail(railId) {
+    if (!railId) return null;
+    const rail = this.querySelector(`[data-upsell-rail][data-upsell-rail-id="${railId}"]`);
+    return rail instanceof HTMLElement ? rail : null;
+  }
+
+  /**
+   * @param {HTMLElement} rail
+   */
+  #updateUpsellNavState(rail) {
+    const railId = rail.dataset.upsellRailId;
+    if (!railId) return;
+
+    const prevButton = this.querySelector(`[data-upsell-nav="prev"][data-upsell-rail-id="${railId}"]`);
+    const nextButton = this.querySelector(`[data-upsell-nav="next"][data-upsell-rail-id="${railId}"]`);
+    if (!(prevButton instanceof HTMLButtonElement) || !(nextButton instanceof HTMLButtonElement)) return;
+
+    const maxScrollLeft = Math.max(rail.scrollWidth - rail.clientWidth, 0);
+    prevButton.disabled = rail.scrollLeft <= 2;
+    nextButton.disabled = rail.scrollLeft >= maxScrollLeft - 2;
   }
 }
 

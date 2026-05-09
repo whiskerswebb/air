@@ -3293,6 +3293,12 @@ fly-to-cart.fly-to-cart--sticky {
   }
 }
 
+.collection-wrapper:has(.facets--vertical) #ResultsList .product-grid.product-grid--grid[product-grid-view='default'] {
+  @media screen and (min-width: 750px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .collection-wrapper:has(.facets-block-wrapper--vertical:not(#filters-drawer)):has(.collection-wrapper--full-width) {
   @media screen and (min-width: 750px) {
     grid-column: 1 / -1;

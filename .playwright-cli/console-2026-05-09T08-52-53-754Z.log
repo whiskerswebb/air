@@ -9,3 +9,538 @@
 [  186052ms] [ERROR] Failed to load resource: net::ERR_INCOMPLETE_CHUNKED_ENCODING @ http://127.0.0.1:9292/:0
 [  189057ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
 [  189057ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  219093ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  219093ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  222097ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  222097ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  225102ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  225102ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  228106ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  228107ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  231112ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  231112ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  234115ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  234116ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  237119ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  237119ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  240125ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  240125ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  243131ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  243131ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  246135ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  246135ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  249140ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  249141ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  252147ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  252147ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  255149ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  255149ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  258153ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  258153ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  261157ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  261157ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  264160ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  264160ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  267163ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  267163ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  270165ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  270165ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  273167ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  273167ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  276177ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  276177ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  279182ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  279182ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  282188ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  282188ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  285202ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  285203ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  288209ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  288209ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  291211ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  291211ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  294215ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  294215ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  297220ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  297220ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  300235ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  300236ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  303242ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  303242ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  306249ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  306249ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  309253ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  309254ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  312260ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  312260ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  315269ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  315269ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  318275ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  318275ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  321279ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  321279ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  324283ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  324283ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  327287ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  327288ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  330292ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  330292ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  333297ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  333297ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  336301ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  336301ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  339305ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  339306ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  342309ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  342309ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  345311ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  345312ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  348315ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  348315ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  351319ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  351319ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  354324ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  354324ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  357329ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  357329ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  360334ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  360334ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  363340ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  363341ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  366345ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  366345ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  369351ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  369351ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  372354ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  372354ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  375356ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  375356ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  378360ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  378360ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  381364ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  381364ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  384367ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  384367ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  387371ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  387371ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  390376ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  390377ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  393380ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  393380ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  396383ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  396383ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  399389ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  399389ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[  402413ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[  402420ms] [INFO] [HotReload] Full reload: Reconnected to new server @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[  404685ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  405012ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[  405081ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[  405452ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[  406523ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=0252f758-900e-4749-b866-4835304ed78f&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[  804093ms] [INFO] [HotReload] Full reload: assets/freshspace-logo.svg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[  805464ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  805608ms] [WARNING] Did not find element expected to be parsed from: <link rel=expect href="#MainContent"> @ https://cdn.shopify.com/storefront/web-components/account.js:0
+[  805770ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[  805777ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[  806082ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[  806094ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[  806107ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[  807133ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=ee0ef70c-a1d5-4940-ada0-f390f6adf4f3&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[  812047ms] [INFO] [HotReload] Full reload: blocks/_header-logo.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[  813430ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  813603ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[  813648ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[  813955ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[  813974ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[  815289ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=33401ac1-cca8-40b5-af49-6dec2fd2fbf4&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[  819569ms] [INFO] [HotReload] Full reload: blocks/_header-logo.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[  820930ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  821109ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[  821143ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[  821448ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[  821458ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[  822425ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=3ee064d9-c7bb-483b-987d-0f1ff87ff03a&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[  824085ms] [WARNING] Found declarative shadowrootmode attribute on a template, but declarative Shadow DOM is not being parsed. Use setHTMLUnsafe() or parseHTMLUnsafe() instead. @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:110
+[  824093ms] [INFO] [HotReload] Updated sections for "sections/header-group.json": [header_section, announcement_bar] @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:145
+[  824139ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[  824401ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[  824410ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[  836096ms] [WARNING] Found declarative shadowrootmode attribute on a template, but declarative Shadow DOM is not being parsed. Use setHTMLUnsafe() or parseHTMLUnsafe() instead. @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:110
+[  836104ms] [INFO] [HotReload] Updated sections for "sections/header-group.json": [header_section, announcement_bar] @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:145
+[  836145ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[  836417ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[  836436ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[  862455ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[  863783ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[  863785ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[  863975ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  863980ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[  864195ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[  871426ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[  871518ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  871519ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[  871536ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[  872577ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[  873787ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  873999ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[  874023ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[  874328ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[  874344ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[  875391ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=a3f063aa-e2aa-45a7-aac4-44fa51eaa2c5&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 1619112ms] [INFO] [HotReload] Full reload: snippets/card-gallery.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 1620634ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 1620896ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 1620899ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 1621258ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 1621272ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 1622326ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=dd432276-1236-49d9-a0dc-d786ebc9d247&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 1624259ms] [INFO] [HotReload] Full reload: snippets/product-media-gallery-content.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 1625806ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 1625983ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 1626080ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 1626382ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 1626392ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 1627537ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=b068ff58-0307-416f-aa85-e320b5c6c23a&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 1630124ms] [INFO] [HotReload] Full reload: templates/collection.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 1631489ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 1631660ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 1631726ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 1632032ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 1632044ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 1633261ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=3344da89-ecff-4e87-ae37-c9fbf7014f55&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 1638859ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 1640247ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 1640247ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 1640425ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 1640429ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 1640443ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 1644677ms] [INFO] [HotReload] Updated theme CSS: assets/base.css @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:162
+[ 1670217ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 1670703ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 1670713ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 1670774ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2121870ms] [INFO] [HotReload] Full reload: assets/home-freshspace-hero.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2122031ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2122042ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2122091ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2193032ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2193257ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2193266ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2193311ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2194512ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2194513ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2194696ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2194697ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2194712ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2200698ms] [INFO] [HotReload] Full reload: sections/hero.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2200841ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2200846ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2200916ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2658471ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-1.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2658603ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2658609ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2658649ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2658752ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-1.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2658834ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2658835ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2658846ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2658930ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-2.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2659010ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2659011ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2659023ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2660030ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-3.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2660137ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2660138ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2660154ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2660535ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-4.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2660629ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2660629ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2660642ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2660934ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-5.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2661041ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2661041ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2661056ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2661740ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-6.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2661847ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2661847ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2661859ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2674383ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-6.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2674493ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2674494ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2674513ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2722962ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2723184ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2723190ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2723228ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2724054ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2724054ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2724329ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2724330ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2724349ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2752789ms] [INFO] [HotReload] Full reload: snippets/product-media-gallery-content.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2753028ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2753039ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2753083ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2767585ms] [INFO] [HotReload] Full reload: snippets/product-media-gallery-content.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2767796ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2767799ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2767843ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2777083ms] [INFO] [HotReload] Full reload: snippets/slideshow-controls.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2777193ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2777198ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2777228ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2794125ms] [INFO] [HotReload] Full reload: snippets/slideshow-controls.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2794370ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2794377ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2794422ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2882776ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2883094ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2883105ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2883342ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 2883861ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2883862ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 2884050ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 2884051ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 2884071ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 3173113ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 3173526ms] [INFO] [HotReload] Full reload: sections/header-group.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 3173597ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 3173941ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 3173945ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 3173989ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 3174704ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 3174705ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 3175063ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 3175064ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 3175099ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 3175164ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 3175165ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 3175576ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 3175578ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 3175624ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 3188991ms] [INFO] [HotReload] Full reload: snippets/mega-menu-list.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 3189188ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 3189191ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 3189222ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4020025ms] [INFO] [HotReload] Full reload: snippets/mega-menu-list.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4020198ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4020206ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4020331ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4395041ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-7.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4395171ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4395174ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4395207ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4395882ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-8.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4395991ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4395991ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4396006ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4396685ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-9.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4396791ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4396792ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4396804ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4397396ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-10.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4397502ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4397503ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4397516ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4404808ms] [INFO] [HotReload] Full reload: assets/pdp-dummy-9.jpg @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4404902ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4404903ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4404917ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4417187ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4417245ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4417484ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4417485ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4417514ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4418263ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4418264ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4418379ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4418380ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4418643ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4418644ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4418661ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4422763ms] [INFO] [HotReload] Full reload: snippets/product-media-gallery-content.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4422943ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4422944ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4422978ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4428585ms] [INFO] [HotReload] Updated theme CSS: compiled_assets/styles.css @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:162
+[ 4539369ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4539372ms] [ERROR] Failed to load resource: net::ERR_INCOMPLETE_CHUNKED_ENCODING @ http://127.0.0.1:9292/:0
+[ 4542374ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4542374ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[ 4545378ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4545379ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[ 4548383ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4548383ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
+[ 4551403ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4551405ms] [INFO] [HotReload] Full reload: Reconnected to new server @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553518ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553520ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553521ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553522ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553523ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553523ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553524ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553525ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553525ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553526ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553527ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553527ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553528ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553528ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553529ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4553529ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4554690ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4554694ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4554730ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4565639ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4565755ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4565756ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4565775ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4566699ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4566700ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4566965ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4566966ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4566980ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4584533ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4584630ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4584631ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4584659ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4585732ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4585733ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4585904ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4585905ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4585916ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4588778ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4588919ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4588920ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4588934ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4589798ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4589799ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4589967ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4589968ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4589979ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4599275ms] [INFO] [HotReload] Full reload: templates/collection.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4599369ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4599370ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4599383ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4626382ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4626545ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4626546ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4626569ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4626668ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4626799ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4626800ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 4626825ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4627900ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4627927ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 4629323ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 4629648ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 4629762ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 4630155ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 4630169ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 4631246ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=b2275c4b-3393-4cc7-821b-8218c2be4c71&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 6063335ms] [INFO] [HotReload] Full reload: snippets/mega-menu-list.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6065093ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6065366ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6065493ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 6065956ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 6065970ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 6067014ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=32f8c96f-57d3-4841-9555-de9e2ac701b8&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 6073699ms] [INFO] [HotReload] Full reload: snippets/header-actions.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6075270ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6075495ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6075521ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 6075906ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 6075924ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 6077027ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=1bbc6238-67e9-4fb7-9cd4-4fd83bc6cd17&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 6078549ms] [INFO] [HotReload] Updated theme CSS: compiled_assets/styles.css @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:162
+[ 6086017ms] [INFO] [HotReload] Full reload: templates/page.contact.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6087419ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6087597ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6087626ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 6087953ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 6087973ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 6089018ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=dff6579f-e237-4949-9fe6-90a2588f0d53&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 6091411ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6092561ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6092562ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6092765ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6092772ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 6092793ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6099709ms] [INFO] [HotReload] Full reload: sections/header-group.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6099939ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6099945ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 6099972ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6107733ms] [INFO] [HotReload] Full reload: sections/footer-group.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6107914ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6107919ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 6107947ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6181989ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6182282ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6182286ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9292/collections/best-sellers:0
+[ 6182344ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6183498ms] [INFO] [HotReload] Full reload: templates/index.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6184735ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6184952ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 6184954ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6185328ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 6185362ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 6186415ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=e536d3fc-792f-4841-9a5b-e3db8f8bbeba&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 6687478ms] [INFO] [HotReload] Full reload: snippets/header-actions.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6689358ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6689731ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6689797ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 6690116ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 6690133ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 6691336ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=99ff6614-7a3b-4e65-8124-660264e20759&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 6691571ms] [INFO] [HotReload] Updated theme CSS: compiled_assets/styles.css @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:162
+[ 6695148ms] [WARNING] Found declarative shadowrootmode attribute on a template, but declarative Shadow DOM is not being parsed. Use setHTMLUnsafe() or parseHTMLUnsafe() instead. @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:110
+[ 6695167ms] [INFO] [HotReload] Updated sections for "sections/header-group.json": [header_section, announcement_bar] @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:145
+[ 6695201ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 6695218ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 6695476ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 6695492ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 6698864ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 6700395ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 6700687ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 6700762ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 6701072ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 6701093ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 6701938ms] [INFO] [HotReload] Updated theme CSS: compiled_assets/styles.css @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:162
+[ 6702349ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=ea191f5a-6f59-49ad-9701-77d4248a1e03&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 7112489ms] [INFO] [HotReload] Full reload: snippets/header-actions.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 7114105ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 7114370ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 7114513ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 7114829ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 7114844ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 7115705ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 7115895ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=442a5e60-c123-456d-8dbf-99a53bf90eb7&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 7117182ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 7117342ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 7117459ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 7117776ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 7117791ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 7119339ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=9fce90df-b09c-4d57-8ede-b65323c2c08d&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 7545567ms] [INFO] [HotReload] Full reload: snippets/header-actions.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 7547360ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 7548002ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 7548082ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 7548501ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 7548519ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 7549688ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=f99336b2-f52b-411d-a923-8241e2a2fadc&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 7739510ms] [INFO] [HotReload] Full reload: snippets/header-actions.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[ 7741167ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 7741365ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[ 7741441ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[ 7741757ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[ 7741770ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[ 7742841ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=d7ef9bbe-014e-45ba-bdd0-878389cdb8e3&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[ 7749707ms] [INFO] [HotReload] Updated theme CSS: compiled_assets/styles.css @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:162
+[ 8259254ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[ 8259257ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://127.0.0.1:9292/:0
+[ 8262278ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[11137654ms] [INFO] [HotReload] Full reload: snippets/header-actions.liquid @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[11140041ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[11140047ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://127.0.0.1:9292/collections/best-sellers:0

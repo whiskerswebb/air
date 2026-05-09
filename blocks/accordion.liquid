@@ -66,6 +66,18 @@
     text-transform: var(--summary-font-case);
     min-height: var(--minimum-touch-target);
   }
+
+  .product-details .accordion .details__header {
+    font-size: var(--font-size--sm);
+    font-weight: var(--font-weight-semibold, 600);
+    line-height: 1.35;
+  }
+
+  .product-details .accordion .details-content .rte :is(h1, h2, h3, h4, h5, h6) {
+    font-size: var(--font-size--md);
+    line-height: 1.35;
+    margin-block: var(--margin-sm) var(--margin-xs);
+  }
 {% endstylesheet %}
 
 {% schema %}

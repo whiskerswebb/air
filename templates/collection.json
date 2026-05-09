@@ -106,8 +106,8 @@
           "static": true,
           "settings": {
             "enable_filtering": true,
-            "filter_style": "horizontal",
-            "filter_width": "full-width",
+            "filter_style": "vertical",
+            "filter_width": "centered",
             "text_label_case": "default",
             "show_swatch_label": false,
             "show_filter_label": false,
@@ -120,7 +120,7 @@
             "padding-inline-start": 0,
             "padding-inline-end": 0,
             "facets_margin_bottom": 0,
-            "facets_margin_right": 0
+            "facets_margin_right": 20
           },
           "blocks": {}
         },
