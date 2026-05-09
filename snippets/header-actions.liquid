@@ -660,7 +660,9 @@
 
   .cart-drawer__upsells {
     min-width: 0;
-    max-width: 100%;
+    width: auto;
+    max-width: none;
+    margin-inline: calc(var(--cart-drawer-summary-padding) * -1);
     padding: 0 0 var(--padding-sm);
     border-bottom: var(--style-border-width) solid var(--color-border);
     overflow: hidden;
@@ -673,6 +675,7 @@
     gap: var(--gap-xs);
     min-width: 0;
     margin-bottom: var(--padding-2xs);
+    padding-inline: var(--cart-drawer-summary-padding);
   }
 
   .cart-drawer__upsells-heading {
@@ -717,11 +720,11 @@
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
-    scroll-padding-inline: 0;
+    scroll-padding-inline: var(--cart-drawer-summary-padding);
     max-width: 100%;
     min-width: 0;
     padding-bottom: var(--padding-3xs);
-    padding-inline-end: var(--padding-sm);
+    padding-inline: var(--cart-drawer-summary-padding);
     scrollbar-width: none;
     mask-image: none !important;
     -webkit-mask-image: none !important;

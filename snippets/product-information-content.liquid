@@ -140,6 +140,59 @@
     height: 100%;
   }
 
+  .product-information--pdp .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block) {
+    --usp-icon-row-gap: var(--gap-md);
+  }
+
+  .product-information--pdp
+    .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block)
+    > .group-block-content {
+    align-items: flex-start;
+    gap: var(--usp-icon-row-gap);
+  }
+
+  .product-information--pdp
+    .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block)
+    > .group-block-content
+    > .group-block {
+    --border-width: 0px !important;
+    --border-style: none !important;
+    --padding-block-start: 0px !important;
+    --padding-block-end: 0px !important;
+    --padding-inline-start: 0px !important;
+    --padding-inline-end: 0px !important;
+
+    border: 0;
+    background: transparent;
+  }
+
+  .product-information--pdp
+    .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block)
+    > .group-block-content
+    > .group-block
+    > .group-block-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-2xs);
+  }
+
+  .product-information--pdp
+    .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block)
+    svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-foreground);
+    opacity: 0.8;
+  }
+
+  .product-information--pdp
+    .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block)
+    .text-block {
+    --text-align: left;
+    color: rgb(var(--color-foreground-rgb) / 0.86);
+  }
+
   /* Mobile styles */
   @media screen and (max-width: 749px) {
     .product-information__media {
@@ -247,9 +300,9 @@
       }
     }
 
-    .product-information--pdp {
-      --product-information-column-gap: max(var(--gap, 0px), 56px);
-    }
+  .product-information--pdp {
+    --product-information-column-gap: max(var(--gap, 0px), 56px);
+  }
 
     /* Handle full width section */
     .section--full-width {

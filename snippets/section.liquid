@@ -5,9 +5,16 @@
   @param {string} children - The children of the section
 {%- enddoc -%}
 
+{% liquid
+  assign is_collection_hero = false
+  if request.page_type == 'collection' and section.id contains 'section'
+    assign is_collection_hero = true
+  endif
+%}
+
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
-  class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
+  class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}{% if is_collection_hero %} section--collection-hero{% endif %}"
   data-testid="ui-test-section"
 
   {% if request.visual_preview_mode %}
@@ -29,20 +36,45 @@
   "
 >
   <div class="custom-section-background">
-    {% render 'background-media',
-      background_media: section.settings.background_media,
-      background_video: section.settings.video,
-      background_video_position: section.settings.video_position,
-      background_image: section.settings.background_image,
-      background_image_position: section.settings.background_image_position
-    %}
+    {% if is_collection_hero %}
+      <div class="background-image-container">
+        {% if collection.image != blank %}
+          {{
+            collection.image
+            | image_url: width: 2400
+            | image_tag:
+              sizes: '100vw',
+              widths: '832, 1200, 1600, 1920, 2400',
+              loading: 'eager',
+              fetchpriority: 'high'
+          }}
+        {% else %}
+          <img
+            src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
+            alt=""
+            width="1866"
+            height="1200"
+            loading="eager"
+            fetchpriority="high"
+          >
+        {% endif %}
+      </div>
+    {% else %}
+      {% render 'background-media',
+        background_media: section.settings.background_media,
+        background_video: section.settings.video,
+        background_video_position: section.settings.video_position,
+        background_image: section.settings.background_image,
+        background_image_position: section.settings.background_image_position
+      %}
+    {% endif %}
   </div>
 
   <div
     class="border-style custom-section-content"
     style="{% render 'border-override', settings: section.settings %}"
   >
-    {% if section.settings.toggle_overlay %}
+    {% if section.settings.toggle_overlay or is_collection_hero %}
       {% render 'overlay', settings: section.settings, layer: '0' %}
     {% endif %}
 
@@ -93,5 +125,99 @@
 
   .custom-section-content {
     z-index: var(--layer-flat);
+  }
+
+  .section--collection-hero {
+    min-height: clamp(300px, 42svh, 460px);
+    color: var(--color-foreground);
+  }
+
+  .section--collection-hero .custom-section-background,
+  .section--collection-hero .background-image-container,
+  .section--collection-hero .background-image-container img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .section--collection-hero .background-image-container img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .section--collection-hero .custom-section-content,
+  .section--collection-hero .section-content-wrapper {
+    min-height: inherit;
+  }
+
+  .section--collection-hero .section-content-wrapper {
+    justify-content: center;
+  }
+
+  .collection-hero__copy {
+    display: grid;
+    gap: var(--gap-xs);
+    max-width: min(42rem, 100%);
+    color: #fff;
+  }
+
+  .collection-hero__copy h1,
+  .collection-hero__copy p {
+    margin: 0;
+  }
+
+  .collection-hero__copy h1 {
+    color: #fff;
+  }
+
+  .collection-hero__copy > p:not(.collection-hero__eyebrow) {
+    max-width: 36rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.45;
+  }
+
+  .collection-hero__eyebrow {
+    font-size: 0.78rem;
+    font-weight: var(--font-weight-semibold, 600);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.88;
+  }
+
+  .section--collection-hero .section-content-wrapper > .group-block:last-child .group-block-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-xs) var(--gap-md);
+  }
+
+  .section--collection-hero .section-content-wrapper > .group-block:last-child .text-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    width: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    font-weight: var(--font-weight-semibold, 600);
+    opacity: 0.92;
+  }
+
+  .section--collection-hero .section-content-wrapper > .group-block:last-child .text-block::before {
+    content: '';
+    flex: 0 0 auto;
+    width: 0.95rem;
+    height: 0.95rem;
+    border: 1px solid rgb(255 255 255 / 0.6);
+    border-radius: 50%;
+    background:
+      linear-gradient(45deg, transparent 47%, #fff 48% 58%, transparent 59%) 34% 56% / 48% 48% no-repeat,
+      linear-gradient(-45deg, transparent 44%, #fff 45% 56%, transparent 57%) 63% 52% / 50% 50% no-repeat;
+  }
+
+  .section--collection-hero .section-content-wrapper > .group-block:last-child .text-block p {
+    margin: 0;
   }
 {% endstylesheet %}

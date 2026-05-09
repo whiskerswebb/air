@@ -935,6 +935,45 @@
             </drawer-localization-component>
           {% endif %}
         {%- endif -%}
+
+        {% if data_header_drawer_type == 'mobile-drawer' %}
+          <div class="menu-drawer__footer">
+            <div class="menu-drawer__footer-links">
+              {% if shop.customer_accounts_enabled %}
+                <a
+                  href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
+                  class="menu-drawer__footer-link"
+                >
+                  <span class="menu-drawer__footer-link-icon" aria-hidden="true">
+                    {{- 'icon-account.svg' | inline_asset_content -}}
+                  </span>
+                  <span>{% if customer %}Account{% else %}Sign in{% endif %}</span>
+                </a>
+              {% endif %}
+              <a
+                href="/pages/sister-stores"
+                class="menu-drawer__footer-link"
+              >
+                Sister Stores
+              </a>
+              <a
+                href="/pages/contact"
+                class="menu-drawer__footer-link"
+              >
+                Contact
+              </a>
+            </div>
+
+            <div
+              class="menu-drawer__footer-usps"
+              aria-label="FreshSpace benefits"
+            >
+              <span>Refill-ready</span>
+              <span>Pet-aware placement</span>
+              <span>Odor-prone spaces</span>
+            </div>
+          </div>
+        {% endif %}
       </div>
 
       {% liquid
@@ -1514,10 +1553,89 @@
   .menu-drawer__utility-links {
     display: flex;
     flex-direction: column;
+    gap: var(--gap-md);
+    padding: 0 var(--drawer-padding) var(--padding-xl);
+    margin-block: auto 0;
+    margin-inline: 0;
+    background-color: transparent;
+  }
+
+  .menu-drawer__footer {
+    display: grid;
+    gap: var(--gap-md);
+    padding-block-start: var(--padding-lg);
+    border-block-start: 1px solid var(--color-border);
+  }
+
+  .menu-drawer__footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr));
+    gap: var(--gap-xs);
+  }
+
+  .menu-drawer__footer-link {
+    min-width: 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-3xs);
+    padding: var(--padding-xs);
+    border: 1px solid var(--color-border);
+    border-radius: var(--style-border-radius-inputs);
+    color: var(--color-foreground);
+    font-family: var(--font-body--family);
+    font-size: 0.78rem;
+    font-weight: var(--font-weight-semibold, 600);
+    line-height: 1.15;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .menu-drawer__footer-link:hover {
+    color: var(--color-foreground);
+    background: rgb(var(--color-foreground-rgb) / 0.04);
+  }
+
+  .menu-drawer__footer-link-icon {
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+
+  .menu-drawer__footer-link-icon svg {
+    width: var(--icon-size-xs);
+    height: var(--icon-size-xs);
+  }
+
+  .menu-drawer__footer-usps {
+    display: grid;
+    gap: var(--gap-2xs);
+  }
+
+  .menu-drawer__footer-usps span {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--gap-2xs);
+    min-height: 0;
     padding: 0;
-    margin-block: auto var(--padding-sm);
-    margin-inline-start: var(--padding-xl);
-    background-color: rgb(var(--color-foreground) 0.03);
+    border-radius: 0;
+    background: transparent;
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-subdued-text));
+    font-size: 0.76rem;
+    font-weight: var(--font-weight-semibold, 600);
+    line-height: 1.25;
+  }
+
+  .menu-drawer__footer-usps span::before {
+    content: '';
+    flex: 0 0 auto;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    background:
+      linear-gradient(45deg, transparent 47%, currentColor 48% 58%, transparent 59%) 34% 56% / 48% 48% no-repeat,
+      linear-gradient(-45deg, transparent 44%, currentColor 45% 56%, transparent 57%) 63% 52% / 50% 50% no-repeat;
   }
 
   .menu-drawer__account {

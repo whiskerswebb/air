@@ -99,7 +99,7 @@
         assign media_list_to_show = media_list_to_show | slice: 1, media_list_to_show.size
       endif
 
-      if media_list_to_show.size > 2 and generic_media_size > 0
+      if settings.product_card_carousel and media_list_to_show.size > 1 and generic_media_size > 0
         assign show_arrows = true
       endif
 
