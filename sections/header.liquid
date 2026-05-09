@@ -74,6 +74,10 @@
     assign search_class = 'search-action--hidden-on-drawer'
   endif
 
+  if section.settings.show_search
+    assign search_class = search_class | append: ' search-action--hide-mobile' | strip
+  endif
+
   # Handle localization positioning
   if section.settings.localization_position == 'left'
     if section.settings.search_position == 'left'
@@ -112,8 +116,12 @@
 
   if section.settings.search_row == 'bottom' or search_style != 'none' and skip_drawer_search == false
     # Mobile search duplicate for when search is not in the right order for mobile layout
+    assign drawer_search_class = 'search-action--hidden-on-menu'
+    if section.settings.show_search
+      assign drawer_search_class = drawer_search_class | append: ' search-action--hide-mobile'
+    endif
     capture drawer_search
-      render 'search', class: 'search-action--hidden-on-menu', style: search_style, display_style: section.settings.actions_display_style
+      render 'search', class: drawer_search_class, style: search_style, display_style: section.settings.actions_display_style
     endcapture
   endif
 
@@ -400,6 +408,28 @@
       {{ navigation_bar }}
     </div>
   {% endif %}
+
+  {% if section.settings.show_search %}
+    <div class="header__mobile-search-row color-{{ section.settings.color_scheme_bottom }} desktop:hidden">
+      <div
+        class="header__mobile-search-form"
+        role="search"
+      >
+        <button
+          type="button"
+          class="button button-unstyled header__mobile-search-trigger"
+          on:click="#search-modal/showDialog"
+          aria-label="{{ 'content.search_input_label' | t }}"
+          aria-haspopup="dialog"
+        >
+          <span class="header__mobile-search-placeholder">Search by product, concern, or breed</span>
+          <span class="svg-wrapper">
+            {{ 'icon-search.svg' | inline_asset_content }}
+          </span>
+        </button>
+      </div>
+    </div>
+  {% endif %}
 </header-component>
 
 <script
@@ -430,6 +460,62 @@
     .header-actions__action {
       /* reset style from base.css */
       transition: color var(--header-content-transition-timing), border-color var(--header-content-transition-timing);
+    }
+  }
+
+  .header__mobile-search-row {
+    border-top: var(--style-border-width) solid var(--color-border);
+    padding: var(--padding-xs) 0;
+  }
+
+  .header__mobile-search-form {
+    width: 100%;
+    margin: 0;
+    padding-inline: var(--padding-sm);
+  }
+
+  .header__mobile-search-trigger {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--gap-xs);
+    align-items: center;
+    min-height: 44px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--style-border-radius-inputs);
+    background: rgb(var(--color-background-rgb));
+    padding-inline: var(--padding-sm);
+    text-align: left;
+  }
+
+  .header__mobile-search-trigger:focus-visible {
+    border-color: var(--color-foreground);
+  }
+
+  .header__mobile-search-placeholder {
+    display: block;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(var(--color-foreground-rgb) / 0.58);
+    font-size: 0.92rem;
+  }
+
+  .header__mobile-search-trigger .svg-wrapper {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: inherit;
+    flex-shrink: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .header__mobile-search-row {
+      display: none;
     }
   }
 
@@ -730,6 +816,10 @@
     .overflow-menu::part(list) {
       justify-content: flex-end;
     }
+  }
+
+  .header__column--right:has(.header-actions__action--stacked) {
+    gap: var(--gap-sm);
   }
 
   .header__columns {

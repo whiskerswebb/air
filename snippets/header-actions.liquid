@@ -83,7 +83,7 @@
       endif
     %}
     <div
-      class="account-button header-actions__action{% if display_style == 'text' %} account-button--text{% endif %} color-{{ settings.popover_color_scheme }}"
+      class="account-button header-actions__action{% if display_style == 'text' %} account-button--text{% else %} header-actions__action--stacked{% endif %} color-{{ settings.popover_color_scheme }}"
     >
       <shopify-account
         menu="{{ customer_account_menu }}"
@@ -110,6 +110,10 @@
           </span>
         {% endif %}
       </shopify-account>
+
+      {% if display_style == 'icon' %}
+        <span class="header-actions__icon-label mobile:hidden">{{ 'content.account_title' | t }}</span>
+      {% endif %}
     </div>
   {% endif %}
 
@@ -162,7 +166,7 @@
         {{ empty_cart_drawer_content }}
       </template>
       <button
-        class="header-actions__action button-unstyled{% if display_style == 'text' %} header-actions__text-style{% endif %}"
+        class="header-actions__action button-unstyled{% if display_style == 'text' %} header-actions__text-style{% else %} header-actions__action--stacked{% endif %}"
         on:click="/open"
         aria-haspopup="dialog"
         aria-label="{{ 'accessibility.cart' | t }}"
@@ -170,6 +174,10 @@
         data-testid="cart-drawer-trigger"
       >
         {{ cart_icon }}
+
+        {% if display_style == 'icon' %}
+          <span class="header-actions__icon-label mobile:hidden">{{ 'content.cart_title' | t }}</span>
+        {% endif %}
       </button>
 
       <dialog
@@ -228,9 +236,153 @@
                   {% render 'cart-products' %}
                 </scroll-hint>
 
+                {% liquid
+                  assign cart_upsell_collection = collections['best-sellers']
+                  if cart_upsell_collection == blank or cart_upsell_collection.products_count == 0
+                    assign cart_upsell_collection = collections['shop-all']
+                  endif
+                  assign upsell_rail_id = 'cart-drawer-upsell-rail-' | append: section.id
+                %}
+
                 <div
                   class="cart-drawer__summary"
                 >
+                  {% if cart_upsell_collection != blank and cart_upsell_collection.products_count > 0 %}
+                    <div class="cart-drawer__upsells">
+                      <div class="cart-drawer__upsells-header">
+                        <p class="cart-drawer__upsells-heading">You may also like</p>
+                        <div class="cart-drawer__upsells-nav" aria-hidden="true">
+                          <button
+                            type="button"
+                            class="button button-unstyled cart-drawer__upsells-nav-button"
+                            data-upsell-nav="prev"
+                            data-upsell-rail-id="{{ upsell_rail_id }}"
+                            aria-label="{{ 'accessibility.slideshow_previous' | t }}"
+                          >
+                            <span class="svg-wrapper flip-x">
+                              {{- 'icon-arrow.svg' | inline_asset_content -}}
+                            </span>
+                          </button>
+                          <button
+                            type="button"
+                            class="button button-unstyled cart-drawer__upsells-nav-button"
+                            data-upsell-nav="next"
+                            data-upsell-rail-id="{{ upsell_rail_id }}"
+                            aria-label="{{ 'accessibility.slideshow_next' | t }}"
+                          >
+                            <span class="svg-wrapper">
+                              {{- 'icon-arrow.svg' | inline_asset_content -}}
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                      <ul
+                        id="{{ upsell_rail_id }}"
+                        class="cart-drawer__upsells-list list-unstyled"
+                        data-upsell-rail
+                        data-upsell-rail-id="{{ upsell_rail_id }}"
+                      >
+                        {% for upsell_product in cart_upsell_collection.products limit: 8 %}
+                          {% liquid
+                            assign upsell_variant = upsell_product.selected_or_first_available_variant
+                            assign upsell_can_add = false
+                            assign upsell_price = upsell_product.price
+                            assign upsell_compare_at = blank
+                            if upsell_variant != blank and upsell_variant.available
+                              assign upsell_can_add = true
+                            endif
+                            if upsell_variant != blank
+                              assign upsell_price = upsell_variant.price
+                              assign upsell_compare_at = upsell_variant.compare_at_price
+                            endif
+                            assign upsell_form_id = 'CartDrawerUpsellForm-' | append: section.id | append: '-' | append: upsell_product.id
+                          %}
+                          <li class="cart-drawer__upsells-item">
+                            <div class="cart-drawer__upsell-card">
+                              <a
+                                href="{{ upsell_product.url }}"
+                                class="cart-drawer__upsell-link"
+                              >
+                                <div class="cart-drawer__upsell-image-wrapper">
+                                  {% if upsell_product.featured_image != blank %}
+                                    {{
+                                      upsell_product.featured_image
+                                      | image_url: width: 180
+                                      | image_tag:
+                                        loading: 'lazy',
+                                        class: 'cart-drawer__upsell-image',
+                                        widths: '90,180',
+                                        sizes: '90px',
+                                        alt: upsell_product.title
+                                    }}
+                                  {% endif %}
+                                </div>
+
+                                <div class="cart-drawer__upsell-content">
+                                  <p class="cart-drawer__upsell-title">{{ upsell_product.title }}</p>
+                                  <div class="cart-drawer__upsell-prices">
+                                    {% if upsell_compare_at != blank and upsell_compare_at > upsell_price %}
+                                      <s class="cart-drawer__upsell-compare">{{ upsell_compare_at | money }}</s>
+                                    {% endif %}
+                                    <span class="cart-drawer__upsell-price">{{ upsell_price | money }}</span>
+                                  </div>
+                                </div>
+                              </a>
+
+                              <product-form-component
+                                class="cart-drawer__upsell-form"
+                                data-section-id="{{ section.id }}"
+                                data-product-id="{{ upsell_product.id }}"
+                                on:submit="/handleSubmit"
+                              >
+                                <div
+                                  class="visually-hidden"
+                                  aria-live="assertive"
+                                  role="status"
+                                  aria-atomic="true"
+                                  ref="liveRegion"
+                                ></div>
+                                {%- form 'product',
+                                  upsell_product,
+                                  id: upsell_form_id,
+                                  novalidate: 'novalidate',
+                                  data-type: 'add-to-cart-form'
+                                -%}
+                                  <input
+                                    type="hidden"
+                                    name="id"
+                                    ref="variantId"
+                                    value="{{ upsell_variant.id }}"
+                                    {% if upsell_can_add == false %}
+                                      disabled
+                                    {% endif %}
+                                  >
+                                  <input
+                                    type="hidden"
+                                    name="quantity"
+                                    value="1"
+                                  >
+                                  <button
+                                    type="submit"
+                                    class="button cart-drawer__upsell-button"
+                                    {% if upsell_can_add == false %}
+                                      disabled
+                                    {% endif %}
+                                  >
+                                    {% if upsell_can_add %}
+                                      {{ 'actions.add' | t }}
+                                    {% else %}
+                                      {{ 'products.product.sold_out' | t }}
+                                    {% endif %}
+                                  </button>
+                                {%- endform -%}
+                              </product-form-component>
+                            </div>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
                   {% render 'cart-summary', section_id: section.id %}
                 </div>
               </scroll-hint>
@@ -372,12 +524,14 @@
 
   .cart-drawer__content {
     height: calc(100% - var(--header-height));
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
     padding: 0;
     background-color: var(--color-background);
-    flex-grow: 1;
-    overflow-y: auto;
+    min-height: 0;
+    overflow: hidden;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
   }
 
   .cart-drawer__heading {
@@ -423,18 +577,20 @@
   .cart-drawer__summary {
     --cart-drawer-summary-padding: var(--padding-lg);
 
-    position: sticky;
+    position: relative;
     bottom: 0;
     z-index: 1;
     display: flex;
+    flex: 0 0 auto;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     gap: var(--gap-xl);
+    width: 100%;
+    min-width: 0;
     padding: var(--cart-drawer-summary-padding);
-    margin-top: auto;
+    margin-top: 0;
     background-color: var(--color-background);
-    /* stylelint-disable-next-line color-named */
-    mask-image: linear-gradient(to bottom, transparent, black var(--cart-drawer-summary-padding));
+    overflow: hidden;
 
     @media screen and (min-width: 750px) {
       --cart-drawer-summary-padding: var(--padding-2xl);
@@ -447,7 +603,7 @@
   }
 
   .cart-drawer__dialog[cart-summary-sticky='false'] .cart-drawer__items {
-    overflow: unset;
+    overflow-y: auto;
   }
 
   .cart-actions summary {
@@ -476,8 +632,14 @@
   .cart-drawer__items {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    min-height: 0;
     padding-inline: var(--cart-drawer-padding);
+    padding-block-end: var(--padding-xl);
     overflow-y: auto;
+    overscroll-behavior: contain;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
 
     @media screen and (min-width: 750px) {
       padding-inline: var(--cart-drawer-padding-desktop);
@@ -494,6 +656,209 @@
     border-bottom: none;
     padding-block-end: 0;
     margin-block-end: 0;
+  }
+
+  .cart-drawer__upsells {
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 0 var(--padding-sm);
+    border-bottom: var(--style-border-width) solid var(--color-border);
+    overflow: hidden;
+  }
+
+  .cart-drawer__upsells-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-xs);
+    min-width: 0;
+    margin-bottom: var(--padding-2xs);
+  }
+
+  .cart-drawer__upsells-heading {
+    margin: 0;
+    font-size: var(--font-size--3xs);
+    font-weight: var(--font-weight-semibold, 600);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .cart-drawer__upsells-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--gap-3xs);
+  }
+
+  .cart-drawer__upsells-nav-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: var(--style-border-width) solid var(--color-border);
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(var(--color-background-rgb));
+  }
+
+  .cart-drawer__upsells-nav-button[disabled] {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  .cart-drawer__upsells-nav-button .svg-wrapper {
+    width: var(--icon-size-2xs);
+    height: var(--icon-size-2xs);
+  }
+
+  .cart-drawer__upsells-list {
+    display: flex;
+    gap: var(--gap-xs);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0;
+    max-width: 100%;
+    min-width: 0;
+    padding-bottom: var(--padding-3xs);
+    padding-inline-end: var(--padding-sm);
+    scrollbar-width: none;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+  }
+
+  .cart-drawer__upsells-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cart-drawer__upsells-item {
+    flex: 0 0 calc(100% - 2.5rem);
+    scroll-snap-align: start;
+  }
+
+  .cart-drawer__upsell-card {
+    display: grid;
+    gap: var(--gap-2xs);
+    border: var(--style-border-width) solid var(--color-border);
+    border-radius: var(--style-border-radius-inputs);
+    padding: var(--padding-2xs);
+    background: rgb(var(--color-background-rgb));
+  }
+
+  @media screen and (min-width: 750px) {
+    .cart-drawer__upsells-item {
+      flex-basis: calc(100% - 3.75rem);
+    }
+  }
+
+  .cart-drawer__upsell-link {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    align-items: center;
+    gap: var(--gap-2xs);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .cart-drawer__upsell-image-wrapper {
+    width: 72px;
+    height: 72px;
+    border-radius: var(--style-border-radius-inputs);
+    overflow: hidden;
+    background: rgb(var(--color-foreground-rgb) / var(--opacity-10-25));
+  }
+
+  .cart-drawer__upsell-image {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .cart-drawer__upsell-content {
+    min-width: 0;
+    min-height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--gap-3xs);
+  }
+
+  .cart-drawer__upsell-title {
+    margin: 0;
+    font-size: 0.98rem;
+    font-weight: var(--font-weight-medium, 500);
+    line-height: 1.2;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-wrap: balance;
+  }
+
+  .cart-drawer__upsell-prices {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.2rem 0.45rem;
+    margin-top: auto;
+  }
+
+  .cart-drawer__upsell-compare {
+    font-size: 0.64rem;
+    opacity: var(--opacity-subdued-text);
+    line-height: 1.15;
+  }
+
+  .cart-drawer__upsell-price {
+    font-size: 0.78rem;
+    font-weight: var(--font-weight-semibold, 600);
+    line-height: 1.15;
+  }
+
+  .cart-drawer__upsell-form {
+    grid-column: 1 / -1;
+  }
+
+  .cart-drawer__upsell-form form {
+    margin: 0;
+  }
+
+  .cart-drawer__upsell-button {
+    position: relative;
+    width: 100%;
+    min-height: 28px;
+    padding: 0.25rem 0.45rem;
+    font-size: 0.82rem;
+    font-weight: var(--font-weight-medium, 500);
+    letter-spacing: 0;
+    text-transform: none;
+    line-height: 1.2;
+  }
+
+  .cart-drawer__upsell-button[data-loading='true'] {
+    color: transparent;
+    pointer-events: none;
+  }
+
+  .cart-drawer__upsell-button[data-loading='true']::after {
+    content: '';
+    position: absolute;
+    inset: 50% auto auto 50%;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgb(var(--color-primary-button-text-rgb, var(--color-background-rgb)) / 0.45);
+    border-top-color: var(--color-primary-button-text);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: cart-drawer-upsell-spin 0.7s linear infinite;
+  }
+
+  @keyframes cart-drawer-upsell-spin {
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
 
   .cart-drawer--empty .cart-drawer__inner {
@@ -541,6 +906,70 @@
 
     @media screen and (max-width: 749px) {
       justify-self: flex-end;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    header-actions:not(.header-actions--text) {
+      gap: 0;
+    }
+
+    .header__column--right header-actions:not(.header-actions--text) {
+      margin-inline-start: 0;
+    }
+
+    .header-actions__action--stacked {
+      display: inline-grid;
+      grid-template-rows: var(--button-size) auto;
+      align-items: center;
+      justify-content: center;
+      gap: 0.15rem;
+      min-width: 2.65rem;
+      height: calc(var(--button-size) + 0.15rem + 0.76rem);
+      padding-inline: 0;
+      line-height: 1;
+    }
+
+    .header-actions__action--stacked .svg-wrapper,
+    .header-actions__action--stacked shopify-account > span[slot='signed-out-avatar'] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: var(--button-size);
+      height: var(--button-size);
+      margin: 0;
+    }
+
+    .header-actions__action--stacked shopify-account {
+      display: block;
+      grid-row: 1;
+      width: var(--button-size);
+      height: var(--button-size);
+    }
+
+    .account-button.header-actions__action--stacked shopify-store {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .account-button.header-actions__action--stacked .header-actions__icon-label {
+      grid-row: 2;
+    }
+
+    .header-actions__action--stacked .account-button__icon {
+      width: var(--icon-size-md);
+      height: var(--icon-size-md);
+    }
+
+    .header-actions__icon-label {
+      font-size: 0.66rem;
+      letter-spacing: 0;
+      text-transform: none;
+      font-weight: var(--font-weight-semibold, 600);
+      color: rgb(var(--color-foreground-rgb) / var(--opacity-subdued-text));
+      line-height: 1.15;
     }
   }
 

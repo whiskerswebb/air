@@ -10,37 +10,40 @@
 {%- enddoc -%}
 
 {% assign image_sizes = sizes | default: 'auto' %}
+{% assign featured_image = blank %}
 
 {% if link.type == 'collection_link' %}
-  {% if link.object.featured_image %}
-    {{
-      link.object.featured_image
-      | image_url: width: 800
-      | image_tag: loading: 'lazy', class: class, sizes: image_sizes
-    }}
-  {% elsif link.object.products.size > 0 %}
+  {% if link.object != blank %}
+    {% assign featured_image = link.object.featured_image | default: link.object.image %}
+  {% endif %}
+
+  {% if featured_image == blank and link.object.products.size > 0 %}
     {% assign product_object = link.object.products | where: 'featured_image' | first %}
-    {% if product_object.featured_image %}
-      {{
-        product_object.featured_image
-        | image_url: width: 800
-        | image_tag: loading: 'lazy', class: class, sizes: image_sizes
-      }}
-    {% endif %}
+    {% assign featured_image = product_object.featured_image %}
   {% endif %}
 {% elsif link.type == 'collections_link' %}
   {% assign collection_object = collections | where: 'featured_image' | first %}
-  {% if collection_object.featured_image %}
-    {{
-      collection_object.featured_image
-      | image_url: width: 800
-      | image_tag: loading: 'lazy', class: class, sizes: image_sizes
-    }}
-  {% endif %}
+  {% assign featured_image = collection_object.featured_image | default: collection_object.image %}
 {% elsif link.type == 'catalog_link' %}
   {% assign product_object = collections.all.products | where: 'featured_image' | first %}
+  {% assign featured_image = product_object.featured_image %}
+{% elsif link.url contains '/collections/' %}
+  {% assign collection_handle_from_url = link.url | split: '/collections/' | last | split: '?' | first | split: '#' | first | split: '/' | first %}
+  {% assign collection_from_url = collections[collection_handle_from_url] %}
+
+  {% if collection_from_url != blank %}
+    {% assign featured_image = collection_from_url.featured_image | default: collection_from_url.image %}
+  {% endif %}
+
+  {% if featured_image == blank and collection_from_url.products.size > 0 %}
+    {% assign product_object = collection_from_url.products | where: 'featured_image' | first %}
+    {% assign featured_image = product_object.featured_image %}
+  {% endif %}
+{% endif %}
+
+{% if featured_image != blank and featured_image.src != blank %}
   {{
-    product_object.featured_image
+    featured_image
     | image_url: width: 800
     | image_tag: loading: 'lazy', class: class, sizes: image_sizes
   }}

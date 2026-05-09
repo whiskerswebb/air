@@ -34,11 +34,11 @@
             "color_scheme": "",
             "type_font_primary_size": "1rem",
             "menu_font_style": "regular",
-            "type_font_primary_link": "body",
+            "type_font_primary_link": "heading",
             "type_case_primary_link": "none",
-            "menu_style": "text",
+            "menu_style": "featured_collections",
             "featured_products_aspect_ratio": "4 / 5",
-            "featured_collections_aspect_ratio": "16 / 9",
+            "featured_collections_aspect_ratio": "4 / 5",
             "image_border_radius": 8,
             "navigation_bar": false,
             "color_scheme_navigation_bar": "",
@@ -95,14 +95,42 @@
             "case": "none"
           },
           "blocks": {}
+        },
+        "announcement_2": {
+          "type": "_announcement",
+          "settings": {
+            "text": "Visit our sister stores across Whiskers Webb",
+            "link": "/pages/sister-stores",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "weight": "600",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "announcement_3": {
+          "type": "_announcement",
+          "settings": {
+            "text": "See every brand in one place: Sister Stores",
+            "link": "/pages/sister-stores",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "weight": "600",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "announcement_1"
+        "announcement_1",
+        "announcement_2",
+        "announcement_3"
       ],
       "settings": {
         "speed": 5,
-        "section_width": "full-width",
+        "section_width": "page-width",
         "color_scheme": "scheme-4",
         "divider_width": 0,
         "padding-block-start": 10,

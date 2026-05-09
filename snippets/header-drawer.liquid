@@ -103,6 +103,83 @@
             {% assign animation_index = 0 %}
             {%- for link in linklist.links -%}
               {% assign animation_index = animation_index | plus: 1 %}
+              {% liquid
+                assign mobile_main_link_image = blank
+                assign mobile_main_link_image_object = blank
+                if data_header_drawer_type == 'mobile-drawer'
+                  assign mobile_main_link_image = link
+
+                  if link.type == 'collection_link' and link.object != blank
+                    assign mobile_main_link_image_object = link.object.image
+
+                    if mobile_main_link_image_object == blank and link.object.products.size > 0
+                      assign fallback_product = link.object.products | where: 'featured_image' | first
+                      if fallback_product != blank
+                        assign mobile_main_link_image_object = fallback_product.featured_image
+                      endif
+                    endif
+                  endif
+
+                  if mobile_main_link_image_object == blank and link.url contains '/collections/'
+                    assign collection_handle_from_url = link.url | split: '/collections/' | last | split: '?' | first | split: '#' | first | split: '/' | first
+                    assign collection_from_url = collections[collection_handle_from_url]
+
+                    if collection_from_url != blank
+                      assign mobile_main_link_image_object = collection_from_url.image
+
+                      if mobile_main_link_image_object == blank and collection_from_url.products.size > 0
+                        assign fallback_product = collection_from_url.products | where: 'featured_image' | first
+                        if fallback_product != blank
+                          assign mobile_main_link_image_object = fallback_product.featured_image
+                        endif
+                      endif
+                    endif
+                  endif
+
+                  if mobile_main_link_image_object == blank and link.type == 'collections_link'
+                    assign mobile_main_link_image = link
+                  endif
+
+                  if mobile_main_link_image_object == blank and link.links != blank
+                    assign collection_children = link.links | where: 'type', 'collection_link'
+                    assign mobile_main_link_image = collection_children | first
+
+                    if mobile_main_link_image != blank and mobile_main_link_image.object != blank
+                      assign mobile_main_link_image_object = mobile_main_link_image.object.image
+
+                      if mobile_main_link_image_object == blank and mobile_main_link_image.object.products.size > 0
+                        assign fallback_product = mobile_main_link_image.object.products | where: 'featured_image' | first
+                        if fallback_product != blank
+                          assign mobile_main_link_image_object = fallback_product.featured_image
+                        endif
+                      endif
+                    endif
+                  elsif link.links != blank
+                    for childlink in link.links
+                      if childlink.url contains '/collections/'
+                        assign child_collection_handle = childlink.url | split: '/collections/' | last | split: '?' | first | split: '#' | first | split: '/' | first
+                        assign child_collection = collections[child_collection_handle]
+
+                        if child_collection != blank
+                          assign mobile_main_link_image_object = child_collection.image
+                          assign mobile_main_link_image = childlink
+
+                          if mobile_main_link_image_object == blank and child_collection.products.size > 0
+                            assign fallback_product = child_collection.products | where: 'featured_image' | first
+                            if fallback_product != blank
+                              assign mobile_main_link_image_object = fallback_product.featured_image
+                            endif
+                          endif
+                        endif
+                      endif
+
+                      if mobile_main_link_image_object != blank
+                        break
+                      endif
+                    endfor
+                  endif
+                endif
+              %}
               <li
                 style="--menu-drawer-animation-index: {{ animation_index }};"
                 class="{%- if block_settings.drawer_accordion -%}menu-drawer__list-item--deep{%- else -%}menu-drawer__list-item--flat{%- endif -%}{% if block_settings.drawer_dividers %} menu-drawer__list-item--divider{% endif %}"
@@ -126,6 +203,13 @@
                         id="HeaderDrawer-{{ link.handle }}"
                         class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element focus-inset"
                       >
+                        {% if mobile_main_link_image != blank %}
+                          {% render 'link-featured-image',
+                            link: mobile_main_link_image,
+                            class: 'menu-drawer__mainlist-image',
+                            sizes: '56px'
+                          %}
+                        {% endif %}
                         <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
                         <span class="svg-wrapper icon-plus">
                           {{- 'icon-plus.svg' | inline_asset_content -}}
@@ -133,17 +217,26 @@
                       </summary>
                       {% liquid
                         assign render_link_image = false
-                        if block_settings.menu_style == 'collection_images'
+                        if block_settings.menu_style == 'collection_images' or data_header_drawer_type == 'mobile-drawer'
                           assign catalog_links = link.links | where: 'type', 'catalog_link'
                           assign collection_list_links = link.links | where: 'type', 'collections_link'
                           assign collection_links = link.links | where: 'type', 'collection_link'
                           if catalog_links.size > 0 or collection_list_links.size > 0 or collection_links.size > 0
                             assign render_link_image = true
                           endif
+
+                          if render_link_image == false and data_header_drawer_type == 'mobile-drawer'
+                            for linked_item in link.links
+                              if linked_item.url contains '/collections/'
+                                assign render_link_image = true
+                                break
+                              endif
+                            endfor
+                          endif
                         endif
                       %}
                       <ul
-                        class="menu-drawer__menu menu-drawer__menu--childlist menu-drawer__animated-element details-content{% if render_link_image %} menu-drawer__menu--grid{% endif %}"
+                        class="menu-drawer__menu menu-drawer__menu--childlist menu-drawer__animated-element details-content{% if render_link_image %}{% if data_header_drawer_type == 'mobile-drawer' %} menu-drawer__menu--with-thumbs{% else %} menu-drawer__menu--grid{% endif %}{% endif %}"
                         role="list"
                         tabindex="-1"
                       >
@@ -190,21 +283,37 @@
                       aria-current="page"
                     {% endif %}
                   >
+                    {% if mobile_main_link_image != blank %}
+                      {% render 'link-featured-image',
+                        link: mobile_main_link_image,
+                        class: 'menu-drawer__mainlist-image',
+                        sizes: '56px'
+                      %}
+                    {% endif %}
                     <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
                   </a>
                   {% liquid
                     assign render_link_image = false
-                    if block_settings.menu_style == 'collection_images'
+                    if block_settings.menu_style == 'collection_images' or data_header_drawer_type == 'mobile-drawer'
                       assign catalog_links = link.links | where: 'type', 'catalog_link'
                       assign collection_list_links = link.links | where: 'type', 'collections_link'
                       assign collection_links = link.links | where: 'type', 'collection_link'
                       if catalog_links.size > 0 or collection_list_links.size > 0 or collection_links.size > 0
                         assign render_link_image = true
                       endif
+
+                      if render_link_image == false and data_header_drawer_type == 'mobile-drawer'
+                        for linked_item in link.links
+                          if linked_item.url contains '/collections/'
+                            assign render_link_image = true
+                            break
+                          endif
+                        endfor
+                      endif
                     endif
                   %}
                   <ul
-                    class="menu-drawer__menu menu-drawer__menu--childlist{% if render_link_image %} menu-drawer__menu--grid{% endif %}"
+                    class="menu-drawer__menu menu-drawer__menu--childlist{% if render_link_image %}{% if data_header_drawer_type == 'mobile-drawer' %} menu-drawer__menu--with-thumbs{% else %} menu-drawer__menu--grid{% endif %}{% endif %}"
                     role="list"
                     tabindex="-1"
                   >
@@ -244,6 +353,13 @@
                       aria-current="page"
                     {% endif %}
                   >
+                    {% if mobile_main_link_image != blank %}
+                      {% render 'link-featured-image',
+                        link: mobile_main_link_image,
+                        class: 'menu-drawer__mainlist-image',
+                        sizes: '56px'
+                      %}
+                    {% endif %}
                     <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
                   </a>
                 {% endif %}
@@ -256,6 +372,83 @@
             {% assign animation_index = 0 %}
             {%- for link in linklist.links -%}
               {% assign animation_index = animation_index | plus: 1 %}
+              {% liquid
+                assign mobile_main_link_image = blank
+                assign mobile_main_link_image_object = blank
+                if data_header_drawer_type == 'mobile-drawer'
+                  assign mobile_main_link_image = link
+
+                  if link.type == 'collection_link' and link.object != blank
+                    assign mobile_main_link_image_object = link.object.image
+
+                    if mobile_main_link_image_object == blank and link.object.products.size > 0
+                      assign fallback_product = link.object.products | where: 'featured_image' | first
+                      if fallback_product != blank
+                        assign mobile_main_link_image_object = fallback_product.featured_image
+                      endif
+                    endif
+                  endif
+
+                  if mobile_main_link_image_object == blank and link.url contains '/collections/'
+                    assign collection_handle_from_url = link.url | split: '/collections/' | last | split: '?' | first | split: '#' | first | split: '/' | first
+                    assign collection_from_url = collections[collection_handle_from_url]
+
+                    if collection_from_url != blank
+                      assign mobile_main_link_image_object = collection_from_url.image
+
+                      if mobile_main_link_image_object == blank and collection_from_url.products.size > 0
+                        assign fallback_product = collection_from_url.products | where: 'featured_image' | first
+                        if fallback_product != blank
+                          assign mobile_main_link_image_object = fallback_product.featured_image
+                        endif
+                      endif
+                    endif
+                  endif
+
+                  if mobile_main_link_image_object == blank and link.type == 'collections_link'
+                    assign mobile_main_link_image = link
+                  endif
+
+                  if mobile_main_link_image_object == blank and link.links != blank
+                    assign collection_children = link.links | where: 'type', 'collection_link'
+                    assign mobile_main_link_image = collection_children | first
+
+                    if mobile_main_link_image != blank and mobile_main_link_image.object != blank
+                      assign mobile_main_link_image_object = mobile_main_link_image.object.image
+
+                      if mobile_main_link_image_object == blank and mobile_main_link_image.object.products.size > 0
+                        assign fallback_product = mobile_main_link_image.object.products | where: 'featured_image' | first
+                        if fallback_product != blank
+                          assign mobile_main_link_image_object = fallback_product.featured_image
+                        endif
+                      endif
+                    endif
+                  elsif link.links != blank
+                    for childlink in link.links
+                      if childlink.url contains '/collections/'
+                        assign child_collection_handle = childlink.url | split: '/collections/' | last | split: '?' | first | split: '#' | first | split: '/' | first
+                        assign child_collection = collections[child_collection_handle]
+
+                        if child_collection != blank
+                          assign mobile_main_link_image_object = child_collection.image
+                          assign mobile_main_link_image = childlink
+
+                          if mobile_main_link_image_object == blank and child_collection.products.size > 0
+                            assign fallback_product = child_collection.products | where: 'featured_image' | first
+                            if fallback_product != blank
+                              assign mobile_main_link_image_object = fallback_product.featured_image
+                            endif
+                          endif
+                        endif
+                      endif
+
+                      if mobile_main_link_image_object != blank
+                        break
+                      endif
+                    endfor
+                  endif
+                endif
+              %}
               <li
                 class="menu-drawer__list-item"
                 style="--menu-drawer-animation-index: {{ animation_index }};"
@@ -273,6 +466,13 @@
                       class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
                       on:click="header-drawer/open/submenu"
                     >
+                      {% if mobile_main_link_image != blank %}
+                        {% render 'link-featured-image',
+                          link: mobile_main_link_image,
+                          class: 'menu-drawer__mainlist-image',
+                          sizes: '56px'
+                        %}
+                      {% endif %}
                       <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
                       <span class="svg-wrapper icon-caret icon-caret--forward">
                         {{- 'icon-caret.svg' | inline_asset_content -}}
@@ -309,17 +509,26 @@
                         </div>
                         {% liquid
                           assign render_link_image = false
-                          if block_settings.menu_style == 'collection_images'
+                          if block_settings.menu_style == 'collection_images' or data_header_drawer_type == 'mobile-drawer'
                             assign catalog_links = link.links | where: 'type', 'catalog_link'
                             assign collection_list_links = link.links | where: 'type', 'collections_link'
                             assign collection_links = link.links | where: 'type', 'collection_link'
                             if catalog_links.size > 0 or collection_list_links.size > 0 or collection_links.size > 0
                               assign render_link_image = true
                             endif
+
+                            if render_link_image == false and data_header_drawer_type == 'mobile-drawer'
+                              for linked_item in link.links
+                                if linked_item.url contains '/collections/'
+                                  assign render_link_image = true
+                                  break
+                                endif
+                              endfor
+                            endif
                           endif
                         %}
                         <ul
-                          class="menu-drawer__menu menu-drawer__menu--childlist{% if render_link_image and link.levels == 1 %} menu-drawer__menu--grid{% endif %}"
+                          class="menu-drawer__menu menu-drawer__menu--childlist{% if render_link_image and link.levels == 1 %}{% if data_header_drawer_type == 'mobile-drawer' %} menu-drawer__menu--with-thumbs{% else %} menu-drawer__menu--grid{% endif %}{% endif %}"
                           role="list"
                           tabindex="-1"
                         >
@@ -387,17 +596,26 @@
                                       </summary>
                                       {% liquid
                                         assign render_link_image = false
-                                        if block_settings.menu_style == 'collection_images'
+                                        if block_settings.menu_style == 'collection_images' or data_header_drawer_type == 'mobile-drawer'
                                           assign catalog_links = childlink.links | where: 'type', 'catalog_link'
                                           assign collection_list_links = childlink.links | where: 'type', 'collections_link'
                                           assign collection_links = childlink.links | where: 'type', 'collection_link'
                                           if catalog_links.size > 0 or collection_list_links.size > 0 or collection_links.size > 0
                                             assign render_link_image = true
                                           endif
+
+                                          if render_link_image == false and data_header_drawer_type == 'mobile-drawer'
+                                            for linked_item in childlink.links
+                                              if linked_item.url contains '/collections/'
+                                                assign render_link_image = true
+                                                break
+                                              endif
+                                            endfor
+                                          endif
                                         endif
                                       %}
                                       <ul
-                                        class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content{% if render_link_image %} menu-drawer__menu--grid{% endif %}"
+                                        class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content{% if render_link_image %}{% if data_header_drawer_type == 'mobile-drawer' %} menu-drawer__menu--with-thumbs{% else %} menu-drawer__menu--grid{% endif %}{% endif %}"
                                         role="list"
                                         tabindex="-1"
                                       >
@@ -452,17 +670,26 @@
                                   </a>
                                   {% liquid
                                     assign render_link_image = false
-                                    if block_settings.menu_style == 'collection_images'
+                                    if block_settings.menu_style == 'collection_images' or data_header_drawer_type == 'mobile-drawer'
                                       assign catalog_links = childlink.links | where: 'type', 'catalog_link'
                                       assign collection_list_links = childlink.links | where: 'type', 'collections_link'
                                       assign collection_links = childlink.links | where: 'type', 'collection_link'
                                       if catalog_links.size > 0 or collection_list_links.size > 0 or collection_links.size > 0
                                         assign render_link_image = true
                                       endif
+
+                                      if render_link_image == false and data_header_drawer_type == 'mobile-drawer'
+                                        for linked_item in childlink.links
+                                          if linked_item.url contains '/collections/'
+                                            assign render_link_image = true
+                                            break
+                                          endif
+                                        endfor
+                                      endif
                                     endif
                                   %}
                                   <ul
-                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content{% if render_link_image %} menu-drawer__menu--grid{% endif %}"
+                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content{% if render_link_image %}{% if data_header_drawer_type == 'mobile-drawer' %} menu-drawer__menu--with-thumbs{% else %} menu-drawer__menu--grid{% endif %}{% endif %}"
                                     role="list"
                                     tabindex="-1"
                                   >
@@ -564,6 +791,13 @@
                       aria-current="page"
                     {% endif %}
                   >
+                    {% if mobile_main_link_image != blank %}
+                      {% render 'link-featured-image',
+                        link: mobile_main_link_image,
+                        class: 'menu-drawer__mainlist-image',
+                        sizes: '56px'
+                      %}
+                    {% endif %}
                     <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
                   </a>
                 {%- endif -%}
@@ -952,7 +1186,15 @@
     padding-block-start: var(--padding-xs);
   }
 
-  .menu-drawer__menu--childlist:not(.menu-drawer__menu--grid) {
+  .menu-drawer__menu--with-thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-2xs);
+    padding-inline-end: var(--menu-drawer-inline-padding);
+    padding-block-start: var(--padding-2xs);
+  }
+
+  .menu-drawer__menu--childlist:not(.menu-drawer__menu--grid):not(.menu-drawer__menu--with-thumbs) {
     flex-grow: 1;
   }
 
@@ -1055,6 +1297,21 @@
     }
   }
 
+  .menu-drawer__mainlist-image {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: calc(var(--menu-image-border-radius) * 0.75);
+    margin-inline-end: var(--gap-md);
+    flex-shrink: 0;
+    background: rgb(var(--color-foreground-rgb) / var(--opacity-10-25));
+  }
+
+  .menu-drawer__menu-item--mainlist .menu-drawer__menu-item-text {
+    flex: 1;
+    min-width: 0;
+  }
+
   .menu-drawer__menu-item--parent {
     font-family: var(--menu-parent-font-family);
     font-style: var(--menu-parent-font-style);
@@ -1124,11 +1381,32 @@
     padding: 0;
   }
 
+  .menu-drawer__menu--with-thumbs .menu-drawer__menu-item:has(> .menu-drawer__link-image) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: var(--gap-md);
+    row-gap: 0;
+    padding: var(--padding-3xs) 0;
+  }
+
   .menu-drawer__link-image {
     width: 100%;
     position: relative;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+  }
+
+  .menu-drawer__menu--with-thumbs .menu-drawer__link-image {
+    width: 42px;
+    aspect-ratio: 1;
+    border-radius: calc(var(--menu-image-border-radius) * 0.75);
+    flex-shrink: 0;
+  }
+
+  .menu-drawer__menu--with-thumbs .menu-drawer__menu-item-text {
+    flex: 1;
+    min-width: 0;
   }
 
   /* Fix alignment for collection image mode links without images in drawer */
