@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -17,9 +18,9 @@
           "settings": {
             "media_presentation": "grid",
             "media_columns": "two",
-            "image_gap": 1,
+            "image_gap": 12,
             "large_first_image": true,
-            "icons_style": "none",
+            "icons_style": "chevron",
             "slideshow_controls_style": "counter",
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "bottom",
@@ -27,8 +28,8 @@
             "aspect_ratio": "1",
             "constrain_to_viewport": false,
             "media_fit": "cover",
-            "media_radius": 0,
-            "extend_media": true,
+            "media_radius": 8,
+            "extend_media": false,
             "zoom": true,
             "video_loop": false,
             "hide_variants": false,
@@ -44,12 +45,12 @@
           "static": true,
           "settings": {
             "width": "custom",
-            "custom_width": 90,
+            "custom_width": 88,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
             "details_position": "flex-start",
-            "gap": 12,
+            "gap": 14,
             "sticky_details_desktop": true,
             "inherit_color_scheme": true,
             "color_scheme": "",
@@ -59,11 +60,11 @@
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 16,
-            "padding-block-end": 36,
-            "padding-inline-start": 12,
-            "padding-inline-end": 12
+            "border_radius": 8,
+            "padding-block-start": 20,
+            "padding-block-end": 28,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
           },
           "blocks": {
             "text_tefwj7": {
@@ -71,12 +72,12 @@
               "name": "t:names.title",
               "settings": {
                 "text": "<h1>{{ closest.product.title }}</h1>",
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "type_preset": "h1",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -92,23 +93,12 @@
               },
               "blocks": {}
             },
-            "reviews": {
-              "type": "review",
-              "settings": {
-                "stars_style": "shaded",
-                "show_number": true,
-                "rating_color": "primary",
-                "type_preset": "paragraph",
-                "alignment": "left"
-              },
-              "blocks": {}
-            },
             "price_a7krng": {
               "type": "price",
               "settings": {
                 "show_sale_price_first": true,
-                "show_installments": true,
-                "show_tax_info": true,
+                "show_installments": false,
+                "show_tax_info": false,
                 "type_preset": "h4",
                 "width": "100%",
                 "alignment": "left",
@@ -134,7 +124,7 @@
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
-                "font": "var(--font-primary--family)",
+                "font": "var(--font-body--family)",
                 "font_size": "",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -198,27 +188,196 @@
                 }
               },
               "block_order": []
+            },
+            "safe_use": {
+              "type": "text",
+              "name": "Safe-use note",
+              "settings": {
+                "text": "<p><strong>Safe-use note:</strong> Use only as directed. Keep out of reach of children and pets. Do not place where pets can lick, chew, or spill the product.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": true,
+                "background_color": "#F2EDE3",
+                "corner_radius": 8,
+                "padding-block-start": 14,
+                "padding-block-end": 14,
+                "padding-inline-start": 14,
+                "padding-inline-end": 14
+              },
+              "blocks": {}
+            },
+            "product_faq": {
+              "type": "accordion",
+              "settings": {
+                "icon": "plus",
+                "dividers": true,
+                "type_preset": "h6",
+                "inherit_color_scheme": true,
+                "color_scheme": "scheme-1",
+                "border": "solid",
+                "border_width": 1,
+                "border_opacity": 18,
+                "border_radius": 8,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "row_1": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Where should I use this?",
+                    "open_by_default": true,
+                    "icon": "question_mark"
+                  },
+                  "blocks": {
+                    "body": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Use the product in the spaces listed in the product description and follow the placement instructions on the page.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "font": "var(--font-body--family)",
+                        "font_size": "",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "body"
+                  ]
+                },
+                "row_2": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Is it a replacement for cleaning?",
+                    "open_by_default": false,
+                    "icon": "question_mark"
+                  },
+                  "blocks": {
+                    "body": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>No. It is intended for everyday freshness routines and should be used alongside normal cleaning and ventilation.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "font": "var(--font-body--family)",
+                        "font_size": "",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "body"
+                  ]
+                },
+                "row_3": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Can I use it around pets?",
+                    "open_by_default": false,
+                    "icon": "question_mark"
+                  },
+                  "blocks": {
+                    "body": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "text": "<p>Keep products out of reach of pets and use only as directed. Do not place where pets can lick, chew, or spill the product.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "font": "var(--font-body--family)",
+                        "font_size": "",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "body"
+                  ]
+                }
+              },
+              "block_order": [
+                "row_1",
+                "row_2",
+                "row_3"
+              ]
             }
           },
           "block_order": [
             "text_tefwj7",
-            "reviews",
             "price_a7krng",
             "text_gXMUag",
             "variant_picker_R3rGDr",
-            "buy_buttons_eYQEYi"
+            "buy_buttons_eYQEYi",
+            "safe_use",
+            "product_faq"
           ]
         }
       },
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
-        "equal_columns": false,
-        "limit_details_width": false,
-        "gap": 8,
+        "equal_columns": true,
+        "limit_details_width": true,
+        "gap": 32,
         "color_scheme": "scheme-1",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 24,
+        "padding-block-end": 48
       }
     },
     "product_recommendations_iA6pyd": {
@@ -232,10 +391,10 @@
             "product_card_gap": 0,
             "inherit_color_scheme": false,
             "color_scheme": "scheme-2",
-            "border": "none",
+            "border": "solid",
             "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
+            "border_opacity": 16,
+            "border_radius": 8,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -248,9 +407,9 @@
               "settings": {
                 "image_ratio": "square",
                 "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
+                "border_width": 0,
+                "border_opacity": 0,
+                "border_radius": 8,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -285,15 +444,15 @@
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_radius": 0,
+                "border_radius": 8,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 12,
-                "padding-block-end": 12,
-                "padding-inline-start": 12,
-                "padding-inline-end": 12
+                "padding-block-start": 14,
+                "padding-block-end": 16,
+                "padding-inline-start": 14,
+                "padding-inline-end": 14
               },
               "blocks": {
                 "group_3RWczc": {
@@ -323,7 +482,7 @@
                     "border": "none",
                     "border_width": 1,
                     "border_opacity": 100,
-                    "border_radius": 0,
+                    "border_radius": 8,
                     "toggle_overlay": false,
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
@@ -415,7 +574,7 @@
                     "border": "none",
                     "border_width": 1,
                     "border_opacity": 100,
-                    "border_radius": 0,
+                    "border_radius": 8,
                     "toggle_overlay": false,
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
@@ -435,8 +594,8 @@
                         "max_width": "normal",
                         "alignment": "left",
                         "type_preset": "custom",
-                        "font": "var(--font-primary--family)",
-                        "font_size": "var(--font-size--body-md)",
+                        "font": "var(--font-body--family)",
+                        "font_size": "",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -479,15 +638,15 @@
         "max_products": 6,
         "columns": 3,
         "mobile_columns": "1",
-        "columns_gap": 1,
-        "rows_gap": 2,
+        "columns_gap": 16,
+        "rows_gap": 18,
         "icons_style": "arrow",
         "icons_shape": "none",
-        "section_width": "full-width",
-        "gap": 0,
+        "section_width": "page-width",
+        "gap": 16,
         "color_scheme": "scheme-1",
-        "padding-block-start": 1,
-        "padding-block-end": 1
+        "padding-block-start": 56,
+        "padding-block-end": 56
       }
     }
   },

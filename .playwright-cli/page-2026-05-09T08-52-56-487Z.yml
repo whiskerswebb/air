@@ -1,0 +1,230 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#MainContent"
+  - generic [ref=e3]:
+    - complementary [ref=e6]:
+      - generic [ref=e9]:
+        - paragraph [ref=e10]: "Launch offer: Save on starter kits for a limited time"
+        - 'link "Launch offer: Save on starter kits for a limited time" [ref=e11] [cursor=pointer]':
+          - /url: /collections/starter-kits
+          - generic [ref=e12]: "Launch offer: Save on starter kits for a limited time"
+    - banner [ref=e13]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - link "FreshSpace" [ref=e19] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e20]: FreshSpace
+          - navigation "Primary" [ref=e23]:
+            - list [ref=e25]:
+              - generic:
+                - link "Shop All" [ref=e26] [cursor=pointer]:
+                  - /url: /collections/shop-all
+                  - generic [ref=e27]: Shop All
+                - link "Starter Kits" [ref=e28] [cursor=pointer]:
+                  - /url: /collections/starter-kits
+                  - generic [ref=e29]: Starter Kits
+                - link "Refills" [ref=e30] [cursor=pointer]:
+                  - /url: /collections/refills
+                  - generic [ref=e31]: Refills
+                - link "Pet Areas" [ref=e32] [cursor=pointer]:
+                  - /url: /collections/pet-areas
+                  - generic [ref=e33]: Pet Areas
+                - link "Bathroom" [ref=e34] [cursor=pointer]:
+                  - /url: /collections/bathroom
+                  - generic [ref=e35]: Bathroom
+                - link "Car" [ref=e36] [cursor=pointer]:
+                  - /url: /collections/car
+                  - generic [ref=e37]: Car
+                - link "About" [ref=e38] [cursor=pointer]:
+                  - /url: /pages/about-us
+                  - generic [ref=e39]: About
+                - link "Blog" [ref=e40] [cursor=pointer]:
+                  - /url: /blogs/freshness-journal
+                  - generic [ref=e41]: Blog
+        - generic [ref=e42]:
+          - button "Search" [ref=e44] [cursor=pointer]:
+            - generic:
+              - img
+          - generic [ref=e45]:
+            - button "Account" [ref=e50] [cursor=pointer]:
+              - img [ref=e52]
+            - button "Cart" [ref=e55] [cursor=pointer]:
+              - generic [ref=e56]:
+                - generic:
+                  - img
+            - status [ref=e59]
+  - main [ref=e60]:
+    - generic [ref=e65]:
+      - heading "Page not found" [level=1] [ref=e67]
+      - paragraph [ref=e69]: The link may be incorrect, or the page has been removed.
+      - link "Continue shopping" [ref=e70] [cursor=pointer]:
+        - /url: /collections/all
+    - generic [ref=e74]:
+      - generic [ref=e76]:
+        - link "Bathroom Freshness Jar" [ref=e77] [cursor=pointer]:
+          - /url: /products/bathroom-freshness-jar?variant=49169958240498
+          - generic [ref=e78]: Bathroom Freshness Jar
+        - generic [ref=e79] [cursor=pointer]:
+          - generic [ref=e80]:
+            - link "Bathroom Freshness Jar" [ref=e81]:
+              - /url: /products/bathroom-freshness-jar?variant=49169958240498
+              - img "Bathroom Freshness Jar product image placeholder" [ref=e87]
+            - generic [ref=e89]: Sale
+            - generic:
+              - generic:
+                - status
+                - button "Add" [ref=e90]:
+                  - generic [ref=e91]:
+                    - generic:
+                      - img
+                    - generic [ref=e92]: Add
+                  - generic [ref=e93]:
+                    - generic:
+                      - img
+          - generic [ref=e95]:
+            - generic [ref=e97]:
+              - link "Bathroom Freshness Jar" [ref=e98]:
+                - /url: /products/bathroom-freshness-jar?variant=49169958240498
+                - heading "Bathroom Freshness Jar" [level=3] [ref=e100]
+              - generic [ref=e103]:
+                - generic [ref=e104]:
+                  - generic [ref=e105]: Sale price
+                  - text: R 229.00 ZAR
+                - generic [ref=e106]:
+                  - generic [ref=e107]: Regular price
+                  - text: R 279.00 ZAR
+            - paragraph [ref=e111]: Compact bathroom freshness support
+      - generic [ref=e113]:
+        - link "Car Fresh Gel Cup" [ref=e114] [cursor=pointer]:
+          - /url: /products/car-fresh-gel-cup?variant=49169959059698
+          - generic [ref=e115]: Car Fresh Gel Cup
+        - generic [ref=e116] [cursor=pointer]:
+          - generic [ref=e117]:
+            - link "Car Fresh Gel Cup" [ref=e118]:
+              - /url: /products/car-fresh-gel-cup?variant=49169959059698
+              - img "Car Fresh Gel Cup product image placeholder" [ref=e124]
+            - generic [ref=e126]: Sale
+            - generic:
+              - generic:
+                - status
+                - button "Add" [ref=e127]:
+                  - generic [ref=e128]:
+                    - generic:
+                      - img
+                    - generic [ref=e129]: Add
+                  - generic [ref=e130]:
+                    - generic:
+                      - img
+          - generic [ref=e132]:
+            - generic [ref=e134]:
+              - link "Car Fresh Gel Cup" [ref=e135]:
+                - /url: /products/car-fresh-gel-cup?variant=49169959059698
+                - heading "Car Fresh Gel Cup" [level=3] [ref=e137]
+              - generic [ref=e140]:
+                - generic [ref=e141]:
+                  - generic [ref=e142]: Sale price
+                  - text: R 159.00 ZAR
+                - generic [ref=e143]:
+                  - generic [ref=e144]: Regular price
+                  - text: R 189.00 ZAR
+            - paragraph [ref=e148]: Small gel cup for everyday car freshness
+      - generic [ref=e150]:
+        - link "Closet & Shoe Deodorizer Pack" [ref=e151] [cursor=pointer]:
+          - /url: /products/closet-shoe-deodorizer-pack?variant=49169959616754
+          - generic [ref=e152]: Closet & Shoe Deodorizer Pack
+        - generic [ref=e153] [cursor=pointer]:
+          - generic [ref=e154]:
+            - link "Closet & Shoe Deodorizer Pack" [ref=e155]:
+              - /url: /products/closet-shoe-deodorizer-pack?variant=49169959616754
+              - img "Closet & Shoe Deodorizer Pack product image placeholder" [ref=e161]
+            - generic [ref=e163]: Sale
+            - generic:
+              - generic:
+                - status
+                - button "Add" [ref=e164]:
+                  - generic [ref=e165]:
+                    - generic:
+                      - img
+                    - generic [ref=e166]: Add
+                  - generic [ref=e167]:
+                    - generic:
+                      - img
+          - generic [ref=e169]:
+            - generic [ref=e171]:
+              - link "Closet & Shoe Deodorizer Pack" [ref=e172]:
+                - /url: /products/closet-shoe-deodorizer-pack?variant=49169959616754
+                - heading "Closet & Shoe Deodorizer Pack" [level=3] [ref=e174]
+              - generic [ref=e177]:
+                - generic [ref=e178]:
+                  - generic [ref=e179]: Sale price
+                  - text: R 189.00 ZAR
+                - generic [ref=e180]:
+                  - generic [ref=e181]: Regular price
+                  - text: R 229.00 ZAR
+            - paragraph [ref=e185]: Freshness support for closets and shoes
+  - contentinfo [ref=e186]:
+    - generic [ref=e190]:
+      - generic [ref=e192]:
+        - group [ref=e194]:
+          - generic "Shop" [ref=e195]
+          - navigation [ref=e196]:
+            - list [ref=e197]:
+              - listitem [ref=e198]:
+                - link "Shop All" [ref=e199] [cursor=pointer]:
+                  - /url: /collections/shop-all
+              - listitem [ref=e200]:
+                - link "Starter Kits" [ref=e201] [cursor=pointer]:
+                  - /url: /collections/starter-kits
+              - listitem [ref=e202]:
+                - link "Refills" [ref=e203] [cursor=pointer]:
+                  - /url: /collections/refills
+              - listitem [ref=e204]:
+                - link "Pet Areas" [ref=e205] [cursor=pointer]:
+                  - /url: /collections/pet-areas
+              - listitem [ref=e206]:
+                - link "Bathroom" [ref=e207] [cursor=pointer]:
+                  - /url: /collections/bathroom
+              - listitem [ref=e208]:
+                - link "Car" [ref=e209] [cursor=pointer]:
+                  - /url: /collections/car
+              - listitem [ref=e210]:
+                - link "About" [ref=e211] [cursor=pointer]:
+                  - /url: /pages/about-us
+              - listitem [ref=e212]:
+                - link "Blog" [ref=e213] [cursor=pointer]:
+                  - /url: /blogs/freshness-journal
+        - group [ref=e215]:
+          - generic "Support" [ref=e216]
+          - navigation [ref=e217]:
+            - list [ref=e218]:
+              - listitem [ref=e219]:
+                - link "Contact" [ref=e220] [cursor=pointer]:
+                  - /url: /pages/contact
+              - listitem [ref=e221]:
+                - link "Shipping Policy" [ref=e222] [cursor=pointer]:
+                  - /url: /pages/shipping
+              - listitem [ref=e223]:
+                - link "Returns Policy" [ref=e224] [cursor=pointer]:
+                  - /url: /pages/returns
+              - listitem [ref=e225]:
+                - link "Privacy Policy" [ref=e226] [cursor=pointer]:
+                  - /url: /pages/privacy-policy
+              - listitem [ref=e227]:
+                - link "Terms of Service" [ref=e228] [cursor=pointer]:
+                  - /url: /pages/terms-of-service
+              - listitem [ref=e229]:
+                - link "FAQ" [ref=e230] [cursor=pointer]:
+                  - /url: /pages/faq
+      - generic [ref=e231]:
+        - generic [ref=e232]: Freshness updates
+        - generic [ref=e234]:
+          - generic [ref=e235]: Email
+          - textbox "Email" [ref=e236]:
+            - /placeholder: Email address
+          - button "Sign up" [ref=e237] [cursor=pointer]
+    - generic [ref=e241]:
+      - generic [ref=e243]:
+        - text: © 2026
+        - link "Whiskers Webb Development Store" [ref=e244] [cursor=pointer]:
+          - /url: /
+      - button "Terms and Policies" [ref=e246] [cursor=pointer]

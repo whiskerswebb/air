@@ -1,0 +1,343 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#MainContent"
+  - generic [ref=e3]:
+    - complementary [ref=e6]:
+      - generic [ref=e9]:
+        - paragraph [ref=e10]: "Launch offer: Save on starter kits for a limited time"
+        - 'link "Launch offer: Save on starter kits for a limited time" [ref=e11] [cursor=pointer]':
+          - /url: /collections/starter-kits
+          - generic [ref=e12]: "Launch offer: Save on starter kits for a limited time"
+    - banner [ref=e13]:
+      - generic [ref=e14]:
+        - heading "Whiskers Webb Development Store" [level=1] [ref=e16]
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - link "FreshSpace" [ref=e20] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e21]: FreshSpace
+            - navigation "Primary" [ref=e24]:
+              - list [ref=e26]:
+                - generic:
+                  - link "Shop All" [ref=e27] [cursor=pointer]:
+                    - /url: /collections/shop-all
+                    - generic [ref=e28]: Shop All
+                  - link "Starter Kits" [ref=e29] [cursor=pointer]:
+                    - /url: /collections/starter-kits
+                    - generic [ref=e30]: Starter Kits
+                  - link "Refills" [ref=e31] [cursor=pointer]:
+                    - /url: /collections/refills
+                    - generic [ref=e32]: Refills
+                  - link "Pet Areas" [ref=e33] [cursor=pointer]:
+                    - /url: /collections/pet-areas
+                    - generic [ref=e34]: Pet Areas
+                  - link "Bathroom" [ref=e35] [cursor=pointer]:
+                    - /url: /collections/bathroom
+                    - generic [ref=e36]: Bathroom
+                  - link "Car" [ref=e37] [cursor=pointer]:
+                    - /url: /collections/car
+                    - generic [ref=e38]: Car
+                  - link "About" [ref=e39] [cursor=pointer]:
+                    - /url: /pages/about-us
+                    - generic [ref=e40]: About
+                  - link "Blog" [ref=e41] [cursor=pointer]:
+                    - /url: /blogs/freshness-journal
+                    - generic [ref=e42]: Blog
+          - generic [ref=e43]:
+            - button "Search" [ref=e45] [cursor=pointer]:
+              - generic:
+                - img
+            - generic [ref=e46]:
+              - button "Account" [ref=e51] [cursor=pointer]:
+                - img [ref=e53]
+              - button "Cart" [ref=e56] [cursor=pointer]:
+                - generic [ref=e57]:
+                  - generic:
+                    - img
+              - status [ref=e60]
+  - main [ref=e61]:
+    - generic [ref=e64]:
+      - generic:
+        - img
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: FreshSpace home freshness essentials
+            - generic:
+              - heading "Freshen every room without overpowering fragrance" [level=1]
+            - generic:
+              - paragraph: Simple odor-control essentials for everyday spaces — from pet areas and bathrooms to cars, closets, and kitchens.
+            - generic:
+              - generic:
+                - link "Shop Starter Kits" [ref=e65] [cursor=pointer]:
+                  - /url: /collections/starter-kits
+                - link "Shop Refills" [ref=e66] [cursor=pointer]:
+                  - /url: /collections/refills
+            - generic:
+              - paragraph: Helps reduce everyday household odors. Easy to place, easy to replace. Clear safe-use guidance included.
+    - generic [ref=e69]:
+      - generic [ref=e72]:
+        - heading "Best sellers for everyday freshness" [level=2] [ref=e74]
+        - paragraph [ref=e76]: The easiest first picks for common odor-prone spaces, starter kits, and repeat refills.
+        - link "Shop Best Sellers" [ref=e77] [cursor=pointer]:
+          - /url: /collections/best-sellers
+      - generic [ref=e78]:
+        - generic [ref=e83]:
+          - img [ref=e89]
+          - generic [ref=e102]:
+            - heading "Product title" [level=3] [ref=e104]
+            - generic [ref=e107]: R 19.99 ZAR
+        - generic [ref=e112]:
+          - img [ref=e118]
+          - generic [ref=e136]:
+            - heading "Product title" [level=3] [ref=e138]
+            - generic [ref=e141]: R 19.99 ZAR
+        - generic [ref=e146]:
+          - img [ref=e152]
+          - generic [ref=e168]:
+            - heading "Product title" [level=3] [ref=e170]
+            - generic [ref=e173]: R 19.99 ZAR
+        - generic [ref=e178]:
+          - img [ref=e184]
+          - generic [ref=e197]:
+            - heading "Product title" [level=3] [ref=e199]
+            - generic [ref=e202]: R 19.99 ZAR
+        - generic [ref=e207]:
+          - img [ref=e213]
+          - generic [ref=e231]:
+            - heading "Product title" [level=3] [ref=e233]
+            - generic [ref=e236]: R 19.99 ZAR
+        - generic [ref=e241]:
+          - img [ref=e247]
+          - generic [ref=e263]:
+            - heading "Product title" [level=3] [ref=e265]
+            - generic [ref=e268]: R 19.99 ZAR
+    - generic [ref=e273]:
+      - generic [ref=e275]:
+        - heading "Simple freshness for the places that need it most" [level=2] [ref=e277]
+        - paragraph [ref=e279]: "Bathrooms, pet areas, closets, cars, kitchens, and laundry corners can hold everyday odors even when the space is clean. FreshSpace keeps the buying path simple: choose the space, place the product as directed, then replace or refill as needed."
+      - generic [ref=e281]:
+        - generic [ref=e282]:
+          - heading "Use-case first" [level=3] [ref=e283]
+          - paragraph [ref=e284]: Shop by room or odor-prone area so customers can find the right starting point quickly.
+        - generic [ref=e285]:
+          - heading "Starter kits up front" [level=3] [ref=e286]
+          - paragraph [ref=e287]: Bundles make the first purchase easier and refills make repeat use clear.
+        - generic [ref=e288]:
+          - heading "Clear safe-use notes" [level=3] [ref=e289]
+          - paragraph [ref=e290]: Every product includes placement and safe-use guidance without unsupported claims.
+    - generic [ref=e293]:
+      - generic [ref=e296]:
+        - heading "Shop by space" [level=2] [ref=e298]
+        - paragraph [ref=e300]: Choose the area you want to freshen first, then compare starter kits, single jars, and small-space options.
+      - generic [ref=e301]:
+        - generic [ref=e303]:
+          - generic:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - paragraph: Collection title
+        - generic [ref=e307]:
+          - generic:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - paragraph: Collection title
+        - generic [ref=e311]:
+          - generic:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - paragraph: Collection title
+        - generic [ref=e315]:
+          - generic:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - paragraph: Collection title
+        - generic [ref=e319]:
+          - generic:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - paragraph: Collection title
+    - generic [ref=e326]:
+      - generic [ref=e328]:
+        - heading "Not sure where to begin? Start with a kit." [level=2] [ref=e330]
+        - paragraph [ref=e332]: "Starter kits are the lowest-friction path for a new customer: multiple everyday spaces, clear placement guidance, and a simple route to refills later."
+        - link "Shop Starter Kits" [ref=e333] [cursor=pointer]:
+          - /url: /collections/starter-kits
+      - generic [ref=e335]:
+        - generic [ref=e336]:
+          - heading "Best for first orders" [level=3] [ref=e337]
+          - paragraph [ref=e338]: Bundle-friendly options help customers solve more than one freshness need at once.
+        - generic [ref=e339]:
+          - heading "Designed for everyday spaces" [level=3] [ref=e340]
+          - paragraph [ref=e341]: Bathrooms, kitchens, pet areas, closets, cars, and other odor-prone spots.
+        - generic [ref=e342]:
+          - heading "Refills keep it simple" [level=3] [ref=e343]
+          - paragraph [ref=e344]: Customers can reorder the refill pack without choosing a full kit again.
+    - generic [ref=e347]:
+      - generic [ref=e350]:
+        - heading "Starter kits made for easy first orders" [level=2] [ref=e352]
+        - paragraph [ref=e354]: Multi-room options help shoppers cover their main odor-prone spaces without overthinking the cart.
+        - link "View Starter Kits" [ref=e355] [cursor=pointer]:
+          - /url: /collections/starter-kits
+      - generic [ref=e356]:
+        - generic [ref=e361]:
+          - img [ref=e367]
+          - generic [ref=e380]:
+            - heading "Product title" [level=3] [ref=e382]
+            - generic [ref=e385]: R 19.99 ZAR
+        - generic [ref=e390]:
+          - img [ref=e396]
+          - generic [ref=e414]:
+            - heading "Product title" [level=3] [ref=e416]
+            - generic [ref=e419]: R 19.99 ZAR
+    - generic [ref=e424]:
+      - heading "Refills make repeat purchase obvious" [level=2] [ref=e426]
+      - paragraph [ref=e428]: Freshness routines work best when customers know what to buy next. Refill positioning helps support retention without adding subscription complexity to the dummy store.
+      - link "Shop Refills" [ref=e429] [cursor=pointer]:
+        - /url: /collections/refills
+    - generic [ref=e432]:
+      - generic [ref=e435]:
+        - heading "Keep refills on hand" [level=2] [ref=e437]
+        - paragraph [ref=e439]: A simple refill path supports repeat orders and keeps customers from rebuying a full setup every time.
+        - link "View Refills" [ref=e440] [cursor=pointer]:
+          - /url: /collections/refills
+      - generic [ref=e446]:
+        - img [ref=e452]
+        - generic [ref=e465]:
+          - heading "Product title" [level=3] [ref=e467]
+          - generic [ref=e470]: R 19.99 ZAR
+    - generic [ref=e475]:
+      - heading "How it works" [level=2] [ref=e477]
+      - generic [ref=e479]:
+        - heading "1. Choose your space" [level=3] [ref=e481]
+        - paragraph [ref=e483]: Start with a room, car, closet, pet area, or bundle.
+      - generic [ref=e485]:
+        - heading "2. Place as directed" [level=3] [ref=e487]
+        - paragraph [ref=e489]: Use the product where it fits the space and follow the safe-use note.
+      - generic [ref=e491]:
+        - heading "3. Replace or refill" [level=3] [ref=e493]
+        - paragraph [ref=e495]: Reorder the same product or switch to a refill when it is time.
+    - generic [ref=e500]:
+      - generic [ref=e501]:
+        - heading "Built to feel trustworthy from the first click" [level=2] [ref=e502]
+        - paragraph [ref=e503]: Clear use cases, straightforward product details, safe-use language, shipping and returns pages, and simple support paths help reduce hesitation before checkout.
+      - paragraph [ref=e505]:
+        - strong [ref=e506]: "Safe-use guidance:"
+        - text: Use only as directed. Keep out of reach of children and pets. Do not place where pets can lick, chew, or spill the product.
+    - generic [ref=e511]:
+      - heading "Freshness questions, answered simply" [level=2] [ref=e513]
+      - generic [ref=e514]:
+        - group [ref=e516]:
+          - generic "How long do the products last?" [ref=e517] [cursor=pointer]:
+            - img [ref=e518]
+            - text: How long do the products last?
+            - generic:
+              - img
+          - paragraph [ref=e523]: Timing depends on the product, placement, and room conditions. Product pages include simple guidance for replacing or refilling as needed.
+        - group [ref=e525]:
+          - generic "Can I use them around pets?" [ref=e526] [cursor=pointer]:
+            - img [ref=e527]
+            - text: Can I use them around pets?
+            - generic:
+              - img
+        - group [ref=e531]:
+          - generic "Are these a replacement for cleaning?" [ref=e532] [cursor=pointer]:
+            - img [ref=e533]
+            - text: Are these a replacement for cleaning?
+            - generic:
+              - img
+        - group [ref=e537]:
+          - generic "Which product should I start with?" [ref=e538] [cursor=pointer]:
+            - img [ref=e539]
+            - text: Which product should I start with?
+            - generic:
+              - img
+    - generic [ref=e546]:
+      - heading "Ready to make everyday spaces feel fresher?" [level=2] [ref=e548]
+      - paragraph [ref=e550]: Start with a kit for the simplest path, or choose refills if you already know what you need next.
+      - generic [ref=e552]:
+        - link "Shop Starter Kits" [ref=e553] [cursor=pointer]:
+          - /url: /collections/starter-kits
+        - link "Shop Best Sellers" [ref=e554] [cursor=pointer]:
+          - /url: /collections/best-sellers
+  - contentinfo [ref=e555]:
+    - generic [ref=e559]:
+      - generic [ref=e561]:
+        - group [ref=e563]:
+          - generic "Shop" [ref=e564]
+          - navigation [ref=e565]:
+            - list [ref=e566]:
+              - listitem [ref=e567]:
+                - link "Shop All" [ref=e568] [cursor=pointer]:
+                  - /url: /collections/shop-all
+              - listitem [ref=e569]:
+                - link "Starter Kits" [ref=e570] [cursor=pointer]:
+                  - /url: /collections/starter-kits
+              - listitem [ref=e571]:
+                - link "Refills" [ref=e572] [cursor=pointer]:
+                  - /url: /collections/refills
+              - listitem [ref=e573]:
+                - link "Pet Areas" [ref=e574] [cursor=pointer]:
+                  - /url: /collections/pet-areas
+              - listitem [ref=e575]:
+                - link "Bathroom" [ref=e576] [cursor=pointer]:
+                  - /url: /collections/bathroom
+              - listitem [ref=e577]:
+                - link "Car" [ref=e578] [cursor=pointer]:
+                  - /url: /collections/car
+              - listitem [ref=e579]:
+                - link "About" [ref=e580] [cursor=pointer]:
+                  - /url: /pages/about-us
+              - listitem [ref=e581]:
+                - link "Blog" [ref=e582] [cursor=pointer]:
+                  - /url: /blogs/freshness-journal
+        - group [ref=e584]:
+          - generic "Support" [ref=e585]
+          - navigation [ref=e586]:
+            - list [ref=e587]:
+              - listitem [ref=e588]:
+                - link "Contact" [ref=e589] [cursor=pointer]:
+                  - /url: /pages/contact
+              - listitem [ref=e590]:
+                - link "Shipping Policy" [ref=e591] [cursor=pointer]:
+                  - /url: /pages/shipping
+              - listitem [ref=e592]:
+                - link "Returns Policy" [ref=e593] [cursor=pointer]:
+                  - /url: /pages/returns
+              - listitem [ref=e594]:
+                - link "Privacy Policy" [ref=e595] [cursor=pointer]:
+                  - /url: /pages/privacy-policy
+              - listitem [ref=e596]:
+                - link "Terms of Service" [ref=e597] [cursor=pointer]:
+                  - /url: /pages/terms-of-service
+              - listitem [ref=e598]:
+                - link "FAQ" [ref=e599] [cursor=pointer]:
+                  - /url: /pages/faq
+      - generic [ref=e600]:
+        - generic [ref=e601]: Freshness updates
+        - generic [ref=e603]:
+          - generic [ref=e604]: Email
+          - textbox "Email" [ref=e605]:
+            - /placeholder: Email address
+          - button "Sign up" [ref=e606] [cursor=pointer]
+    - generic [ref=e610]:
+      - generic [ref=e612]:
+        - text: © 2026
+        - link "Whiskers Webb Development Store" [ref=e613] [cursor=pointer]:
+          - /url: /
+      - button "Terms and Policies" [ref=e615] [cursor=pointer]

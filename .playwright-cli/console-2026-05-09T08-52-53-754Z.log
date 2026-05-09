@@ -1,0 +1,11 @@
+[    1909ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:9292/collections/best-sellers:0
+[    2248ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[    2380ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[    2697ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ :3119
+[    2932ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[    3056ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:9292/favicon.ico:0
+[    4050ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=2935f02e-19ea-41ef-9e67-0ef6f4f47830&analytics_trace_id=ef38eb88-b182-44e8-a422-a23df7f933bd&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fwhiskers-webb-development-store.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[  186051ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  186052ms] [ERROR] Failed to load resource: net::ERR_INCOMPLETE_CHUNKED_ENCODING @ http://127.0.0.1:9292/:0
+[  189057ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[  189057ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:9292/:0
