@@ -82,7 +82,7 @@
               "type": "text",
               "name": "Headline",
               "settings": {
-                "text": "<h1>Freshen every room without overpowering fragrance</h1>",
+                "text": "<h1>Freshen the rooms people actually notice</h1>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -108,7 +108,7 @@
               "type": "text",
               "name": "Subheading",
               "settings": {
-                "text": "<p>Simple odor-control essentials for everyday spaces — from pet areas and bathrooms to cars, closets, and kitchens.</p>",
+                "text": "<p>Odor-control gels, starter kits, and refills for pet corners, bathrooms, cars, and small spaces — made to sit quietly in the room, not overpower it.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -208,7 +208,7 @@
               "type": "text",
               "name": "USP line",
               "settings": {
-                "text": "",
+                "text": "<p><span>Shop by room</span><span>Starter kits + refills</span><span>Clear safe-use guidance</span></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -261,7 +261,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
-        "section_height": "large",
+        "section_height": "medium",
         "section_height_custom": 64,
         "color_scheme": "scheme-5",
         "toggle_overlay": true,
@@ -314,7 +314,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Best sellers for everyday freshness</h2>",
+                "text": "<h2>Start with what shoppers come back for</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -340,7 +340,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>The easiest first picks for common odor-prone spaces, starter kits, and repeat refills.</p>",
+                "text": "<p>Popular first orders for the rooms that need a quiet, low-effort freshness routine.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -700,7 +700,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h2>Simple freshness for the places that need it most</h2>",
+                "text": "<h2>Freshness for the places that collect real-life odors</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -726,7 +726,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>Bathrooms, pet areas, closets, cars, kitchens, and laundry corners can hold everyday odors even when the space is clean. FreshSpace keeps the buying path simple: choose the space, place the product as directed, then replace or refill as needed.</p>",
+                "text": "<p>Some spaces need more than a quick spray. FreshSpace helps you pick the problem area, place the right format, and keep the routine going without a heavy perfume cloud.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -798,7 +798,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Use-case first</h3><p>Shop by room or odor-prone area so customers can find the right starting point quickly.</p>",
+                "text": "<h3>Start with the worst spot</h3><p>Pet corner, bathroom shelf, laundry nook, car console, or closet. The room decides the product.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -824,7 +824,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Starter kits up front</h3><p>Bundles make the first purchase easier and refills make repeat use clear.</p>",
+                "text": "<h3>Make the routine obvious</h3><p>Choose a starter kit when you want the simplest first order, or go straight to jars and refills when you already know the space.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -850,7 +850,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Clear safe-use notes</h3><p>Every product includes placement and safe-use guidance without unsupported claims.</p>",
+                "text": "<h3>Keep safety visible</h3><p>Every product page keeps placement and safe-use notes close to the buy button, so there is less guesswork before checkout.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -986,7 +986,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>Choose the area you want to freshen first, then compare starter kits, single jars, and small-space options.</p>",
+                "text": "<p>Find the right fit by room first, then compare starter kits, single jars, and small-space options.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1156,7 +1156,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h2>Not sure where to begin? Start with a kit.</h2>",
+                "text": "<h2>New to FreshSpace? A kit removes the guessing.</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1182,7 +1182,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>Starter kits are the lowest-friction path for a new customer: multiple everyday spaces, clear placement guidance, and a simple route to refills later.</p>",
+                "text": "<p>Starter kits are built for the first order: cover the most common odor-prone spaces, follow the placement notes, then reorder refills when the routine is working.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1269,7 +1269,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Best for first orders</h3><p>Bundle-friendly options help customers solve more than one freshness need at once.</p>",
+                "text": "<h3>Covers more than one space</h3><p>Useful when the home has a few problem spots and you do not want to build a basket from scratch.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1295,7 +1295,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Designed for everyday spaces</h3><p>Bathrooms, kitchens, pet areas, closets, cars, and other odor-prone spots.</p>",
+                "text": "<h3>Clear setup path</h3><p>Start with priority areas first, then move refills into the spaces where the routine works best.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1321,7 +1321,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Refills keep it simple</h3><p>Customers can reorder the refill pack without choosing a full kit again.</p>",
+                "text": "<h3>Refill without rethinking</h3><p>Once you know what works, reorder refills instead of buying another full kit.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1641,7 +1641,7 @@
           "name": "t:names.title",
           "static": true,
           "settings": {
-            "text": "<h2>Freshness tips from the blog</h2>",
+                "text": "<h2>Helpful reads before you choose</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -1758,10 +1758,10 @@
       "name": "Featured blogs",
       "settings": {
         "blog": "freshness-journal",
-        "layout_type": "carousel",
+        "layout_type": "grid",
         "carousel_on_mobile": false,
-        "post_limit": 9,
-        "columns": 3,
+        "post_limit": 4,
+        "columns": 4,
         "mobile_columns": "1",
         "mobile_card_size": "60cqw",
         "columns_gap": 16,
@@ -1782,7 +1782,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<h2>Ready to make everyday spaces feel fresher?</h2>",
+                "text": "<h2>Ready to make the next room feel fresher?</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",

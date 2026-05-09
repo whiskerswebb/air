@@ -50,7 +50,7 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "details_position": "flex-start",
-            "gap": 10,
+            "gap": 16,
             "sticky_details_desktop": true,
             "inherit_color_scheme": true,
             "color_scheme": "",
@@ -199,8 +199,8 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 6,
-                "padding-block-end": 8,
+                "padding-block-start": 12,
+                "padding-block-end": 12,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -626,7 +626,7 @@
                   "settings": {
                     "heading": "Where should I use this?",
                     "open_by_default": false,
-                    "icon": "question_mark"
+                    "icon": "map_pin"
                   },
                   "blocks": {
                     "body": {
@@ -665,7 +665,7 @@
                   "settings": {
                     "heading": "Is it a replacement for cleaning?",
                     "open_by_default": false,
-                    "icon": "question_mark"
+                    "icon": "washing"
                   },
                   "blocks": {
                     "body": {
@@ -704,7 +704,7 @@
                   "settings": {
                     "heading": "Can I use it around pets?",
                     "open_by_default": false,
-                    "icon": "question_mark"
+                    "icon": "paw_print"
                   },
                   "blocks": {
                     "body": {
@@ -750,10 +750,10 @@
             "text_tefwj7",
             "price_a7krng",
             "pdp_description",
-            "usp_icon_row",
             "text_gXMUag",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "usp_icon_row",
             "safe_use",
             "product_faq"
           ]

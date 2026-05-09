@@ -95,59 +95,48 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "text_sisterStores": {
-              "type": "text",
-              "name": "Sister Stores",
-              "settings": {
-                "text": "<p><a href=\"/pages/sister-stores\">Sister Stores</a></p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "paragraph",
-                "font": "var(--font-primary--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "menu_k94JXn",
-            "menu_CY8HUp",
-            "text_sisterStores"
+            "menu_CY8HUp"
           ]
-        },
-        "email_signup_t3aAfi": {
-          "type": "email-signup",
-          "name": "t:names.email_signup",
+        }
+      },
+      "block_order": [
+        "group_EJMKU9"
+      ],
+      "name": "t:names.footer",
+      "settings": {
+        "section_width": "page-width",
+        "gap": 28,
+        "color_scheme": "scheme-8",
+        "padding-block-start": 44,
+        "padding-block-end": 44
+      }
+    },
+    "sister_stores": {
+      "type": "footer",
+      "blocks": {
+        "sister_store_text": {
+          "type": "text",
+          "name": "Sister store links",
           "settings": {
-            "width": "fill",
-            "custom_width": 70,
-            "inherit_color_scheme": true,
-            "heading": "Freshness updates",
-            "heading_preset": "h4",
-            "color_scheme": "",
-            "border_style": "underline",
-            "border_width": 1,
-            "border_radius": 8,
-            "input_type_preset": "paragraph",
-            "style_class": "button-secondary",
-            "display_type": "text",
-            "label": "Sign up",
-            "integrated_button": false,
-            "button_type_preset": "paragraph",
+            "text": "<p>FreshSpace is part of the Whiskers Webb family of stores. <a href=\"/pages/sister-stores\">Visit our sister-store hub</a> to browse every brand in one place.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -157,16 +146,15 @@
         }
       },
       "block_order": [
-        "group_EJMKU9",
-        "email_signup_t3aAfi"
+        "sister_store_text"
       ],
-      "name": "t:names.footer",
+      "name": "Sister stores",
       "settings": {
         "section_width": "page-width",
-        "gap": 28,
+        "gap": 0,
         "color_scheme": "scheme-8",
-        "padding-block-start": 44,
-        "padding-block-end": 44
+        "padding-block-start": 18,
+        "padding-block-end": 18
       }
     },
     "utilities": {
@@ -228,6 +216,7 @@
   },
   "order": [
     "footer_WnX4aJ",
+    "sister_stores",
     "utilities"
   ]
 }

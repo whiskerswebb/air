@@ -9,12 +9,13 @@
  */
 {
   "current": {
-    "type_body_font": "inter_n4",
-    "type_subheading_font": "inter_n6",
-    "type_heading_font": "inter_n7",
-    "type_accent_font": "inter_n6",
-    "type_size_paragraph": "14",
+    "type_body_font": "work_sans_n4",
+    "type_subheading_font": "work_sans_n6",
+    "type_heading_font": "lora_n7",
+    "type_accent_font": "work_sans_n7",
+    "type_size_paragraph": "16",
     "type_line_height_paragraph": "body-normal",
+    "type_line_height_h1": "display-tight",
     "type_case_h1": "none",
     "type_size_h2": "48",
     "type_line_height_h2": "display-tight",
@@ -24,6 +25,8 @@
     "type_case_h5": "none",
     "type_case_h6": "none",
     "card_hover_effect": "subtle-zoom",
+    "quick_add": true,
+    "mobile_quick_add": true,
     "show_second_image_on_hover": false,
     "product_card_carousel": true,
     "button_border_radius_primary": 8,
@@ -31,7 +34,10 @@
     "button_text_case_primary": "uppercase",
     "secondary_button_border_width": 1,
     "button_border_radius_secondary": 8,
+    "type_font_button_secondary": "accent",
+    "button_text_case_secondary": "uppercase",
     "cart_type": "drawer",
+    "auto_open_cart_drawer": true,
     "inputs_border_radius": 8,
     "popover_border_radius": 8,
     "popover_border": "none",
@@ -352,8 +358,8 @@
         }
       }
     },
-    "logo_height": 32,
-    "logo_height_mobile": 28
+    "logo_height": 44,
+    "logo_height_mobile": 36
   },
   "presets": {
     "Savor": {

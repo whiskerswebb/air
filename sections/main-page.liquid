@@ -15,9 +15,459 @@
       {% render 'spacing-style', settings: section.settings %}
     "
   >
-    {% content_for 'blocks' %}
+    {% if page.handle == 'sister-stores' %}
+      {% liquid
+        assign shop_all_collection = collections['shop-all']
+        assign starter_kits_collection = collections['starter-kits']
+        assign refills_collection = collections['refills']
+        assign pet_areas_collection = collections['pet-areas']
+      %}
+
+      <div class="sister-stores-page">
+        <section class="sister-stores-page__hero">
+          <div class="sister-stores-page__hero-copy">
+            <p class="sister-stores-page__eyebrow">Whiskers Webb family</p>
+            <h1>Discover our sister stores</h1>
+            <p>
+              A growing family of focused stores, built to make everyday shopping simpler. FreshSpace is our home freshness store, with more Whiskers Webb brands joining the hub as they launch.
+            </p>
+            <div class="sister-stores-page__actions">
+              <a class="button" href="{{ routes.root_url }}">Shop FreshSpace</a>
+              <a class="button-secondary" href="#freshspace-store">Explore the hub</a>
+            </div>
+          </div>
+
+          <div class="sister-stores-page__hero-media" aria-label="FreshSpace home freshness imagery">
+            <img
+              src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
+              alt="FreshSpace products styled in a calm home setting"
+              width="1866"
+              height="1200"
+              loading="eager"
+              fetchpriority="high"
+            >
+            <div class="sister-stores-page__media-card">
+              <span>Live now</span>
+              <strong>FreshSpace</strong>
+              <small>Home freshness essentials</small>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="freshspace-store"
+          class="sister-stores-page__featured"
+          aria-labelledby="freshspace-store-heading"
+        >
+          <div>
+            <p class="sister-stores-page__eyebrow">Current store</p>
+            <h2 id="freshspace-store-heading">FreshSpace Home Freshness</h2>
+            <p>
+              Odor-control essentials for bathrooms, pet areas, cars, closets, kitchens, and compact home spaces. Start with a kit, choose by room, or keep your routine going with refills.
+            </p>
+          </div>
+
+          <div class="sister-stores-page__quick-links" aria-label="FreshSpace shortcuts">
+            <a href="{{ routes.collections_url }}/shop-all">Shop all</a>
+            <a href="{{ routes.collections_url }}/starter-kits">Starter kits</a>
+            <a href="{{ routes.collections_url }}/refills">Refills</a>
+          </div>
+        </section>
+
+        <section class="sister-stores-page__grid" aria-label="Whiskers Webb stores and collections">
+          <a class="sister-stores-page__store-card sister-stores-page__store-card--feature" href="{{ routes.collections_url }}/shop-all">
+            <span class="sister-stores-page__store-image">
+              {% if shop_all_collection.featured_image %}
+                {{
+                  shop_all_collection.featured_image
+                  | image_url: width: 900
+                  | image_tag:
+                    widths: '450, 700, 900',
+                    sizes: '(min-width: 990px) 34vw, 100vw',
+                    loading: 'lazy',
+                    alt: shop_all_collection.title
+                }}
+              {% else %}
+                <img
+                  src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
+                  alt=""
+                  width="1866"
+                  height="1200"
+                  loading="lazy"
+                >
+              {% endif %}
+            </span>
+            <span class="sister-stores-page__store-content">
+              <span class="sister-stores-page__badge">Open now</span>
+              <strong>FreshSpace</strong>
+              <span>Home freshness by space, routine, and refill need.</span>
+            </span>
+          </a>
+
+          <a class="sister-stores-page__store-card" href="{{ routes.collections_url }}/starter-kits">
+            <span class="sister-stores-page__store-image">
+              {% if starter_kits_collection.featured_image %}
+                {{
+                  starter_kits_collection.featured_image
+                  | image_url: width: 700
+                  | image_tag:
+                    widths: '360, 540, 700',
+                    sizes: '(min-width: 990px) 22vw, 100vw',
+                    loading: 'lazy',
+                    alt: starter_kits_collection.title
+                }}
+              {% else %}
+                <img
+                  src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
+                  alt=""
+                  width="1866"
+                  height="1200"
+                  loading="lazy"
+                >
+              {% endif %}
+            </span>
+            <span class="sister-stores-page__store-content">
+              <span class="sister-stores-page__badge">Best first stop</span>
+              <strong>Starter kits</strong>
+              <span>Simple first purchases for common odor-prone spaces.</span>
+            </span>
+          </a>
+
+          <a class="sister-stores-page__store-card" href="{{ routes.collections_url }}/refills">
+            <span class="sister-stores-page__store-image">
+              {% if refills_collection.featured_image %}
+                {{
+                  refills_collection.featured_image
+                  | image_url: width: 700
+                  | image_tag:
+                    widths: '360, 540, 700',
+                    sizes: '(min-width: 990px) 22vw, 100vw',
+                    loading: 'lazy',
+                    alt: refills_collection.title
+                }}
+              {% else %}
+                <img
+                  src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
+                  alt=""
+                  width="1866"
+                  height="1200"
+                  loading="lazy"
+                >
+              {% endif %}
+            </span>
+            <span class="sister-stores-page__store-content">
+              <span class="sister-stores-page__badge">Keep it going</span>
+              <strong>Refills</strong>
+              <span>Reorder without rebuilding your whole home setup.</span>
+            </span>
+          </a>
+
+          <a class="sister-stores-page__store-card" href="{{ routes.collections_url }}/pet-areas">
+            <span class="sister-stores-page__store-image">
+              {% if pet_areas_collection.featured_image %}
+                {{
+                  pet_areas_collection.featured_image
+                  | image_url: width: 700
+                  | image_tag:
+                    widths: '360, 540, 700',
+                    sizes: '(min-width: 990px) 22vw, 100vw',
+                    loading: 'lazy',
+                    alt: pet_areas_collection.title
+                }}
+              {% else %}
+                <img
+                  src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
+                  alt=""
+                  width="1866"
+                  height="1200"
+                  loading="lazy"
+                >
+              {% endif %}
+            </span>
+            <span class="sister-stores-page__store-content">
+              <span class="sister-stores-page__badge">Pet-aware</span>
+              <strong>Pet areas</strong>
+              <span>Freshness support for everyday pet-home zones.</span>
+            </span>
+          </a>
+
+          <div class="sister-stores-page__store-card sister-stores-page__store-card--coming">
+            <span class="sister-stores-page__store-content">
+              <span class="sister-stores-page__badge">Coming soon</span>
+              <strong>More Whiskers Webb stores</strong>
+              <span>New focused stores can be added here as the family grows.</span>
+            </span>
+          </div>
+        </section>
+
+      </div>
+    {% else %}
+      {% content_for 'blocks' %}
+    {% endif %}
   </div>
 </div>
+
+{% stylesheet %}
+  .sister-stores-page {
+    display: grid;
+    gap: clamp(2rem, 5vw, 4rem);
+    width: 100%;
+    padding-block-start: clamp(2rem, 5vw, 4rem);
+  }
+
+  .sister-stores-page__hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: stretch;
+    gap: clamp(1rem, 3vw, 2rem);
+    min-height: clamp(420px, 58svh, 620px);
+  }
+
+  .sister-stores-page__hero-copy,
+  .sister-stores-page__featured {
+    display: grid;
+    align-content: center;
+    gap: var(--gap-md);
+  }
+
+  .sister-stores-page__eyebrow {
+    margin: 0;
+    color: rgb(var(--color-foreground-rgb) / 0.66);
+    font-family: var(--font-subheading--family);
+    font-size: 0.78rem;
+    font-weight: var(--font-subheading--weight);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .sister-stores-page h1,
+  .sister-stores-page h2,
+  .sister-stores-page p {
+    margin: 0;
+  }
+
+  .sister-stores-page h1 {
+    max-width: 8.5em;
+    font-size: clamp(3.1rem, 7vw, 6.5rem);
+    line-height: 0.92;
+  }
+
+  .sister-stores-page h2 {
+    max-width: 11em;
+    font-size: clamp(2.3rem, 4vw, 4.5rem);
+    line-height: 0.98;
+  }
+
+  .sister-stores-page__hero-copy > p:not(.sister-stores-page__eyebrow),
+  .sister-stores-page__featured p {
+    max-width: 36rem;
+    color: rgb(var(--color-foreground-rgb) / 0.76);
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    line-height: 1.45;
+  }
+
+  .sister-stores-page__actions,
+  .sister-stores-page__quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-sm);
+    margin-block-start: var(--gap-xs);
+  }
+
+  .sister-stores-page__hero-media {
+    position: relative;
+    min-height: 360px;
+    overflow: hidden;
+    border-radius: var(--style-border-radius-sm);
+    background: var(--color-background);
+  }
+
+  .sister-stores-page__hero-media img,
+  .sister-stores-page__store-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .sister-stores-page__hero-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 35%, rgb(0 0 0 / 0.48));
+  }
+
+  .sister-stores-page__media-card {
+    position: absolute;
+    inset-block-end: var(--gap-lg);
+    inset-inline-start: var(--gap-lg);
+    z-index: 1;
+    display: grid;
+    gap: 0.15rem;
+    width: min(18rem, calc(100% - var(--gap-lg) * 2));
+    padding: var(--gap-md);
+    border: 1px solid rgb(255 255 255 / 0.28);
+    border-radius: var(--style-border-radius-sm);
+    background: rgb(250 248 242 / 0.92);
+    color: var(--color-foreground);
+  }
+
+  .sister-stores-page__media-card span,
+  .sister-stores-page__badge {
+    width: fit-content;
+    color: rgb(var(--color-foreground-rgb) / 0.66);
+    font-size: 0.78rem;
+    font-weight: var(--font-weight-semibold, 600);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .sister-stores-page__media-card strong,
+  .sister-stores-page__store-card strong {
+    color: var(--color-foreground-heading);
+    font-family: var(--font-heading--family);
+    font-size: clamp(1.55rem, 2.4vw, 2.2rem);
+    line-height: 1;
+  }
+
+  .sister-stores-page__media-card small {
+    color: rgb(var(--color-foreground-rgb) / 0.72);
+    font-size: 0.95rem;
+  }
+
+  .sister-stores-page__featured {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--gap-xl);
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid rgb(var(--color-border-rgb) / 0.7);
+    border-radius: var(--style-border-radius-sm);
+    background: #fff;
+  }
+
+  .sister-stores-page__quick-links {
+    align-content: center;
+    justify-content: flex-end;
+  }
+
+  .sister-stores-page__quick-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0.65rem 0.9rem;
+    border: 1px solid rgb(var(--color-border-rgb) / 0.8);
+    border-radius: var(--style-border-radius-sm);
+    color: var(--color-foreground);
+    font-weight: var(--font-weight-semibold, 600);
+    text-decoration: none;
+  }
+
+  .sister-stores-page__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--gap-md);
+  }
+
+  .sister-stores-page__store-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+    border: 1px solid rgb(var(--color-border-rgb) / 0.76);
+    border-radius: var(--style-border-radius-sm);
+    background: #fff;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .sister-stores-page__store-card--feature {
+    grid-column: span 2;
+  }
+
+  .sister-stores-page__store-image {
+    display: block;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: rgb(var(--color-foreground-rgb) / 0.06);
+  }
+
+  .sister-stores-page__store-content {
+    display: grid;
+    align-content: start;
+    gap: var(--gap-xs);
+    padding: var(--gap-md);
+  }
+
+  .sister-stores-page__store-content > span:last-child {
+    color: rgb(var(--color-foreground-rgb) / 0.72);
+    line-height: 1.35;
+  }
+
+  .sister-stores-page__store-card--coming {
+    min-height: 260px;
+    background:
+      linear-gradient(135deg, rgb(var(--color-foreground-rgb) / 0.04), transparent 44%),
+      rgb(var(--color-foreground-rgb) / 0.025);
+  }
+
+  .sister-stores-page__store-card--coming .sister-stores-page__store-content {
+    align-content: center;
+  }
+
+  @media screen and (max-width: 989px) {
+    .sister-stores-page__hero,
+    .sister-stores-page__featured {
+      grid-template-columns: 1fr;
+    }
+
+    .sister-stores-page__hero {
+      min-height: 0;
+    }
+
+    .sister-stores-page__hero-media {
+      min-height: 320px;
+    }
+
+    .sister-stores-page__quick-links {
+      justify-content: flex-start;
+    }
+
+    .sister-stores-page__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sister-stores-page__store-card--feature {
+      grid-column: span 2;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .sister-stores-page {
+      gap: 2rem;
+      padding-block-start: calc(var(--header-group-height, 80px) - 20px);
+    }
+
+    .sister-stores-page h1 {
+      font-size: clamp(3rem, 15vw, 4.25rem);
+    }
+
+    .sister-stores-page__hero-media {
+      min-height: 260px;
+    }
+
+    .sister-stores-page__actions > *,
+    .sister-stores-page__quick-links a {
+      width: 100%;
+    }
+
+    .sister-stores-page__grid,
+    .sister-stores-page__store-card--feature {
+      grid-template-columns: 1fr;
+      grid-column: auto;
+    }
+
+    .sister-stores-page__store-image {
+      aspect-ratio: 4 / 3;
+    }
+  }
+{% endstylesheet %}
 
 {% schema %}
 {

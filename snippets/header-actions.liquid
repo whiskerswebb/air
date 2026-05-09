@@ -383,7 +383,7 @@
                       </ul>
                     </div>
                   {% endif %}
-                  {% render 'cart-summary', section_id: section.id %}
+                  {% render 'cart-summary', section_id: section.id, hide_discount_code: true %}
                 </div>
               </scroll-hint>
             {%- endif -%}

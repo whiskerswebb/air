@@ -1000,6 +1000,66 @@ body:has(.header[transparent]) #header-group > *:not(.header-section) {
   overflow: hidden;
 }
 
+.product-grid .product-card,
+.product-grid .product-card__content {
+  height: 100%;
+}
+
+.product-grid .product-card__content > .group-block:last-child {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.product-grid .product-card__content > .group-block:last-child > .group-block-content {
+  height: 100%;
+  gap: 0.55rem;
+  align-items: stretch;
+}
+
+.product-grid
+  .product-card__content
+  > .group-block:last-child
+  > .group-block-content
+  > .group-block:first-child
+  .group-block-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.28rem;
+  align-items: start;
+}
+
+.product-grid .product-card [role='heading'][aria-level='3'] {
+  color: var(--color-foreground-heading);
+  font-family: var(--font-accent--family);
+  font-size: clamp(1rem, 2.65vw, 1.18rem);
+  font-weight: var(--font-accent--weight);
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.product-grid .product-card product-price {
+  width: 100%;
+  align-items: flex-start;
+  --text-align: left;
+}
+
+.product-grid .product-card product-price > *,
+.product-grid .product-card .price,
+.product-grid .product-card .compare-at-price {
+  font-size: 0.92rem;
+  line-height: 1.18;
+}
+
+.product-grid .product-card .compare-at-price {
+  font-size: 0.82rem;
+}
+
+.product-grid .product-card .text-block.custom-typography p {
+  color: rgb(var(--color-foreground-rgb) / 0.74);
+  font-size: 0.86rem;
+  line-height: 1.28;
+}
+
 [product-grid-view='zoom-out'] .product-grid__card {
   row-gap: var(--padding-xs);
 }
@@ -1298,6 +1358,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button {
   font-family: var(--button-font-family-primary);
+  font-weight: var(--button-font-weight-primary);
   text-transform: var(--button-text-case-primary);
   border-radius: var(--style-border-radius-buttons-primary);
 }
@@ -1308,12 +1369,14 @@ button.shopify-payment-button__button--unbranded {
 
 .button-secondary {
   font-family: var(--button-font-family-secondary);
+  font-weight: var(--button-font-weight-secondary);
   text-transform: var(--button-text-case-secondary);
   border-radius: var(--style-border-radius-buttons-secondary);
 }
 
 button.shopify-payment-button__button--unbranded {
   font-family: var(--button-font-family-primary);
+  font-weight: var(--button-font-weight-primary);
   text-transform: var(--button-text-case-primary);
 }
 

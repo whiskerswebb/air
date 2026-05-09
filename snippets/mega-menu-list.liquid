@@ -51,6 +51,7 @@
 
   if menu_content_type == 'featured_collections'
     assign collection_handles = ''
+    assign menu_context_key = parent_link.handle | default: parent_link.title | handleize
 
     if parent_link.type == 'collection_link'
       assign collection_handles = parent_link.object.handle | append: ','
@@ -61,6 +62,15 @@
     for collection_link in collection_links
       assign collection_handles = collection_handles | append: collection_link.object.handle | append: ','
     endfor
+
+    case menu_context_key
+      when 'shop'
+        assign collection_handles = 'best-sellers,starter-kits,refills,'
+      when 'shop-by-space', 'shop-by-room', 'spaces'
+        assign collection_handles = 'pet-areas,bathroom,car,small-spaces,'
+      when 'learn', 'freshness-tips', 'journal'
+        assign collection_handles = 'starter-kits,small-spaces,bathroom,'
+    endcase
 
     if collection_handles == blank
       assign menu_content_type = 'text'

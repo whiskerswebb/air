@@ -3,7 +3,17 @@
 
   @param {string} [accelerated_checkout_buttons_layout] - { 'vertical' } Forced layout of the additional checkout buttons, instead of relying on platform's layout.
   @param {string} [section_id] - The section ID for cart discount component.
+  @param {boolean} [hide_discount_code] - Hide the discount code field while preserving applied discount totals.
 {%- enddoc -%}
+
+{% liquid
+  assign show_discount_code = settings.show_add_discount_code
+  assign tax_info_without_discounts = settings.show_add_discount_code
+  if hide_discount_code
+    assign show_discount_code = false
+    assign tax_info_without_discounts = true
+  endif
+%}
 
 <div class="cart-totals">
   {% # We need to keep this node in place to allow morphing to work properly # %}
@@ -38,7 +48,7 @@
     {%- endif -%}
   </div>
 
-  {% if settings.show_cart_note or settings.show_add_discount_code %}
+  {% if settings.show_cart_note or show_discount_code %}
     <div class="cart-actions">
       {% if settings.show_cart_note %}
         <script
@@ -89,10 +99,10 @@
           %}
         </cart-note>
       {% endif %}
-      {% if settings.show_cart_note and settings.show_add_discount_code %}
+      {% if settings.show_cart_note and show_discount_code %}
         <div class="cart-actions__divider"></div>
       {% endif %}
-      {% if settings.show_add_discount_code %}
+      {% if show_discount_code %}
         {% liquid
           assign discount_codes = cart.cart_level_discount_applications | where: 'type', 'discount_code' | map: 'title'
           for item in cart.items
@@ -252,7 +262,7 @@
       </span>
     {% endif %}
     <div class="cart-totals__item cart-totals__tax-note cart-primary-typography">
-      {% render 'tax-info', has_discounts_enabled: settings.show_add_discount_code %}
+      {% render 'tax-info', has_discounts_enabled: tax_info_without_discounts %}
     </div>
   </div>
 </div>

@@ -142,6 +142,10 @@
 
   .product-information--pdp .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block) {
     --usp-icon-row-gap: var(--gap-md);
+
+    padding-block: var(--gap-sm);
+    border-block: 1px solid rgb(var(--color-foreground-rgb) / 0.14);
+    background: transparent;
   }
 
   .product-information--pdp
@@ -180,10 +184,14 @@
   .product-information--pdp
     .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block)
     svg {
-    width: 1.25rem;
-    height: 1.25rem;
-    color: var(--color-foreground);
-    opacity: 0.8;
+    box-sizing: content-box;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.4rem;
+    border-radius: 999px;
+    background: rgb(var(--color-primary-rgb) / 0.12);
+    color: var(--color-primary);
+    opacity: 1;
   }
 
   .product-information--pdp
@@ -193,14 +201,50 @@
     color: rgb(var(--color-foreground-rgb) / 0.86);
   }
 
+  @media screen and (min-width: 750px) {
+    .product-information--pdp
+      .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block)
+      > .group-block-content
+      > .group-block
+      + .group-block {
+      padding-inline-start: var(--gap-md) !important;
+      border-inline-start: 1px solid rgb(var(--color-foreground-rgb) / 0.12);
+    }
+  }
+
   /* Mobile styles */
   @media screen and (max-width: 749px) {
     .product-information__media {
       grid-column: 1 / -1;
     }
 
+    .product-information--pdp .product-information__media .product-media-container {
+      --media-preview-ratio: 1.28 !important;
+
+      aspect-ratio: 1.28 / 1 !important;
+    }
+
+    .product-information--pdp .product-information__media .product-media {
+      --gallery-aspect-ratio: 1.28 !important;
+    }
+
     .product-details {
       grid-column: 2 / 3;
+    }
+
+    .product-information--pdp
+      .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block)
+      > .group-block-content {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--gap-sm) var(--gap-md);
+    }
+
+    .product-information--pdp
+      .group-block:has(> .group-block-content > .group-block + .group-block + .group-block + .group-block)
+      > .group-block-content
+      > .group-block {
+      min-width: 0;
     }
   }
 
