@@ -100,7 +100,7 @@ class HeaderActions extends Component {
     const railId = button.dataset.upsellRailId;
     if (!railId) return;
 
-    const rail = this.querySelector(`[data-upsell-rail-id="${railId}"]`);
+    const rail = this.querySelector(`[data-upsell-rail][data-upsell-rail-id="${railId}"]`);
     if (!(rail instanceof HTMLElement)) return;
 
     const direction = button.dataset.upsellNav === 'next' ? 1 : -1;

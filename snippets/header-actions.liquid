@@ -524,12 +524,14 @@
 
   .cart-drawer__content {
     height: calc(100% - var(--header-height));
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
     padding: 0;
     background-color: var(--color-background);
-    flex-grow: 1;
+    min-height: 0;
     overflow: hidden;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
   }
 
   .cart-drawer__heading {
@@ -575,18 +577,20 @@
   .cart-drawer__summary {
     --cart-drawer-summary-padding: var(--padding-lg);
 
-    position: sticky;
+    position: relative;
     bottom: 0;
     z-index: 1;
     display: flex;
+    flex: 0 0 auto;
     flex-direction: column;
     align-items: stretch;
     gap: var(--gap-xl);
+    width: 100%;
+    min-width: 0;
     padding: var(--cart-drawer-summary-padding);
-    margin-top: auto;
+    margin-top: 0;
     background-color: var(--color-background);
-    /* stylelint-disable-next-line color-named */
-    mask-image: linear-gradient(to bottom, transparent, black var(--cart-drawer-summary-padding));
+    overflow: hidden;
 
     @media screen and (min-width: 750px) {
       --cart-drawer-summary-padding: var(--padding-2xl);
@@ -599,7 +603,7 @@
   }
 
   .cart-drawer__dialog[cart-summary-sticky='false'] .cart-drawer__items {
-    overflow: unset;
+    overflow-y: auto;
   }
 
   .cart-actions summary {
@@ -628,10 +632,14 @@
   .cart-drawer__items {
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    height: 100%;
     min-height: 0;
     padding-inline: var(--cart-drawer-padding);
+    padding-block-end: var(--padding-xl);
     overflow-y: auto;
+    overscroll-behavior: contain;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
 
     @media screen and (min-width: 750px) {
       padding-inline: var(--cart-drawer-padding-desktop);
@@ -651,8 +659,11 @@
   }
 
   .cart-drawer__upsells {
+    min-width: 0;
+    max-width: 100%;
     padding: 0 0 var(--padding-sm);
     border-bottom: var(--style-border-width) solid var(--color-border);
+    overflow: hidden;
   }
 
   .cart-drawer__upsells-header {
@@ -660,6 +671,7 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--gap-xs);
+    min-width: 0;
     margin-bottom: var(--padding-2xs);
   }
 
@@ -672,7 +684,7 @@
   }
 
   .cart-drawer__upsells-nav {
-    display: none;
+    display: inline-flex;
     align-items: center;
     gap: var(--gap-3xs);
   }
@@ -706,9 +718,13 @@
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scroll-padding-inline: 0;
+    max-width: 100%;
+    min-width: 0;
     padding-bottom: var(--padding-3xs);
     padding-inline-end: var(--padding-sm);
     scrollbar-width: none;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
   }
 
   .cart-drawer__upsells-list::-webkit-scrollbar {
@@ -730,10 +746,6 @@
   }
 
   @media screen and (min-width: 750px) {
-    .cart-drawer__upsells-nav {
-      display: inline-flex;
-    }
-
     .cart-drawer__upsells-item {
       flex-basis: calc(100% - 3.75rem);
     }
@@ -814,6 +826,7 @@
   }
 
   .cart-drawer__upsell-button {
+    position: relative;
     width: 100%;
     min-height: 28px;
     padding: 0.25rem 0.45rem;
@@ -822,6 +835,30 @@
     letter-spacing: 0;
     text-transform: none;
     line-height: 1.2;
+  }
+
+  .cart-drawer__upsell-button[data-loading='true'] {
+    color: transparent;
+    pointer-events: none;
+  }
+
+  .cart-drawer__upsell-button[data-loading='true']::after {
+    content: '';
+    position: absolute;
+    inset: 50% auto auto 50%;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgb(var(--color-primary-button-text-rgb, var(--color-background-rgb)) / 0.45);
+    border-top-color: var(--color-primary-button-text);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: cart-drawer-upsell-spin 0.7s linear infinite;
+  }
+
+  @keyframes cart-drawer-upsell-spin {
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
 
   .cart-drawer--empty .cart-drawer__inner {
@@ -874,7 +911,7 @@
 
   @media screen and (min-width: 750px) {
     header-actions:not(.header-actions--text) {
-      gap: var(--gap-2xs);
+      gap: 0;
     }
 
     .header__column--right header-actions:not(.header-actions--text) {
@@ -882,18 +919,48 @@
     }
 
     .header-actions__action--stacked {
-      display: inline-flex;
-      flex-direction: column;
+      display: inline-grid;
+      grid-template-rows: var(--button-size) auto;
       align-items: center;
       justify-content: center;
       gap: 0.15rem;
-      min-width: 3.2rem;
-      padding-inline: 0.1rem;
+      min-width: 2.65rem;
+      height: calc(var(--button-size) + 0.15rem + 0.76rem);
+      padding-inline: 0;
       line-height: 1;
     }
 
-    .header-actions__action--stacked .svg-wrapper {
+    .header-actions__action--stacked .svg-wrapper,
+    .header-actions__action--stacked shopify-account > span[slot='signed-out-avatar'] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: var(--button-size);
+      height: var(--button-size);
       margin: 0;
+    }
+
+    .header-actions__action--stacked shopify-account {
+      display: block;
+      grid-row: 1;
+      width: var(--button-size);
+      height: var(--button-size);
+    }
+
+    .account-button.header-actions__action--stacked shopify-store {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .account-button.header-actions__action--stacked .header-actions__icon-label {
+      grid-row: 2;
+    }
+
+    .header-actions__action--stacked .account-button__icon {
+      width: var(--icon-size-md);
+      height: var(--icon-size-md);
     }
 
     .header-actions__icon-label {
