@@ -86,8 +86,8 @@
         "announcement_1": {
           "type": "_announcement",
           "settings": {
-            "text": "Launch offer: Save on starter kits for a limited time",
-            "link": "shopify://collections/starter-kits",
+            "text": "New arrivals for a calmer home atmosphere",
+            "link": "shopify://collections/new-arrivals",
             "font": "var(--font-body--family)",
             "font_size": "0.875rem",
             "weight": "600",
@@ -99,7 +99,7 @@
         "announcement_2": {
           "type": "_announcement",
           "settings": {
-            "text": "Visit our sister stores across Whiskers Webb",
+            "text": "Airloom is part of Whiskers Webb",
             "link": "/pages/sister-stores",
             "font": "var(--font-body--family)",
             "font_size": "0.875rem",
@@ -112,7 +112,7 @@
         "announcement_3": {
           "type": "_announcement",
           "settings": {
-            "text": "See every brand in one place: Sister Stores",
+            "text": "Visit the Whiskers Webb sister-store hub",
             "link": "/pages/sister-stores",
             "font": "var(--font-body--family)",
             "font_size": "0.875rem",

@@ -16,7 +16,7 @@
           "type": "custom-liquid",
           "name": "Collection intro",
           "settings": {
-            "custom_liquid": "<div class=\"collection-hero__copy\">{% if closest.collection.handle == 'all' %}<p class=\"collection-hero__eyebrow\">FreshSpace essentials</p><h1>Shop All</h1><p>Browse odor-control essentials by space, routine, and refill need - then tap into the product that fits the room you want to freshen first.</p>{% else %}<p class=\"collection-hero__eyebrow\">FreshSpace collection</p><h1>{{ closest.collection.title }}</h1><p>{% if closest.collection.description != blank %}{{ closest.collection.description }}{% else %}Simple FreshSpace picks for everyday odor-prone spaces, starter routines, and easy refills.{% endif %}</p>{% endif %}</div>"
+            "custom_liquid": "<div class=\"collection-hero__copy\">{% case closest.collection.handle %}{% when 'all', 'shop-all' %}{% assign collection_copy = 'Browse incense, holders, and home fragrance pieces for the spaces you use every day.' %}{% when 'incense-holders' %}{% assign collection_copy = 'Find holders and burners that keep incense steady, neater, and easier to enjoy at home.' %}{% when 'incense-sticks' %}{% assign collection_copy = 'Shop incense for rooms where you want a more noticeable scent and a slower moment.' %}{% when 'home-fragrance' %}{% assign collection_copy = 'Simple fragrance pieces for bedrooms, bathrooms, living rooms, cars, and everyday spaces.' %}{% when 'best-sellers' %}{% assign collection_copy = 'Start with the Airloom pieces shoppers are most likely to reach for first.' %}{% when 'new-arrivals' %}{% assign collection_copy = 'Fresh additions to the Airloom range, from incense pieces to practical room fragrance.' %}{% when 'bedroom' %}{% assign collection_copy = 'Softer fragrance choices for bedrooms and evening routines.' %}{% when 'living-room' %}{% assign collection_copy = 'Warm, welcoming fragrance choices for the room everyone gathers in.' %}{% when 'workspace' %}{% assign collection_copy = 'Simple scent pieces for desks, studies, and focused corners.' %}{% when 'entryway' %}{% assign collection_copy = 'Fragrance pieces that help the first step inside feel more welcoming.' %}{% else %}{% assign collection_copy = 'Practical fragrance pieces for calmer rooms, cleaner setups, and everyday use.' %}{% endcase %}<p class=\"collection-hero__eyebrow\">Airloom collection</p><h1>{% if closest.collection.handle == 'all' %}Shop All{% else %}{{ closest.collection.title }}{% endif %}</h1><p>{{ collection_copy }}</p></div>"
           },
           "blocks": {}
         },
@@ -61,7 +61,7 @@
               "type": "text",
               "name": "Value prop",
               "settings": {
-                "text": "<p>Shop by room</p>",
+                "text": "<p>Choose by room</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -87,7 +87,7 @@
               "type": "text",
               "name": "Value prop",
               "settings": {
-                "text": "<p>Starter kits + refills</p>",
+                "text": "<p>Incense and holders</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -113,7 +113,7 @@
               "type": "text",
               "name": "Value prop",
               "settings": {
-                "text": "<p>Clear safe-use guidance</p>",
+                "text": "<p>Simple care notes</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-labelledby="airloom-logo-title">
+  <title id="airloom-logo-title">Airloom</title>
+  <defs>
+    <linearGradient id="airloom-mark-bg" x1="16" y1="12" x2="112" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFF5EC"/>
+      <stop offset="1" stop-color="#DCE8D8"/>
+    </linearGradient>
+    <linearGradient id="airloom-mark-stroke" x1="36" y1="36" x2="94" y2="94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#77977E"/>
+      <stop offset="1" stop-color="#55745C"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#airloom-mark-bg)"/>
+    <path d="M38 82.5V58.7L64 37l26 21.7v23.8" stroke="#2F3B34" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M47.5 79.5c12.4-12.9 27.2-12.9 39.7 0" stroke="url(#airloom-mark-stroke)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M42.5 93.5c13.1-10.3 30-10.3 43.1 0 5 3.9 10 3.9 15 0" stroke="url(#airloom-mark-stroke)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M64 58.5v20" stroke="#2F3B34" stroke-width="7" stroke-linecap="round"/>
+    <text x="148" y="78" fill="#24322D" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="0">Airloom</text>
+    <text x="151" y="103" fill="#5F7F67" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="750" letter-spacing="3.1">HOME ATMOSPHERE</text>
+  </g>
+</svg>

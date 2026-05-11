@@ -65,11 +65,13 @@
 
     case menu_context_key
       when 'shop'
-        assign collection_handles = 'best-sellers,starter-kits,refills,'
+        assign collection_handles = 'best-sellers,incense-holders,new-arrivals,'
       when 'shop-by-space', 'shop-by-room', 'spaces'
-        assign collection_handles = 'pet-areas,bathroom,car,small-spaces,'
+        assign collection_handles = 'bedroom,living-room,workspace,entryway,'
+      when 'shop-by-ritual', 'rituals'
+        assign collection_handles = 'home-fragrance,incense-holders,incense-sticks,'
       when 'learn', 'freshness-tips', 'journal'
-        assign collection_handles = 'starter-kits,small-spaces,bathroom,'
+        assign collection_handles = 'home-fragrance,incense-holders,best-sellers,'
     endcase
 
     if collection_handles == blank
@@ -265,16 +267,20 @@
     assign menu_context_key = parent_link.handle | default: parent_link.title | handleize
 
     case menu_context_key
-      when 'pet-areas', 'pets'
-        assign default_featured_collection_handles = 'pet-areas,best-sellers,refills' | split: ','
-      when 'bathroom', 'bath'
-        assign default_featured_collection_handles = 'bathroom,starter-kits,refills' | split: ','
-      when 'car', 'auto'
-        assign default_featured_collection_handles = 'car,bundles,best-sellers' | split: ','
-      when 'small-spaces', 'small-space', 'closets', 'closet'
-        assign default_featured_collection_handles = 'small-spaces,bundles,starter-kits' | split: ','
+      when 'bedroom'
+        assign default_featured_collection_handles = 'bedroom,home-fragrance,incense-holders' | split: ','
+      when 'living-room', 'lounge'
+        assign default_featured_collection_handles = 'living-room,home-fragrance,best-sellers' | split: ','
+      when 'workspace', 'desk', 'studio'
+        assign default_featured_collection_handles = 'workspace,incense-sticks,incense-holders' | split: ','
+      when 'entryway', 'hallway'
+        assign default_featured_collection_handles = 'entryway,home-fragrance,new-arrivals' | split: ','
+      when 'incense-holders'
+        assign default_featured_collection_handles = 'incense-holders,incense-sticks,best-sellers' | split: ','
+      when 'incense-sticks'
+        assign default_featured_collection_handles = 'incense-sticks,incense-holders,home-fragrance' | split: ','
       else
-        assign default_featured_collection_handles = 'best-sellers,starter-kits,refills' | split: ','
+        assign default_featured_collection_handles = 'best-sellers,home-fragrance,new-arrivals' | split: ','
     endcase
 
     assign default_featured_collections_count = 0

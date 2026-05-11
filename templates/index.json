@@ -56,7 +56,7 @@
               "type": "text",
               "name": "Eyebrow",
               "settings": {
-                "text": "<p>FreshSpace home freshness essentials</p>",
+                "text": "<p>Home fragrance by Airloom</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -82,7 +82,7 @@
               "type": "text",
               "name": "Headline",
               "settings": {
-                "text": "<h1>Freshen the rooms people actually notice</h1>",
+                "text": "<h1>Make your home feel calmer</h1>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -108,7 +108,7 @@
               "type": "text",
               "name": "Subheading",
               "settings": {
-                "text": "<p>Odor-control gels, starter kits, and refills for pet corners, bathrooms, cars, and small spaces — made to sit quietly in the room, not overpower it.</p>",
+                "text": "<p>Shop incense, burners, holders, and simple fragrance pieces for bedrooms, living rooms, bathrooms, cars, and daily use.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -173,8 +173,8 @@
                 "starter": {
                   "type": "button",
                   "settings": {
-                    "label": "Shop Starter Kits",
-                    "link": "shopify://collections/starter-kits",
+                    "label": "Shop Incense Holders",
+                    "link": "shopify://collections/incense-holders",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
@@ -187,8 +187,8 @@
                 "refills": {
                   "type": "button",
                   "settings": {
-                    "label": "Shop Refills",
-                    "link": "shopify://collections/refills",
+                    "label": "Shop Incense",
+                    "link": "shopify://collections/incense-sticks",
                     "open_in_new_tab": false,
                     "style_class": "button-secondary",
                     "width": "fit-content",
@@ -208,7 +208,7 @@
               "type": "text",
               "name": "USP line",
               "settings": {
-                "text": "<p><span>Shop by room</span><span>Starter kits + refills</span><span>Clear safe-use guidance</span></p>",
+                "text": "<p><span>Choose by room</span><span>Incense and holders</span><span>Simple care notes</span></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -314,7 +314,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Start with what shoppers come back for</h2>",
+            "text": "<h2>Easy first picks</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -340,7 +340,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Popular first orders for the rooms that need a quiet, low-effort freshness routine.</p>",
+            "text": "<p>Start with the pieces people reach for first: incense, holders, and home fragrance staples for the rooms you use every day.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -632,7 +632,7 @@
           ]
         }
       },
-      "name": "Best sellers for everyday freshness",
+      "name": "Best sellers",
       "settings": {
         "collection": "shop-all",
         "layout_type": "carousel",
@@ -700,7 +700,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h2>Freshness for the places that collect real-life odors</h2>",
+                "text": "<h2>Choose fragrance by how the room is used</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -726,7 +726,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>Some spaces need more than a quick spray. FreshSpace helps you pick the problem area, place the right format, and keep the routine going without a heavy perfume cloud.</p>",
+                "text": "<p>A bedroom, bathroom, car, and living room all need different things. Airloom makes it easier to choose the right format for each space.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -798,7 +798,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Start with the worst spot</h3><p>Pet corner, bathroom shelf, laundry nook, car console, or closet. The room decides the product.</p>",
+                "text": "<h3>Start with the room</h3><p>Choose for the space first. A quiet bedroom, busy bathroom, car, and living room should not all smell the same.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -824,7 +824,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Make the routine obvious</h3><p>Choose a starter kit when you want the simplest first order, or go straight to jars and refills when you already know the space.</p>",
+                "text": "<h3>Pick the right format</h3><p>Use incense when you want a stronger scent. Choose holders and burners when you need a cleaner, safer setup.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -850,7 +850,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Keep safety visible</h3><p>Every product page keeps placement and safe-use notes close to the buy button, so there is less guesswork before checkout.</p>",
+                "text": "<h3>Know how to use it</h3><p>Each product page keeps the practical notes close by, so you can check placement, care, and safety before you buy.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -960,7 +960,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h2>Shop by space</h2>",
+              "text": "<h2>Shop by room</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -986,7 +986,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>Find the right fit by room first, then compare starter kits, single jars, and small-space options.</p>",
+              "text": "<p>Browse by the room you want to improve, then choose the scent format that makes the most sense for that space.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1086,10 +1086,10 @@
       "settings": {
         "collection_list": [
           "shop-all",
-          "pet-areas",
-          "bathroom",
-          "car",
-          "small-spaces"
+          "bedroom",
+          "living-room",
+          "workspace",
+          "entryway"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
@@ -1114,7 +1114,7 @@
       "blocks": {
         "copy": {
           "type": "group",
-          "name": "Starter copy",
+          "name": "Guidance copy",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -1156,7 +1156,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h2>New to FreshSpace? A kit removes the guessing.</h2>",
+                "text": "<h2>Not sure where to start?</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1182,7 +1182,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>Starter kits are built for the first order: cover the most common odor-prone spaces, follow the placement notes, then reorder refills when the routine is working.</p>",
+                "text": "<p>Think about the room first, then the product. A soft evening scent, a practical bathroom freshener, and a car fragrance all solve different problems.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1207,8 +1207,8 @@
             "button": {
               "type": "button",
               "settings": {
-                "label": "Shop Starter Kits",
-                "link": "shopify://collections/starter-kits",
+                "label": "Shop Incense Holders",
+                "link": "shopify://collections/incense-holders",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -1227,7 +1227,7 @@
         },
         "checklist": {
           "type": "group",
-          "name": "Kit benefits",
+          "name": "Choice benefits",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -1269,7 +1269,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Covers more than one space</h3><p>Useful when the home has a few problem spots and you do not want to build a basket from scratch.</p>",
+                "text": "<h3>Choose the room</h3><p>Start with where the product will live. That keeps the scent level and product style easier to get right.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1295,7 +1295,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Clear setup path</h3><p>Start with priority areas first, then move refills into the spaces where the routine works best.</p>",
+                "text": "<h3>Choose the format</h3><p>Incense is more noticeable. Holders keep burning products neater. Fresheners are better for low-effort daily use.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1321,7 +1321,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Refill without rethinking</h3><p>Once you know what works, reorder refills instead of buying another full kit.</p>",
+                "text": "<h3>Build from there</h3><p>Start with one room you care about most, then add pieces for the rest of the home as the range grows.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1355,7 +1355,7 @@
         "copy",
         "checklist"
       ],
-      "name": "Starter kit feature",
+      "name": "Fragrance guidance feature",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -1391,7 +1391,7 @@
           "type": "text",
           "name": "FAQ heading",
           "settings": {
-            "text": "<h2>Freshness questions, answered simply</h2>",
+            "text": "<h2>Home fragrance, without the guesswork</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -1444,7 +1444,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Timing depends on the product, placement, and room conditions. Product pages include simple guidance for replacing or refilling as needed.</p>",
+                    "text": "<p>It depends on the product, room size, airflow, and how often you use it. Check the product page for the most useful guidance.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1474,7 +1474,7 @@
             "row_2": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Can I use them around pets?",
+                "heading": "Can I use these around pets?",
                 "open_by_default": false,
                 "icon": "question_mark",
                 "width": 20
@@ -1484,7 +1484,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Keep products out of reach of pets and use only as directed. Do not place where pets can lick, chew, or spill the product.</p>",
+                    "text": "<p>Use extra care around pets. Keep fragrance products, ash, oils, and burning items out of reach, and keep the room ventilated.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1524,7 +1524,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>No. FreshSpace products are intended for everyday freshness routines and are not a replacement for cleaning, ventilation, or addressing the source of strong odors.</p>",
+                    "text": "<p>No. Fragrance can make a clean room feel better, but it should not replace cleaning, ventilation, or dealing with the source of a strong odour.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1564,7 +1564,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>If you want one easy first order, start with the Multi-Room Starter Kit. If you already know the space, shop by bathroom, pet areas, car, or small spaces.</p>",
+                    "text": "<p>For a stronger scent, start with incense and a suitable holder. For everyday freshness, choose a room or car freshener as the range expands.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1782,7 +1782,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-                "text": "<h2>Ready to make the next room feel fresher?</h2>",
+            "text": "<h2>Ready to make the room feel better?</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1808,7 +1808,7 @@
           "type": "text",
           "name": "Copy",
           "settings": {
-            "text": "<p>Start with a kit for the simplest path, or choose refills if you already know what you need next.</p>",
+            "text": "<p>Start with incense and a holder, or browse the easiest picks for your first Airloom order.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1873,8 +1873,8 @@
             "starter": {
               "type": "button",
               "settings": {
-                "label": "Shop Starter Kits",
-                "link": "shopify://collections/starter-kits",
+                "label": "Shop Incense Holders",
+                "link": "shopify://collections/incense-holders",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",

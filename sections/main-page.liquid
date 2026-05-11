@@ -18,29 +18,29 @@
     {% if page.handle == 'sister-stores' %}
       {% liquid
         assign shop_all_collection = collections['shop-all']
-        assign starter_kits_collection = collections['starter-kits']
-        assign refills_collection = collections['refills']
-        assign pet_areas_collection = collections['pet-areas']
+        assign incense_holders_collection = collections['incense-holders']
+        assign incense_sticks_collection = collections['incense-sticks']
+        assign home_fragrance_collection = collections['home-fragrance']
       %}
 
       <div class="sister-stores-page">
         <section class="sister-stores-page__hero">
           <div class="sister-stores-page__hero-copy">
             <p class="sister-stores-page__eyebrow">Whiskers Webb family</p>
-            <h1>Discover our sister stores</h1>
+            <h1>Explore the Whiskers Webb stores</h1>
             <p>
-              A growing family of focused stores, built to make everyday shopping simpler. FreshSpace is our home freshness store, with more Whiskers Webb brands joining the hub as they launch.
+              Whiskers Webb brings together focused online stores with clear ranges and simple shopping. Airloom is our home fragrance store, and more brands will be added here as they launch.
             </p>
             <div class="sister-stores-page__actions">
-              <a class="button" href="{{ routes.root_url }}">Shop FreshSpace</a>
-              <a class="button-secondary" href="#freshspace-store">Explore the hub</a>
+              <a class="button" href="{{ routes.root_url }}">Shop Airloom</a>
+              <a class="button-secondary" href="#freshspace-store">View the stores</a>
             </div>
           </div>
 
-          <div class="sister-stores-page__hero-media" aria-label="FreshSpace home freshness imagery">
+          <div class="sister-stores-page__hero-media" aria-label="Airloom home fragrance imagery">
             <img
               src="{{ 'home-freshspace-hero.jpg' | asset_url }}"
-              alt="FreshSpace products styled in a calm home setting"
+              alt="Airloom products styled in a calm home setting"
               width="1866"
               height="1200"
               loading="eager"
@@ -48,8 +48,8 @@
             >
             <div class="sister-stores-page__media-card">
               <span>Live now</span>
-              <strong>FreshSpace</strong>
-              <small>Home freshness essentials</small>
+              <strong>Airloom</strong>
+              <small>Home fragrance essentials</small>
             </div>
           </div>
         </section>
@@ -61,16 +61,16 @@
         >
           <div>
             <p class="sister-stores-page__eyebrow">Current store</p>
-            <h2 id="freshspace-store-heading">FreshSpace Home Freshness</h2>
+            <h2 id="freshspace-store-heading">Airloom Home Fragrance</h2>
             <p>
-              Odor-control essentials for bathrooms, pet areas, cars, closets, kitchens, and compact home spaces. Start with a kit, choose by room, or keep your routine going with refills.
+              Incense, holders, and home fragrance pieces for bedrooms, living rooms, workspaces, bathrooms, cars, and the spaces you use every day.
             </p>
           </div>
 
-          <div class="sister-stores-page__quick-links" aria-label="FreshSpace shortcuts">
+          <div class="sister-stores-page__quick-links" aria-label="Airloom shortcuts">
             <a href="{{ routes.collections_url }}/shop-all">Shop all</a>
-            <a href="{{ routes.collections_url }}/starter-kits">Starter kits</a>
-            <a href="{{ routes.collections_url }}/refills">Refills</a>
+            <a href="{{ routes.collections_url }}/incense-holders">Incense holders</a>
+            <a href="{{ routes.collections_url }}/incense-sticks">Incense</a>
           </div>
         </section>
 
@@ -99,22 +99,22 @@
             </span>
             <span class="sister-stores-page__store-content">
               <span class="sister-stores-page__badge">Open now</span>
-              <strong>FreshSpace</strong>
-              <span>Home freshness by space, routine, and refill need.</span>
+              <strong>Airloom</strong>
+              <span>Home fragrance by room, format, and everyday use.</span>
             </span>
           </a>
 
-          <a class="sister-stores-page__store-card" href="{{ routes.collections_url }}/starter-kits">
+          <a class="sister-stores-page__store-card" href="{{ routes.collections_url }}/incense-holders">
             <span class="sister-stores-page__store-image">
-              {% if starter_kits_collection.featured_image %}
+              {% if incense_holders_collection.featured_image %}
                 {{
-                  starter_kits_collection.featured_image
+                  incense_holders_collection.featured_image
                   | image_url: width: 700
                   | image_tag:
                     widths: '360, 540, 700',
                     sizes: '(min-width: 990px) 22vw, 100vw',
                     loading: 'lazy',
-                    alt: starter_kits_collection.title
+                    alt: incense_holders_collection.title
                 }}
               {% else %}
                 <img
@@ -128,22 +128,22 @@
             </span>
             <span class="sister-stores-page__store-content">
               <span class="sister-stores-page__badge">Best first stop</span>
-              <strong>Starter kits</strong>
-              <span>Simple first purchases for common odor-prone spaces.</span>
+              <strong>Incense holders</strong>
+              <span>Practical holders and burners for cleaner incense use.</span>
             </span>
           </a>
 
-          <a class="sister-stores-page__store-card" href="{{ routes.collections_url }}/refills">
+          <a class="sister-stores-page__store-card" href="{{ routes.collections_url }}/incense-sticks">
             <span class="sister-stores-page__store-image">
-              {% if refills_collection.featured_image %}
+              {% if incense_sticks_collection.featured_image %}
                 {{
-                  refills_collection.featured_image
+                  incense_sticks_collection.featured_image
                   | image_url: width: 700
                   | image_tag:
                     widths: '360, 540, 700',
                     sizes: '(min-width: 990px) 22vw, 100vw',
                     loading: 'lazy',
-                    alt: refills_collection.title
+                    alt: incense_sticks_collection.title
                 }}
               {% else %}
                 <img
@@ -156,23 +156,23 @@
               {% endif %}
             </span>
             <span class="sister-stores-page__store-content">
-              <span class="sister-stores-page__badge">Keep it going</span>
-              <strong>Refills</strong>
-              <span>Reorder without rebuilding your whole home setup.</span>
+              <span class="sister-stores-page__badge">Incense</span>
+              <strong>Incense</strong>
+              <span>For rooms where you want a more noticeable scent.</span>
             </span>
           </a>
 
-          <a class="sister-stores-page__store-card" href="{{ routes.collections_url }}/pet-areas">
+          <a class="sister-stores-page__store-card" href="{{ routes.collections_url }}/home-fragrance">
             <span class="sister-stores-page__store-image">
-              {% if pet_areas_collection.featured_image %}
+              {% if home_fragrance_collection.featured_image %}
                 {{
-                  pet_areas_collection.featured_image
+                  home_fragrance_collection.featured_image
                   | image_url: width: 700
                   | image_tag:
                     widths: '360, 540, 700',
                     sizes: '(min-width: 990px) 22vw, 100vw',
                     loading: 'lazy',
-                    alt: pet_areas_collection.title
+                    alt: home_fragrance_collection.title
                 }}
               {% else %}
                 <img
@@ -185,9 +185,9 @@
               {% endif %}
             </span>
             <span class="sister-stores-page__store-content">
-              <span class="sister-stores-page__badge">Pet-aware</span>
-              <strong>Pet areas</strong>
-              <span>Freshness support for everyday pet-home zones.</span>
+              <span class="sister-stores-page__badge">Growing range</span>
+              <strong>Home fragrance</strong>
+              <span>Browse the wider fragrance range as new categories are added.</span>
             </span>
           </a>
 
@@ -195,7 +195,7 @@
             <span class="sister-stores-page__store-content">
               <span class="sister-stores-page__badge">Coming soon</span>
               <strong>More Whiskers Webb stores</strong>
-              <span>New focused stores can be added here as the family grows.</span>
+              <span>New stores will be added here as the Whiskers Webb range grows.</span>
             </span>
           </div>
         </section>

@@ -20,7 +20,7 @@
     endif
   endif
 
-  assign brand_name = 'FreshSpace'
+  assign brand_name = 'Airloom'
   assign alt_text_fallback = 'accessibility.home_logo_alt' | t: store_name: brand_name
 %}
 
@@ -67,13 +67,13 @@
       %}
     {% else %}
       <img
-        src="{{ 'freshspace-logo.svg' | asset_url }}"
+        src="{{ 'airloom-logo.svg' | asset_url }}"
         alt="{{ alt_text_fallback }}"
         class="header-logo__image"
-        width="180"
+        width="176"
         height="{{ settings.logo_height }}"
         loading="eager"
-        style="--header-logo-image-width: 180px; --header-logo-image-width-mobile: 148px; --header-logo-image-height: {{ settings.logo_height }}px; --header-logo-image-height-mobile: {{ settings.logo_height_mobile }}px;"
+        style="--header-logo-image-width: 176px; --header-logo-image-width-mobile: 144px; --header-logo-image-height: {{ settings.logo_height }}px; --header-logo-image-height-mobile: {{ settings.logo_height_mobile }}px;"
       >
     {% endif %}
   </span>

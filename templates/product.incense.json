@@ -207,165 +207,7 @@
               "blocks": {
                 "usp_space": {
                   "type": "group",
-                  "name": "Made for real rooms",
-                  "settings": {
-                    "open_in_new_tab": false,
-                    "content_direction": "column",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "center",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 6,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "solid",
-                    "border_width": 1,
-                    "border_opacity": 16,
-                    "border_radius": 8,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "padding-block-start": 10,
-                    "padding-block-end": 10,
-                    "padding-inline-start": 8,
-                    "padding-inline-end": 8
-                  },
-                  "blocks": {
-                    "icon": {
-                      "type": "icon",
-                      "settings": {
-                        "icon": "map_pin",
-                        "width": 24,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "copy": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p><strong>Made for real rooms</strong></p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "center",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.8125rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "icon",
-                    "copy"
-                  ]
-                },
-                "usp_refill": {
-                  "type": "group",
-                  "name": "Easy to place",
-                  "settings": {
-                    "open_in_new_tab": false,
-                    "content_direction": "column",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "center",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 6,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "solid",
-                    "border_width": 1,
-                    "border_opacity": 16,
-                    "border_radius": 8,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "padding-block-start": 10,
-                    "padding-block-end": 10,
-                    "padding-inline-start": 8,
-                    "padding-inline-end": 8
-                  },
-                  "blocks": {
-                    "icon": {
-                      "type": "icon",
-                      "settings": {
-                        "icon": "plant",
-                        "width": 24,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "copy": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p><strong>Easy to use</strong></p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "center",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.8125rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "icon",
-                    "copy"
-                  ]
-                },
-                "usp_easy": {
-                  "type": "group",
-                  "name": "Everyday atmosphere",
+                  "name": "Scent ritual",
                   "settings": {
                     "open_in_new_tab": false,
                     "content_direction": "column",
@@ -414,7 +256,7 @@
                     "copy": {
                       "type": "text",
                       "settings": {
-                        "text": "<p><strong>Everyday scent</strong></p>",
+                        "text": "<p><strong>Noticeable scent</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -442,9 +284,88 @@
                     "copy"
                   ]
                 },
-                "usp_safe": {
+                "usp_refill": {
                   "type": "group",
-                  "name": "Clear guidance",
+                  "name": "Room atmosphere",
+                  "settings": {
+                    "open_in_new_tab": false,
+                    "content_direction": "column",
+                    "vertical_on_mobile": false,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 6,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 16,
+                    "border_radius": 8,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "padding-block-start": 10,
+                    "padding-block-end": 10,
+                    "padding-inline-start": 8,
+                    "padding-inline-end": 8
+                  },
+                  "blocks": {
+                    "icon": {
+                      "type": "icon",
+                      "settings": {
+                        "icon": "plant",
+                        "width": 24,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "copy": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Sets the mood</strong></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "center",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.8125rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon",
+                    "copy"
+                  ]
+                },
+                "usp_easy": {
+                  "type": "group",
+                  "name": "Holder required",
                   "settings": {
                     "open_in_new_tab": false,
                     "content_direction": "column",
@@ -493,7 +414,86 @@
                     "copy": {
                       "type": "text",
                       "settings": {
-                        "text": "<p><strong>Care notes included</strong></p>",
+                        "text": "<p><strong>Use with a holder</strong></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "center",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.8125rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon",
+                    "copy"
+                  ]
+                },
+                "usp_safe": {
+                  "type": "group",
+                  "name": "Burn with care",
+                  "settings": {
+                    "open_in_new_tab": false,
+                    "content_direction": "column",
+                    "vertical_on_mobile": false,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 6,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 16,
+                    "border_radius": 8,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "padding-block-start": 10,
+                    "padding-block-end": 10,
+                    "padding-inline-start": 8,
+                    "padding-inline-end": 8
+                  },
+                  "blocks": {
+                    "icon": {
+                      "type": "icon",
+                      "settings": {
+                        "icon": "lock",
+                        "width": 24,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "copy": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Never leave burning</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -581,7 +581,7 @@
               "type": "text",
               "name": "Safe-use note",
               "settings": {
-                "text": "<p><strong>Use note:</strong> Read the product instructions before use. Keep fragrance products away from children, pets, delicate surfaces, fabrics, and open flames unless the product is designed for burning.</p>",
+                "text": "<p><strong>Incense safety:</strong> Burn incense only in a suitable holder on a heat-resistant surface. Keep it away from children, pets, drafts, fabrics, and anything flammable. Never leave burning incense unattended.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -624,16 +624,16 @@
                 "row_1": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Where should I use this?",
+                    "heading": "How should I burn it?",
                     "open_by_default": false,
-                    "icon": "map_pin"
+                    "icon": "perfume"
                   },
                   "blocks": {
                     "body": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Choose based on the room, the surface it will sit on, and how noticeable you want the scent to be.</p>",
+                        "text": "<p>Light the tip, let it catch briefly, then gently blow out the flame so the incense smoulders. Always use a holder that catches ash safely.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -663,16 +663,16 @@
                 "row_2": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "How do I choose the right option?",
+                    "heading": "Where is it best used?",
                     "open_by_default": false,
-                    "icon": "perfume"
+                    "icon": "plant"
                   },
                   "blocks": {
                     "body": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Start with the format. Incense is more noticeable, holders keep burning products neater, and fresheners are better for low-effort daily use.</p>",
+                        "text": "<p>Use incense in a well-ventilated room when you want a more noticeable scent, such as a living room, bedroom, workspace, or entryway.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -702,16 +702,16 @@
                 "row_3": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "What should I know before use?",
+                    "heading": "Can I use it around pets?",
                     "open_by_default": false,
-                    "icon": "check_box"
+                    "icon": "paw_print"
                   },
                   "blocks": {
                     "body": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Read the instructions, keep products out of reach of children and pets, and only use them in suitable spaces.</p>",
+                        "text": "<p>Use extra care around pets. Keep incense and ash out of reach, ventilate the room, and do not burn it near animals or enclosed pet spaces.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
