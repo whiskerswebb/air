@@ -1,0 +1,14 @@
+[38058377ms] [INFO] [HotReload] Full reload: templates/product.incense-holder.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[38058484ms] [INFO] [HotReload] Full reload: templates/product.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[38058680ms] [INFO] [HotReload] Full reload: templates/product.incense.json @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:55
+[38061207ms] [ERROR] [HotReload] Connection closed by the server, attempting to reconnect... @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:304
+[38061642ms] [INFO] [HotReload] Connected @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:299
+[38061802ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/storefront/web-components/account/account-dialog-DgTBvLFI.js:0
+[38062102ms] [ERROR] Framing 'https://shop.app/' violates the following Content Security Policy directive: "frame-ancestors 'self' https://shop.app https://admin.shopify.com". The request has been blocked.
+ @ :0
+[38062115ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_8e3QE3km.esm.js:0
+[38062108ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ chrome-error://chromewebdata/:0
+[38062143ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.index_yClTBeP0.esm.js:0
+[38062108ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ chrome-error://chromewebdata/:0
+[38063603ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://shop.app/accounts/pre_auth?client_id=c845a48b-bbef-4e48-a56e-a2a351f7ddab&analytics_trace_id=9a0b9699-d4a2-41e7-a602-d23b533ab8b3&flow=embed&flow_version=account_menu&target_origin=http%3A%2F%2F127.0.0.1%3A9292&storefront_domain=https%3A%2F%2Fairbloom-9699.myshopify.com&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=en:0
+[38079963ms] [INFO] [HotReload] Updated theme CSS: compiled_assets/styles.css @ http://127.0.0.1:9292/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:162

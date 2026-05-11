@@ -383,6 +383,10 @@
     --product-information-column-gap: max(var(--gap, 0px), 56px);
   }
 
+  .product-information--pdp .product-information__media .product-media-container {
+    max-height: min(760px, calc(100vh - var(--header-height, 120px) - 96px));
+  }
+
     /* Handle full width section */
     .section--full-width {
       .product-information__grid:not(.product-information--media-none) {
