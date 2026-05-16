@@ -56,7 +56,7 @@
               "type": "text",
               "name": "Eyebrow",
               "settings": {
-                "text": "<p>Home fragrance by Airloom</p>",
+                "text": "<p>Home fragrance by Airbloom</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -726,7 +726,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>A bedroom, bathroom, car, and living room all need different things. Airloom makes it easier to choose the right format for each space.</p>",
+                "text": "<p>A bedroom, bathroom, car, and living room all need different things. Airbloom makes it easier to choose the right format for each space.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1633,148 +1633,6 @@
         "padding-block-end": 56
       }
     },
-    "featured_blog_posts": {
-      "type": "featured-blog-posts",
-      "blocks": {
-        "static-blog-title": {
-          "type": "_featured-blog-posts-title",
-          "name": "t:names.title",
-          "static": true,
-          "settings": {
-                "text": "<h2>Helpful reads before you choose</h2>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "static-blog-post-card": {
-          "type": "_featured-blog-posts-card",
-          "name": "t:names.blog_card",
-          "static": true,
-          "settings": {
-            "alignment": "left",
-            "gap": 8,
-            "inherit_color_scheme": false,
-            "color_scheme": "scheme-2",
-            "border": "solid",
-            "border_width": 1,
-            "border_opacity": 16,
-            "border_radius": 8,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "image": {
-              "type": "_featured-blog-posts-image",
-              "static": true,
-              "settings": {
-                "image_ratio": "square",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0
-              },
-              "blocks": {}
-            },
-            "title": {
-              "type": "_heading",
-              "name": "t:names.title",
-              "static": true,
-              "settings": {
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "text": "<h4>{{ closest.article.title }}</h4>",
-                "read_only": false,
-                "alignment": "left",
-                "show_alignment": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "blog-post-info-text": {
-              "type": "_blog-post-info-text",
-              "name": "t:names.details",
-              "static": true,
-              "settings": {
-                "show_date": true,
-                "show_author": false,
-                "type_preset": "",
-                "alignment": "left",
-                "show_alignment": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
-            "blog-post-description": {
-              "type": "_blog-post-description",
-              "name": "t:names.excerpt",
-              "static": true,
-              "settings": {
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 8,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": []
-        }
-      },
-      "name": "Featured blogs",
-      "settings": {
-        "blog": "freshness-journal",
-        "layout_type": "grid",
-        "carousel_on_mobile": false,
-        "post_limit": 4,
-        "columns": 4,
-        "mobile_columns": "1",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 16,
-        "rows_gap": 18,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "page-width",
-        "gap": 16,
-        "color_scheme": "scheme-1",
-        "padding-block-start": 56,
-        "padding-block-end": 56
-      }
-    },
     "final_cta": {
       "type": "section",
       "blocks": {
@@ -1808,7 +1666,7 @@
           "type": "text",
           "name": "Copy",
           "settings": {
-            "text": "<p>Start with incense and a holder, or browse the easiest picks for your first Airloom order.</p>",
+            "text": "<p>Start with incense and a holder, or browse the easiest picks for your first Airbloom order.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1947,7 +1805,6 @@
     "shop_by_space",
     "starter_feature",
     "home_faq",
-    "featured_blog_posts",
     "final_cta"
   ]
 }
