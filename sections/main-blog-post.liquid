@@ -23,7 +23,19 @@
     {%- if article.image -%}
       {%- content_for 'block', id: 'blog-post-image', type: '_blog-post-featured-image' %}
     {%- endif -%}
-    {%- content_for 'block', id: 'blog-post-content', type: '_blog-post-content' %}
+
+    <div class="blog-post-layout" data-article-toc>
+      <aside class="blog-post-toc" aria-labelledby="blog-post-toc-title" hidden>
+        <p id="blog-post-toc-title" class="blog-post-toc__title">In this article</p>
+        <nav aria-label="Article sections">
+          <ol class="blog-post-toc__list" data-article-toc-list></ol>
+        </nav>
+      </aside>
+
+      <div class="blog-post-layout__content" data-article-body>
+        {%- content_for 'block', id: 'blog-post-content', type: '_blog-post-content' %}
+      </div>
+    </div>
 
     {% liquid
       assign shop_the_article_products = article.metafields.custom.shop_the_article.value
@@ -63,7 +75,7 @@
                 {% if variant.available %}
                   {% form 'product', product, class: 'shop-the-article__form' %}
                     <input type="hidden" name="id" value="{{ variant.id }}">
-                    <button type="submit" class="button button-secondary shop-the-article__button">
+                    <button type="submit" class="button shop-the-article__button">
                       Add to cart
                     </button>
                   {% endform %}
@@ -115,7 +127,111 @@
   {{ article | structured_data }}
 </script>
 
+<script>
+  (() => {
+    const initArticleToc = () => {
+      document.querySelectorAll('[data-article-toc]').forEach((articleLayout) => {
+        const body = articleLayout.querySelector('[data-article-body]');
+        const toc = articleLayout.querySelector('.blog-post-toc');
+        const list = articleLayout.querySelector('[data-article-toc-list]');
+
+        if (!body || !toc || !list) return;
+
+        const headings = Array.from(body.querySelectorAll('.blog-post-content h2')).filter((heading) =>
+          heading.textContent.trim()
+        );
+
+        if (!headings.length) return;
+
+        list.replaceChildren();
+
+        headings.forEach((heading, index) => {
+          if (!heading.id) {
+            const slug = heading.textContent
+              .trim()
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/^-|-$/g, '');
+
+            heading.id = `article-${slug || 'section'}-${index + 1}`;
+          }
+
+          const item = document.createElement('li');
+          const link = document.createElement('a');
+
+          link.href = `#${heading.id}`;
+          link.textContent = heading.textContent.trim();
+          item.append(link);
+          list.append(item);
+        });
+
+        toc.hidden = false;
+      });
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initArticleToc, { once: true });
+    } else {
+      initArticleToc();
+    }
+  })();
+</script>
+
 {% stylesheet %}
+  .blog-post-layout {
+    display: grid;
+    grid-template-columns: minmax(10rem, 13rem) minmax(0, var(--normal-content-width));
+    justify-content: center;
+    align-items: start;
+    gap: var(--gap-2xl);
+    width: 100%;
+  }
+
+  .blog-post-layout__content {
+    min-width: 0;
+  }
+
+  .blog-post-toc {
+    position: sticky;
+    top: calc(var(--sticky-header-offset, 0px) + var(--padding-lg));
+    width: 100%;
+    padding-block-start: var(--padding-sm);
+    font-size: var(--font-size--body-sm);
+  }
+
+  .blog-post-toc[hidden] {
+    display: none;
+  }
+
+  .blog-post-toc__title {
+    margin: 0 0 var(--margin-xs);
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-subdued-text));
+    font-size: var(--font-size--body-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .blog-post-toc__list {
+    display: grid;
+    gap: var(--gap-xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .blog-post-toc__list a {
+    color: rgb(var(--color-foreground-rgb) / 0.72);
+    text-decoration: none;
+  }
+
+  .blog-post-toc__list a:hover {
+    color: var(--color-primary);
+  }
+
+  .blog-post-layout .blog-post-content h2 {
+    scroll-margin-block-start: calc(var(--header-height, 0px) + var(--padding-xl));
+  }
+
   .blog-post-comments-container {
     width: 100%;
     max-width: var(--normal-content-width);
@@ -195,6 +311,8 @@
   }
 
   .shop-the-article__card {
+    display: flex;
+    flex-direction: column;
     min-width: 0;
   }
 
@@ -213,7 +331,9 @@
   }
 
   .shop-the-article__content {
-    display: grid;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     gap: var(--gap-2xs);
     padding-block-start: var(--padding-sm);
   }
@@ -229,14 +349,26 @@
   }
 
   .shop-the-article__form {
-    margin-block-start: var(--margin-xs);
+    margin-block-start: auto;
+    padding-block-start: var(--padding-sm);
   }
 
   .shop-the-article__button {
+    margin-block-start: auto;
     width: 100%;
   }
 
   @media screen and (max-width: 989px) {
+    .blog-post-layout {
+      grid-template-columns: minmax(0, var(--normal-content-width));
+    }
+
+    .blog-post-toc {
+      position: static;
+      padding: var(--padding-md);
+      border: 1px solid rgb(var(--color-foreground-rgb) / 0.12);
+    }
+
     .shop-the-article__grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
