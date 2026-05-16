@@ -108,7 +108,7 @@
               "type": "text",
               "name": "Subheading",
               "settings": {
-                "text": "<p>Curated incense sticks, bundles, trays, backflow holders, storage tubes, candle cups and diffuser oil refills, priced in rand and organised for South African checkout.</p>",
+                "text": "<p>Curated incense, holders, storage, candle pieces and room-fragrance essentials for calmer everyday spaces.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -208,7 +208,7 @@
               "type": "text",
               "name": "USP line",
               "settings": {
-                "text": "<p><span>Priced in ZAR</span><span>South Africa checkout</span><span>Usage notes included</span></p>",
+                "text": "<p><span>Priced in ZAR</span><span>Room-by-room edits</span><span>Care notes included</span></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1392,7 +1392,7 @@
           "type": "text",
           "name": "FAQ heading",
           "settings": {
-            "text": "<h2>Good to know before you order</h2>",
+            "text": "<h2>Choosing the right piece</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -1435,7 +1435,7 @@
             "row_1": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Do you ship in South Africa?",
+                "heading": "What should I buy first?",
                 "open_by_default": true,
                 "icon": "question_mark",
                 "width": 20
@@ -1445,7 +1445,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Yes. Airbloom is set up for South African checkout. Delivery options and fees are shown before payment, so you can confirm the total before placing your order.</p>",
+                    "text": "<p>Start with the room you want to improve. Choose incense for a clear scent moment, a holder for a neater setup, or an odour absorber for cupboards, shoes, bins, cars and pet-adjacent spaces.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1475,7 +1475,7 @@
             "row_2": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "How long will delivery take?",
+                "heading": "How do I avoid an overpowering scent?",
                 "open_by_default": false,
                 "icon": "question_mark",
                 "width": 20
@@ -1485,7 +1485,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Delivery timing depends on the product, the address, and the available shipping option at checkout. Use the checkout estimate as the final guide before paying.</p>",
+                    "text": "<p>Use one fragrance product at a time, keep the room ventilated, and start with shorter scent sessions in small bedrooms, bathrooms and home offices.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1515,7 +1515,7 @@
             "row_3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Can I use fragrance products around pets?",
+                "heading": "What if I have pets at home?",
                 "open_by_default": false,
                 "icon": "question_mark",
                 "width": 20
@@ -1525,7 +1525,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Use extra care around pets. Keep fragrance products, ash, oils, and burning items out of reach, avoid heavy scent in small closed rooms, and keep the space ventilated.</p>",
+                    "text": "<p>Keep fragrance products, ash, oils and burning items out of reach. Avoid heavy scent in small closed rooms and use extra caution around sensitive animals.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1555,7 +1555,7 @@
             "row_4": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Which product should I start with?",
+                "heading": "Where do delivery costs appear?",
                 "open_by_default": false,
                 "icon": "question_mark",
                 "width": 20
@@ -1565,7 +1565,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>For a more noticeable scent moment, start with incense and a suitable holder. For a lighter everyday routine, choose a freshener or storage piece that fits the room you use most.</p>",
+                    "text": "<p>Delivery options and fees are shown before payment at checkout, so you can review the full total before placing an order.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
