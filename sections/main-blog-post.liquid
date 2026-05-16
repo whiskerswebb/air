@@ -20,10 +20,6 @@
       {%- content_for 'block', id: 'blog-post-details', type: '_blog-post-info-text' %}
     </header>
 
-    {%- if article.image -%}
-      {%- content_for 'block', id: 'blog-post-image', type: '_blog-post-featured-image' %}
-    {%- endif -%}
-
     <div class="blog-post-layout" data-article-toc>
       <aside class="blog-post-toc" aria-labelledby="blog-post-toc-title" hidden>
         <p id="blog-post-toc-title" class="blog-post-toc__title">In this article</p>
@@ -33,6 +29,9 @@
       </aside>
 
       <div class="blog-post-layout__content" data-article-body>
+        {%- if article.image -%}
+          {%- content_for 'block', id: 'blog-post-image', type: '_blog-post-featured-image' %}
+        {%- endif -%}
         {%- content_for 'block', id: 'blog-post-content', type: '_blog-post-content' %}
       </div>
     </div>
@@ -145,6 +144,8 @@
 
         list.replaceChildren();
 
+        const tocLinks = [];
+
         headings.forEach((heading, index) => {
           if (!heading.id) {
             const slug = heading.textContent
@@ -163,9 +164,57 @@
           link.textContent = heading.textContent.trim();
           item.append(link);
           list.append(item);
+          tocLinks.push(link);
         });
 
         toc.hidden = false;
+
+        tocLinks.forEach((link) => {
+          link.addEventListener('click', (event) => {
+            const target = document.getElementById(decodeURIComponent(link.hash.slice(1)));
+
+            if (!target) return;
+
+            event.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.pushState(null, '', link.hash);
+          });
+        });
+
+        const setActiveLink = (activeHeading) => {
+          tocLinks.forEach((link) => {
+            const isActive = link.hash === `#${activeHeading.id}`;
+            link.classList.toggle('is-active', isActive);
+
+            if (isActive) {
+              link.setAttribute('aria-current', 'true');
+            } else {
+              link.removeAttribute('aria-current');
+            }
+          });
+        };
+
+        setActiveLink(headings[0]);
+
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              const visibleHeadings = entries
+                .filter((entry) => entry.isIntersecting)
+                .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+              if (visibleHeadings[0]) {
+                setActiveLink(visibleHeadings[0].target);
+              }
+            },
+            {
+              rootMargin: '-20% 0px -65% 0px',
+              threshold: 0,
+            }
+          );
+
+          headings.forEach((heading) => observer.observe(heading));
+        }
       });
     };
 
@@ -191,9 +240,16 @@
     min-width: 0;
   }
 
+  .blog-post-layout__content .blog-post-featured-image {
+    margin-block-end: var(--margin-xl);
+  }
+
   .blog-post-toc {
     position: sticky;
-    top: calc(var(--sticky-header-offset, 0px) + var(--padding-lg));
+    top: calc(var(--header-height, var(--sticky-header-offset, 0px)) + var(--padding-lg));
+    align-self: start;
+    max-height: calc(100vh - var(--header-height, 0px) - var(--padding-2xl));
+    overflow-y: auto;
     width: 100%;
     padding-block-start: var(--padding-sm);
     font-size: var(--font-size--body-sm);
@@ -226,6 +282,15 @@
 
   .blog-post-toc__list a:hover {
     color: var(--color-primary);
+  }
+
+  .blog-post-toc__list a.is-active,
+  .blog-post-toc__list a[aria-current='true'] {
+    color: var(--color-foreground);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
   }
 
   .blog-post-layout .blog-post-content h2 {
@@ -364,9 +429,11 @@
     }
 
     .blog-post-toc {
-      position: static;
+      position: sticky;
       padding: var(--padding-md);
       border: 1px solid rgb(var(--color-foreground-rgb) / 0.12);
+      background: rgb(var(--color-background-rgb));
+      z-index: 1;
     }
 
     .shop-the-article__grid {
