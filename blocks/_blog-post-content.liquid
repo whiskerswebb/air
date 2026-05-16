@@ -11,6 +11,20 @@
     max-width: var(--normal-content-width);
     margin: 0 auto;
   }
+
+  .blog-post-content :is(h2, h3) {
+    font-family: var(--font-heading--family);
+    line-height: 1.2;
+    margin-block: 2rem 0.75rem;
+  }
+
+  .blog-post-content h2 {
+    font-size: clamp(1.35rem, 1.15rem + 0.45vw, 1.75rem);
+  }
+
+  .blog-post-content h3 {
+    font-size: clamp(1.15rem, 1.05rem + 0.25vw, 1.35rem);
+  }
 {% endstylesheet %}
 
 {% schema %}
