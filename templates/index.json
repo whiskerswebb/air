@@ -314,7 +314,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-            "text": "<h2>Ready-to-shop pieces</h2>",
+                "text": "<h2>Start with the everyday essentials</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -340,7 +340,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-            "text": "<p>A tighter first range of incense, holders, storage and small scent pieces, selected so you can build a usable setup without wading through endless supplier listings.</p>",
+                "text": "<p>A clean edit of incense, holders, storage, and home fragrance staples for bedrooms, bathrooms, desks, and living spaces.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -960,7 +960,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-              "text": "<h2>Browse the range</h2>",
+                "text": "<h2>Browse the range</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -986,7 +986,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-              "text": "<p>Use room collections as a shortcut, or browse holders, incense, storage and home-fragrance pieces directly.</p>",
+                "text": "<p>Use room collections as a shortcut, or browse holders, incense, storage and home-fragrance pieces directly.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1392,7 +1392,7 @@
           "type": "text",
           "name": "FAQ heading",
           "settings": {
-            "text": "<h2>Questions worth answering before you buy</h2>",
+            "text": "<h2>Good to know before you order</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -1435,7 +1435,7 @@
             "row_1": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Do you ship to South Africa?",
+                "heading": "Do you ship in South Africa?",
                 "open_by_default": true,
                 "icon": "question_mark",
                 "width": 20
@@ -1445,7 +1445,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>The store is set up for South African checkout. Final delivery options and fees should be checked at checkout before payment.</p>",
+                    "text": "<p>Yes. Airbloom is set up for South African checkout. Delivery options and fees are shown before payment, so you can confirm the total before placing your order.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1475,7 +1475,7 @@
             "row_2": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Why buy here instead of hunting through supplier listings?",
+                "heading": "How long will delivery take?",
                 "open_by_default": false,
                 "icon": "question_mark",
                 "width": 20
@@ -1485,7 +1485,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Airbloom organises the range, cleans up product naming, prices in rand, groups items by use case, and adds practical product notes so choosing is faster.</p>",
+                    "text": "<p>Delivery timing depends on the product, the address, and the available shipping option at checkout. Use the checkout estimate as the final guide before paying.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1515,7 +1515,7 @@
             "row_3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Can I use these around pets?",
+                "heading": "Can I use fragrance products around pets?",
                 "open_by_default": false,
                 "icon": "question_mark",
                 "width": 20
@@ -1525,7 +1525,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Use extra care around pets. Keep fragrance products, ash, oils, and burning items out of reach, and keep the room ventilated.</p>",
+                    "text": "<p>Use extra care around pets. Keep fragrance products, ash, oils, and burning items out of reach, avoid heavy scent in small closed rooms, and keep the space ventilated.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1565,7 +1565,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>For scent, start with incense. For a neater setup, add a suitable holder or tray. For organisation, choose one of the storage pieces.</p>",
+                    "text": "<p>For a more noticeable scent moment, start with incense and a suitable holder. For a lighter everyday routine, choose a freshener or storage piece that fits the room you use most.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1797,6 +1797,148 @@
         "padding-block-start": 60,
         "padding-block-end": 60
       }
+    },
+    "featured_blog_posts": {
+      "type": "featured-blog-posts",
+      "blocks": {
+        "static-blog-title": {
+          "type": "_featured-blog-posts-title",
+          "name": "t:names.title",
+          "static": true,
+          "settings": {
+            "text": "<h2>Helpful reads for a fresher home</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-blog-post-card": {
+          "type": "_featured-blog-posts-card",
+          "name": "t:names.blog_card",
+          "static": true,
+          "settings": {
+            "alignment": "left",
+            "gap": 8,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-2",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 16,
+            "border_radius": 8,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "image": {
+              "type": "_featured-blog-posts-image",
+              "static": true,
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0
+              },
+              "blocks": {}
+            },
+            "title": {
+              "type": "_heading",
+              "name": "t:names.title",
+              "static": true,
+              "settings": {
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "text": "<h4>{{ closest.article.title }}</h4>",
+                "read_only": false,
+                "alignment": "left",
+                "show_alignment": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "blog-post-info-text": {
+              "type": "_blog-post-info-text",
+              "name": "t:names.details",
+              "static": true,
+              "settings": {
+                "show_date": true,
+                "show_author": false,
+                "type_preset": "",
+                "alignment": "left",
+                "show_alignment": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "blog-post-description": {
+              "type": "_blog-post-description",
+              "name": "t:names.excerpt",
+              "static": true,
+              "settings": {
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 8,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": []
+        }
+      },
+      "name": "Featured blogs",
+      "settings": {
+        "blog": "journal",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "post_limit": 3,
+        "columns": 3,
+        "mobile_columns": "1",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 16,
+        "rows_gap": 18,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 16,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 56,
+        "padding-block-end": 56
+      }
     }
   },
   "order": [
@@ -1806,6 +1948,7 @@
     "shop_by_space",
     "starter_feature",
     "home_faq",
+    "featured_blog_posts",
     "final_cta"
   ]
 }
