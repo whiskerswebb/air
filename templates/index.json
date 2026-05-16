@@ -82,7 +82,7 @@
               "type": "text",
               "name": "Headline",
               "settings": {
-                "text": "<h1>Make your home feel calmer</h1>",
+                "text": "<h1>Incense, holders and home fragrance for calmer rooms</h1>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -108,7 +108,7 @@
               "type": "text",
               "name": "Subheading",
               "settings": {
-                "text": "<p>Shop incense, holders, storage, candles, and diffuser oils for calm corners, shelves, desks, and everyday home rituals.</p>",
+                "text": "<p>Curated incense sticks, bundles, trays, backflow holders, storage tubes, candle cups and diffuser oil refills, priced in rand and organised for South African checkout.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -208,7 +208,7 @@
               "type": "text",
               "name": "USP line",
               "settings": {
-                "text": "<p><span>Incense and holders</span><span>Storage and oils</span><span>Clear care notes</span></p>",
+                "text": "<p><span>Priced in ZAR</span><span>South Africa checkout</span><span>Usage notes included</span></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -314,7 +314,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-            "text": "<h2>Easy first picks</h2>",
+            "text": "<h2>Ready-to-shop pieces</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -340,7 +340,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-            "text": "<p>Start with the pieces people reach for first: incense, holders, and home fragrance staples for the rooms you use every day.</p>",
+            "text": "<p>A tighter first range of incense, holders, storage and small scent pieces, selected so you can build a usable setup without wading through endless supplier listings.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -700,7 +700,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h2>What Airbloom is good for</h2>",
+                "text": "<h2>Choose by the job you need done</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -726,7 +726,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>This range is strongest for simple home-fragrance rituals: incense for scent, holders for a neater burn, and storage pieces that keep supplies organised.</p>",
+                "text": "<p>Different products solve different problems. Start with scent, add a proper holder, then keep the pieces you use often stored neatly.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -850,7 +850,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Care notes before checkout</h3><p>Each product page now carries practical notes on placement, use, and care, so the product feels less like a mystery import.</p>",
+                "text": "<h3>Notes before checkout</h3><p>Product pages include plain use and care notes, so you know what the item is for before you add it to cart.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -986,7 +986,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-              "text": "<p>Use the room collections as a shortcut, or browse incense holders, incense sticks, and storage pieces directly.</p>",
+              "text": "<p>Use room collections as a shortcut, or browse holders, incense, storage and home-fragrance pieces directly.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1392,7 +1392,7 @@
           "type": "text",
           "name": "FAQ heading",
           "settings": {
-            "text": "<h2>Home fragrance, without the guesswork</h2>",
+            "text": "<h2>Questions worth answering before you buy</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -1435,7 +1435,7 @@
             "row_1": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "How long do the products last?",
+                "heading": "Do you ship to South Africa?",
                 "open_by_default": true,
                 "icon": "question_mark",
                 "width": 20
@@ -1445,7 +1445,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>It depends on the product, room size, airflow, and how often you use it. Check the product page for the most useful guidance.</p>",
+                    "text": "<p>The store is set up for South African checkout. Final delivery options and fees should be checked at checkout before payment.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1475,7 +1475,7 @@
             "row_2": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Can I use these around pets?",
+                "heading": "Why buy here instead of hunting through supplier listings?",
                 "open_by_default": false,
                 "icon": "question_mark",
                 "width": 20
@@ -1485,7 +1485,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Use extra care around pets. Keep fragrance products, ash, oils, and burning items out of reach, and keep the room ventilated.</p>",
+                    "text": "<p>Airbloom organises the range, cleans up product naming, prices in rand, groups items by use case, and adds practical product notes so choosing is faster.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1515,7 +1515,7 @@
             "row_3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are these a replacement for cleaning?",
+                "heading": "Can I use these around pets?",
                 "open_by_default": false,
                 "icon": "question_mark",
                 "width": 20
@@ -1525,7 +1525,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>No. Fragrance can make a clean room feel better, but it should not replace cleaning, ventilation, or dealing with the source of a strong odour.</p>",
+                    "text": "<p>Use extra care around pets. Keep fragrance products, ash, oils, and burning items out of reach, and keep the room ventilated.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1641,7 +1641,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<h2>Ready to make the room feel better?</h2>",
+            "text": "<h2>Start with one useful piece</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1667,7 +1667,7 @@
           "type": "text",
           "name": "Copy",
           "settings": {
-            "text": "<p>Start with incense and a holder, or browse the easiest picks for your first Airbloom order.</p>",
+            "text": "<p>Choose incense for scent, a holder for safer placement, or storage if you already have sticks and want the setup to look more intentional.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
