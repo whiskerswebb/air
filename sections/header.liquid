@@ -422,7 +422,7 @@
           aria-label="{{ 'content.search_input_label' | t }}"
           aria-haspopup="dialog"
         >
-          <span class="header__mobile-search-placeholder">Search by product, room, or routine</span>
+          <span class="header__mobile-search-placeholder">Search products</span>
           <span class="svg-wrapper">
             {{ 'icon-search.svg' | inline_asset_content }}
           </span>
@@ -499,7 +499,11 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     color: rgb(var(--color-foreground-rgb) / 0.58);
-    font-size: 0.92rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-transform: none;
   }
 
   .header__mobile-search-trigger .svg-wrapper {
