@@ -108,7 +108,7 @@
               "type": "text",
               "name": "Subheading",
               "settings": {
-                "text": "<p>Shop incense, burners, holders, and simple fragrance pieces for bedrooms, living rooms, bathrooms, cars, and daily use.</p>",
+                "text": "<p>Shop incense, holders, storage, candles, and diffuser oils for calm corners, shelves, desks, and everyday home rituals.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -208,7 +208,7 @@
               "type": "text",
               "name": "USP line",
               "settings": {
-                "text": "<p><span>Choose by room</span><span>Incense and holders</span><span>Simple care notes</span></p>",
+                "text": "<p><span>Incense and holders</span><span>Storage and oils</span><span>Clear care notes</span></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -700,7 +700,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h2>Choose fragrance by how the room is used</h2>",
+                "text": "<h2>What Airbloom is good for</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -726,7 +726,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>A bedroom, bathroom, car, and living room all need different things. Airbloom makes it easier to choose the right format for each space.</p>",
+                "text": "<p>This range is strongest for simple home-fragrance rituals: incense for scent, holders for a neater burn, and storage pieces that keep supplies organised.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -798,7 +798,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Start with the room</h3><p>Choose for the space first. A quiet bedroom, busy bathroom, car, and living room should not all smell the same.</p>",
+                "text": "<h3>Incense for atmosphere</h3><p>Choose sticks, bundles, or cones when you want a noticeable scent for a short, supervised moment at home.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -824,7 +824,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Pick the right format</h3><p>Use incense when you want a stronger scent. Choose holders and burners when you need a cleaner, safer setup.</p>",
+                "text": "<h3>Holders for a better setup</h3><p>Use trays, burners, and backflow holders to keep ash, heat, and placement easier to manage.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -850,7 +850,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Know how to use it</h3><p>Each product page keeps the practical notes close by, so you can check placement, care, and safety before you buy.</p>",
+                "text": "<h3>Care notes before checkout</h3><p>Each product page now carries practical notes on placement, use, and care, so the product feels less like a mystery import.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -960,7 +960,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-              "text": "<h2>Shop by room</h2>",
+              "text": "<h2>Browse the range</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -986,7 +986,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-              "text": "<p>Browse by the room you want to improve, then choose the scent format that makes the most sense for that space.</p>",
+              "text": "<p>Use the room collections as a shortcut, or browse incense holders, incense sticks, and storage pieces directly.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1111,6 +1111,7 @@
     },
     "starter_feature": {
       "type": "section",
+      "disabled": true,
       "blocks": {
         "copy": {
           "type": "group",
@@ -1182,7 +1183,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>Think about the room first, then the product. A soft evening scent, a practical bathroom freshener, and a car fragrance all solve different problems.</p>",
+                "text": "<p>Think about the ritual first, then the product. Incense, holders, storage, and oil refills each solve a different part of the home-fragrance setup.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1295,7 +1296,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Choose the format</h3><p>Incense is more noticeable. Holders keep burning products neater. Fresheners are better for low-effort daily use.</p>",
+                "text": "<h3>Choose the format</h3><p>Incense is more noticeable. Holders keep burning products neater. Storage keeps sticks and supplies easier to manage.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1564,7 +1565,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>For a stronger scent, start with incense and a suitable holder. For everyday freshness, choose a room or car freshener as the range expands.</p>",
+                    "text": "<p>For scent, start with incense. For a neater setup, add a suitable holder or tray. For organisation, choose one of the storage pieces.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
