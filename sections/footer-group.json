@@ -122,7 +122,7 @@
           "type": "text",
           "name": "Sister store links",
           "settings": {
-            "text": "<p>Airloom is part of Whiskers Webb. <a href=\"/pages/sister-stores\">Visit the sister-store hub</a>.</p>",
+            "text": "<p>Airbloom is part of Whiskers Webb. <a href=\"/pages/sister-stores\">Visit the sister-store hub</a>.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",

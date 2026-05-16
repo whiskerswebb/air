@@ -254,8 +254,9 @@
                       "blocks": {}
                     },
                     "copy": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "settings": {
+                        "metafield_key": "pdp_usp_1",
                         "text": "<p><strong>Made for real rooms</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
@@ -333,8 +334,9 @@
                       "blocks": {}
                     },
                     "copy": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "settings": {
+                        "metafield_key": "pdp_usp_2",
                         "text": "<p><strong>Easy to use</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
@@ -412,8 +414,9 @@
                       "blocks": {}
                     },
                     "copy": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "settings": {
+                        "metafield_key": "best_for",
                         "text": "<p><strong>Everyday scent</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
@@ -491,8 +494,9 @@
                       "blocks": {}
                     },
                     "copy": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "settings": {
+                        "metafield_key": "care_note",
                         "text": "<p><strong>Care notes included</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
@@ -630,9 +634,11 @@
                   },
                   "blocks": {
                     "body": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "name": "t:names.text",
                       "settings": {
+                        "metafield_key": "best_for",
+                        "emphasize": false,
                         "text": "<p>Choose based on the room, the surface it will sit on, and how noticeable you want the scent to be.</p>",
                         "width": "100%",
                         "max_width": "normal",
@@ -708,9 +714,11 @@
                   },
                   "blocks": {
                     "body": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "name": "t:names.text",
                       "settings": {
+                        "metafield_key": "care_note",
+                        "emphasize": false,
                         "text": "<p>Read the instructions, keep products out of reach of children and pets, and only use them in suitable spaces.</p>",
                         "width": "100%",
                         "max_width": "normal",

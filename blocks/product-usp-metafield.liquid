@@ -1,0 +1,297 @@
+{% liquid
+  assign block_settings = block.settings
+  assign metafield_value = blank
+
+  case block_settings.metafield_key
+    when 'pdp_usp_1'
+      assign metafield_value = closest.product.metafields.custom.pdp_usp_1.value
+    when 'pdp_usp_2'
+      assign metafield_value = closest.product.metafields.custom.pdp_usp_2.value
+    when 'pdp_usp_3'
+      assign metafield_value = closest.product.metafields.custom.pdp_usp_3.value
+    when 'best_for'
+      assign metafield_value = closest.product.metafields.custom.best_for.value
+    when 'care_note'
+      assign metafield_value = closest.product.metafields.custom.care_note.value
+    when 'shipping_note'
+      assign metafield_value = closest.product.metafields.custom.shipping_note.value
+  endcase
+
+  assign fallback_text = block_settings.text
+%}
+
+{% capture resolved_text %}
+  {% if metafield_value != blank %}
+    {% if block_settings.emphasize %}
+      <p><strong>{{ metafield_value | escape }}</strong></p>
+    {% else %}
+      <p>{{ metafield_value | escape }}</p>
+    {% endif %}
+  {% else %}
+    {{ fallback_text }}
+  {% endif %}
+{% endcapture %}
+
+{% if resolved_text != blank %}
+  <rte-formatter
+    class="spacing-style text-block text-block--{{ block.id }} custom-typography custom-font-size product-usp-metafield"
+    style="
+      {% render 'spacing-padding', settings: block_settings %}
+      {% render 'typography-style', settings: block_settings %}
+      --width: {{ block_settings.width }};
+      --max-width: var(--max-width--body-{{ block_settings.max_width }});
+      --text-align: {{ block_settings.alignment }};
+    "
+    {{ block.shopify_attributes }}
+  >
+    {{ resolved_text | strip }}
+  </rte-formatter>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product USP metafield",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "metafield_key",
+      "label": "Product metafield",
+      "options": [
+        {
+          "value": "pdp_usp_1",
+          "label": "PDP USP 1"
+        },
+        {
+          "value": "pdp_usp_2",
+          "label": "PDP USP 2"
+        },
+        {
+          "value": "pdp_usp_3",
+          "label": "PDP USP 3"
+        },
+        {
+          "value": "best_for",
+          "label": "Best for"
+        },
+        {
+          "value": "care_note",
+          "label": "Care note"
+        },
+        {
+          "value": "shipping_note",
+          "label": "Shipping note"
+        }
+      ],
+      "default": "pdp_usp_1"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Fallback text",
+      "default": "<p><strong>Made for everyday spaces</strong></p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "emphasize",
+      "label": "Bold metafield value",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "fit-content",
+          "label": "t:options.fit"
+        },
+        {
+          "value": "100%",
+          "label": "t:options.fill"
+        }
+      ],
+      "default": "100%"
+    },
+    {
+      "type": "select",
+      "id": "max_width",
+      "label": "t:settings.max_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "t:options.narrow"
+        },
+        {
+          "value": "normal",
+          "label": "t:options.normal"
+        },
+        {
+          "value": "none",
+          "label": "t:options.none"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "t:settings.alignment",
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "type_preset",
+      "label": "t:settings.preset",
+      "options": [
+        {
+          "value": "custom",
+          "label": "t:options.custom"
+        }
+      ],
+      "default": "custom"
+    },
+    {
+      "type": "select",
+      "id": "font",
+      "label": "t:settings.font",
+      "options": [
+        {
+          "value": "var(--font-body--family)",
+          "label": "t:options.body"
+        },
+        {
+          "value": "var(--font-heading--family)",
+          "label": "t:options.heading"
+        }
+      ],
+      "default": "var(--font-body--family)"
+    },
+    {
+      "type": "text",
+      "id": "font_size",
+      "label": "t:settings.size",
+      "default": "0.8125rem"
+    },
+    {
+      "type": "select",
+      "id": "line_height",
+      "label": "t:settings.line_height",
+      "options": [
+        {
+          "value": "normal",
+          "label": "t:options.normal"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "select",
+      "id": "letter_spacing",
+      "label": "t:settings.letter_spacing",
+      "options": [
+        {
+          "value": "normal",
+          "label": "t:options.normal"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "select",
+      "id": "case",
+      "label": "t:settings.case",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:options.none"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "wrap",
+      "label": "t:settings.wrap",
+      "options": [
+        {
+          "value": "pretty",
+          "label": "t:options.pretty"
+        }
+      ],
+      "default": "pretty"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "t:settings.color"
+    },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "t:settings.background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "default": "#00000026"
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "t:settings.corner_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "t:settings.left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "t:settings.right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product USP metafield"
+    }
+  ]
+}
+{% endschema %}

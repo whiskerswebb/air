@@ -77,7 +77,7 @@
             "text_jrgQcg": {
               "type": "text",
               "settings": {
-                "text": "<p>{{ closest.page.content }}</p>",
+                "text": "<p>Need help choosing a product, checking an order, or understanding delivery? Send us a note and we will reply by email.</p><p>For product questions, include the product name and scent, colour or pack option if there is one. For order questions, include your order number if you have it.</p><p>Airbloom currently serves customers in South Africa, with delivery options and final charges shown at checkout.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
