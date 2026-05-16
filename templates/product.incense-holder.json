@@ -207,7 +207,87 @@
               "blocks": {
                 "usp_space": {
                   "type": "group",
-                  "name": "Stable display",
+                  "name": "Product cue",
+                  "settings": {
+                    "open_in_new_tab": false,
+                    "content_direction": "column",
+                    "vertical_on_mobile": false,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "center",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 6,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "solid",
+                    "border_width": 1,
+                    "border_opacity": 16,
+                    "border_radius": 8,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "padding-block-start": 10,
+                    "padding-block-end": 10,
+                    "padding-inline-start": 8,
+                    "padding-inline-end": 8
+                  },
+                  "blocks": {
+                    "icon": {
+                      "type": "icon",
+                      "settings": {
+                        "icon": "map_pin",
+                        "width": 24,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "copy": {
+                      "type": "product-usp-metafield",
+                      "settings": {
+                        "text": "<p><strong>Room scent</strong></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "center",
+                        "type_preset": "custom",
+                        "font": "var(--font-body--family)",
+                        "font_size": "0.8125rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "metafield_key": "pdp_usp_1"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon",
+                    "copy"
+                  ]
+                },
+                "usp_refill": {
+                  "type": "group",
+                  "name": "Placement cue",
                   "settings": {
                     "open_in_new_tab": false,
                     "content_direction": "column",
@@ -254,9 +334,9 @@
                       "blocks": {}
                     },
                     "copy": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "settings": {
-                        "text": "<p><strong>Stable placement</strong></p>",
+                        "text": "<p><strong>Easy place</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -274,86 +354,8 @@
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "icon",
-                    "copy"
-                  ]
-                },
-                "usp_refill": {
-                  "type": "group",
-                  "name": "Safe surfaces",
-                  "settings": {
-                    "open_in_new_tab": false,
-                    "content_direction": "column",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "center",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 6,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "solid",
-                    "border_width": 1,
-                    "border_opacity": 16,
-                    "border_radius": 8,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "padding-block-start": 10,
-                    "padding-block-end": 10,
-                    "padding-inline-start": 8,
-                    "padding-inline-end": 8
-                  },
-                  "blocks": {
-                    "icon": {
-                      "type": "icon",
-                      "settings": {
-                        "icon": "lock",
-                        "width": 24,
-                        "link": "",
-                        "open_in_new_tab": false
-                      },
-                      "blocks": {}
-                    },
-                    "copy": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p><strong>Use on safe surfaces</strong></p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "center",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.8125rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
+                        "padding-inline-end": 0,
+                        "metafield_key": "pdp_usp_2"
                       },
                       "blocks": {}
                     }
@@ -365,7 +367,7 @@
                 },
                 "usp_easy": {
                   "type": "group",
-                  "name": "Easy to style",
+                  "name": "Use cue",
                   "settings": {
                     "open_in_new_tab": false,
                     "content_direction": "column",
@@ -412,9 +414,9 @@
                       "blocks": {}
                     },
                     "copy": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "settings": {
-                        "text": "<p><strong>Easy to style</strong></p>",
+                        "text": "<p><strong>Daily use</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -432,7 +434,8 @@
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0
+                        "padding-inline-end": 0,
+                        "metafield_key": "pdp_usp_3"
                       },
                       "blocks": {}
                     }
@@ -444,7 +447,7 @@
                 },
                 "usp_safe": {
                   "type": "group",
-                  "name": "Clear care notes",
+                  "name": "Care cue",
                   "settings": {
                     "open_in_new_tab": false,
                     "content_direction": "column",
@@ -491,9 +494,9 @@
                       "blocks": {}
                     },
                     "copy": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "settings": {
-                        "text": "<p><strong>Simple care notes</strong></p>",
+                        "text": "<p><strong>Care notes</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -511,7 +514,8 @@
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0
+                        "padding-inline-end": 0,
+                        "metafield_key": "pdp_usp_4"
                       },
                       "blocks": {}
                     }

@@ -207,7 +207,7 @@
               "blocks": {
                 "usp_space": {
                   "type": "group",
-                  "name": "Made for real rooms",
+                  "name": "Product cue",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": false,
@@ -257,7 +257,7 @@
                       "type": "product-usp-metafield",
                       "settings": {
                         "metafield_key": "pdp_usp_1",
-                        "text": "<p><strong>Made for real rooms</strong></p>",
+                        "text": "<p><strong>Room scent</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -287,7 +287,7 @@
                 },
                 "usp_refill": {
                   "type": "group",
-                  "name": "Easy to place",
+                  "name": "Placement cue",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": false,
@@ -337,7 +337,7 @@
                       "type": "product-usp-metafield",
                       "settings": {
                         "metafield_key": "pdp_usp_2",
-                        "text": "<p><strong>Easy to use</strong></p>",
+                        "text": "<p><strong>Easy place</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -367,7 +367,7 @@
                 },
                 "usp_easy": {
                   "type": "group",
-                  "name": "Everyday atmosphere",
+                  "name": "Use cue",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": false,
@@ -417,7 +417,7 @@
                       "type": "product-usp-metafield",
                       "settings": {
                         "metafield_key": "pdp_usp_3",
-                        "text": "<p><strong>Room-ready</strong></p>",
+                        "text": "<p><strong>Daily use</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -447,7 +447,7 @@
                 },
                 "usp_safe": {
                   "type": "group",
-                  "name": "Clear guidance",
+                  "name": "Care cue",
                   "settings": {
                     "content_direction": "column",
                     "vertical_on_mobile": false,
@@ -497,7 +497,7 @@
                       "type": "product-usp-metafield",
                       "settings": {
                         "metafield_key": "pdp_usp_4",
-                        "text": "<p><strong>Care guidance</strong></p>",
+                        "text": "<p><strong>Care notes</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
