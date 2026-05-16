@@ -25,6 +25,58 @@
     {%- endif -%}
     {%- content_for 'block', id: 'blog-post-content', type: '_blog-post-content' %}
 
+    {% liquid
+      assign shop_the_article_products = article.metafields.custom.shop_the_article.value
+    %}
+    {% if shop_the_article_products != blank %}
+      <section class="shop-the-article" aria-labelledby="shop-the-article-title">
+        <div class="shop-the-article__header">
+          <p>Featured products</p>
+          <h2 id="shop-the-article-title">Shop the article</h2>
+        </div>
+
+        <div class="shop-the-article__grid">
+          {% for product in shop_the_article_products limit: 4 %}
+            {% liquid
+              assign variant = product.selected_or_first_available_variant
+            %}
+            <article class="shop-the-article__card">
+              <a href="{{ product.url }}" class="shop-the-article__media" aria-label="{{ product.title | escape }}">
+                {% if product.featured_image %}
+                  {% assign product_image_alt = product.featured_image.alt | default: product.title %}
+                  {{
+                    product.featured_image
+                    | image_url: width: 700
+                    | image_tag:
+                      widths: '240, 360, 480, 700',
+                      sizes: '(min-width: 990px) 25vw, (min-width: 750px) 50vw, 100vw',
+                      loading: 'lazy',
+                      alt: product_image_alt
+                  }}
+                {% endif %}
+              </a>
+
+              <div class="shop-the-article__content">
+                <a href="{{ product.url }}" class="shop-the-article__title">{{ product.title }}</a>
+                <span class="shop-the-article__price">{{ product.price | money_with_currency }}</span>
+
+                {% if variant.available %}
+                  {% form 'product', product, class: 'shop-the-article__form' %}
+                    <input type="hidden" name="id" value="{{ variant.id }}">
+                    <button type="submit" class="button button-secondary shop-the-article__button">
+                      Add to cart
+                    </button>
+                  {% endform %}
+                {% else %}
+                  <a href="{{ product.url }}" class="button button-secondary shop-the-article__button">View product</a>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
     {% comment %} Dynamic area for @app blocks only, at the bottom {% endcomment %}
     {% content_for 'blocks' %}
 
@@ -109,6 +161,91 @@
   .blog-post-comments-pagination .current,
   .blog-post-comments-pagination a:hover {
     border-bottom: 1px solid var(--color-foreground);
+  }
+
+  .shop-the-article {
+    width: 100%;
+    max-width: var(--wide-content-width);
+    margin: var(--margin-3xl) auto 0;
+    padding-block-start: var(--padding-xl);
+    border-top: 1px solid rgb(var(--color-foreground-rgb) / 0.14);
+  }
+
+  .shop-the-article__header {
+    display: grid;
+    gap: var(--gap-2xs);
+    margin-block-end: var(--margin-lg);
+  }
+
+  .shop-the-article__header p,
+  .shop-the-article__header h2 {
+    margin: 0;
+  }
+
+  .shop-the-article__header p {
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-subdued-text));
+    font-size: var(--font-size--body-sm);
+    text-transform: uppercase;
+  }
+
+  .shop-the-article__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--gap-lg);
+  }
+
+  .shop-the-article__card {
+    min-width: 0;
+  }
+
+  .shop-the-article__media {
+    aspect-ratio: 1 / 1;
+    display: block;
+    overflow: hidden;
+    background: rgb(var(--color-foreground-rgb) / 0.04);
+  }
+
+  .shop-the-article__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .shop-the-article__content {
+    display: grid;
+    gap: var(--gap-2xs);
+    padding-block-start: var(--padding-sm);
+  }
+
+  .shop-the-article__title {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .shop-the-article__price {
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-subdued-text));
+    font-size: var(--font-size--body-sm);
+  }
+
+  .shop-the-article__form {
+    margin-block-start: var(--margin-xs);
+  }
+
+  .shop-the-article__button {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 989px) {
+    .shop-the-article__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .shop-the-article__grid {
+      grid-template-columns: 1fr;
+    }
   }
 {% endstylesheet %}
 
