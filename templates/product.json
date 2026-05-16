@@ -171,7 +171,6 @@
               "type": "group",
               "name": "PDP USP icons",
               "settings": {
-                "open_in_new_tab": false,
                 "content_direction": "row",
                 "vertical_on_mobile": false,
                 "horizontal_alignment": "space-between",
@@ -199,6 +198,7 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "open_in_new_tab": false,
                 "padding-block-start": 12,
                 "padding-block-end": 12,
                 "padding-inline-start": 0,
@@ -209,7 +209,6 @@
                   "type": "group",
                   "name": "Made for real rooms",
                   "settings": {
-                    "open_in_new_tab": false,
                     "content_direction": "column",
                     "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
@@ -237,6 +236,7 @@
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
+                    "open_in_new_tab": false,
                     "padding-block-start": 10,
                     "padding-block-end": 10,
                     "padding-inline-start": 8,
@@ -289,7 +289,6 @@
                   "type": "group",
                   "name": "Easy to place",
                   "settings": {
-                    "open_in_new_tab": false,
                     "content_direction": "column",
                     "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
@@ -317,6 +316,7 @@
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
+                    "open_in_new_tab": false,
                     "padding-block-start": 10,
                     "padding-block-end": 10,
                     "padding-inline-start": 8,
@@ -369,7 +369,6 @@
                   "type": "group",
                   "name": "Everyday atmosphere",
                   "settings": {
-                    "open_in_new_tab": false,
                     "content_direction": "column",
                     "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
@@ -397,6 +396,7 @@
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
+                    "open_in_new_tab": false,
                     "padding-block-start": 10,
                     "padding-block-end": 10,
                     "padding-inline-start": 8,
@@ -416,8 +416,8 @@
                     "copy": {
                       "type": "product-usp-metafield",
                       "settings": {
-                        "metafield_key": "best_for",
-                        "text": "<p><strong>Everyday scent</strong></p>",
+                        "metafield_key": "pdp_usp_3",
+                        "text": "<p><strong>Room-ready</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -449,7 +449,6 @@
                   "type": "group",
                   "name": "Clear guidance",
                   "settings": {
-                    "open_in_new_tab": false,
                     "content_direction": "column",
                     "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
@@ -477,6 +476,7 @@
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
+                    "open_in_new_tab": false,
                     "padding-block-start": 10,
                     "padding-block-end": 10,
                     "padding-inline-start": 8,
@@ -496,8 +496,8 @@
                     "copy": {
                       "type": "product-usp-metafield",
                       "settings": {
-                        "metafield_key": "care_note",
-                        "text": "<p><strong>Care notes included</strong></p>",
+                        "metafield_key": "pdp_usp_4",
+                        "text": "<p><strong>Care guidance</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "center",
@@ -585,7 +585,7 @@
               "type": "text",
               "name": "Safe-use note",
               "settings": {
-                "text": "<p><strong>Use note:</strong> Read the product instructions before use. Keep fragrance products away from children, pets, delicate surfaces, fabrics, and open flames unless the product is designed for burning.</p>",
+                "text": "<p>Use with care. Check the placement and care notes below before using fragrance or burning products.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -628,7 +628,7 @@
                 "row_1": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Where should I use this?",
+                    "heading": "Best place to use it",
                     "open_by_default": false,
                     "icon": "map_pin"
                   },
@@ -638,8 +638,8 @@
                       "name": "t:names.text",
                       "settings": {
                         "metafield_key": "best_for",
-                        "emphasize": false,
                         "text": "<p>Choose based on the room, the surface it will sit on, and how noticeable you want the scent to be.</p>",
+                        "emphasize": false,
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -669,16 +669,18 @@
                 "row_2": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "How do I choose the right option?",
+                    "heading": "How to use and care for it",
                     "open_by_default": false,
                     "icon": "perfume"
                   },
                   "blocks": {
                     "body": {
-                      "type": "text",
+                      "type": "product-usp-metafield",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Start with the format. Incense is more noticeable, holders keep burning products neater, and fresheners are better for low-effort daily use.</p>",
+                        "metafield_key": "care_note",
+                        "text": "<p>Use as directed, keep the item clean and dry where relevant, and follow the care notes for this product.</p>",
+                        "emphasize": false,
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -708,18 +710,16 @@
                 "row_3": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "What should I know before use?",
+                    "heading": "If you have pets or children",
                     "open_by_default": false,
                     "icon": "check_box"
                   },
                   "blocks": {
                     "body": {
-                      "type": "product-usp-metafield",
+                      "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "metafield_key": "care_note",
-                        "emphasize": false,
-                        "text": "<p>Read the instructions, keep products out of reach of children and pets, and only use them in suitable spaces.</p>",
+                        "text": "<p>Keep fragrance products, oils, ash and burning items out of reach. Use scent lightly in smaller rooms and keep the space ventilated.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -845,7 +845,6 @@
               "type": "_product-card-group",
               "name": "t:names.group",
               "settings": {
-                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "space-between",
@@ -873,6 +872,7 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "open_in_new_tab": false,
                 "padding-block-start": 14,
                 "padding-block-end": 16,
                 "padding-inline-start": 14,
@@ -883,7 +883,6 @@
                   "type": "_product-card-group",
                   "name": "t:names.group",
                   "settings": {
-                    "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": true,
                     "horizontal_alignment": "space-between",
@@ -911,6 +910,7 @@
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
+                    "open_in_new_tab": false,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -975,7 +975,6 @@
                   "type": "_product-card-group",
                   "name": "t:names.group",
                   "settings": {
-                    "open_in_new_tab": false,
                     "content_direction": "column",
                     "vertical_on_mobile": true,
                     "horizontal_alignment": "flex-start",
@@ -1003,6 +1002,7 @@
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
+                    "open_in_new_tab": false,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
