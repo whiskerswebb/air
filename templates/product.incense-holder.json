@@ -173,13 +173,13 @@
               "settings": {
                 "open_in_new_tab": false,
                 "content_direction": "row",
-                "vertical_on_mobile": false,
-                "horizontal_alignment": "space-between",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 8,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 14,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -199,26 +199,26 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 12,
-                "padding-block-end": 12,
+                "padding-block-start": 6,
+                "padding-block-end": 6,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {
                 "usp_space": {
                   "type": "group",
-                  "name": "Product cue",
+                  "name": "Scent",
                   "settings": {
                     "open_in_new_tab": false,
-                    "content_direction": "column",
+                    "content_direction": "row",
                     "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "center",
+                    "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 6,
-                    "width": "fill",
+                    "gap": 5,
+                    "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
@@ -229,25 +229,25 @@
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
-                    "border": "solid",
-                    "border_width": 1,
-                    "border_opacity": 16,
-                    "border_radius": 8,
+                    "border": "none",
+                    "border_width": 0,
+                    "border_opacity": 0,
+                    "border_radius": 0,
                     "toggle_overlay": false,
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
-                    "padding-block-start": 10,
-                    "padding-block-end": 10,
-                    "padding-inline-start": 8,
-                    "padding-inline-end": 8
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {
                     "icon": {
                       "type": "icon",
                       "settings": {
-                        "icon": "map_pin",
-                        "width": 24,
+                        "icon": "perfume",
+                        "width": 16,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -256,10 +256,10 @@
                     "copy": {
                       "type": "product-usp-metafield",
                       "settings": {
-                        "text": "<p><strong>Room scent</strong></p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "center",
+                        "text": "<p>Scent</p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "0.8125rem",
@@ -275,7 +275,8 @@
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0,
-                        "metafield_key": "pdp_usp_1"
+                        "metafield_key": "pdp_usp_1",
+                        "emphasize": false
                       },
                       "blocks": {}
                     }
@@ -287,18 +288,18 @@
                 },
                 "usp_refill": {
                   "type": "group",
-                  "name": "Placement cue",
+                  "name": "Placement",
                   "settings": {
                     "open_in_new_tab": false,
-                    "content_direction": "column",
+                    "content_direction": "row",
                     "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "center",
+                    "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 6,
-                    "width": "fill",
+                    "gap": 5,
+                    "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
@@ -309,25 +310,25 @@
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
-                    "border": "solid",
-                    "border_width": 1,
-                    "border_opacity": 16,
-                    "border_radius": 8,
+                    "border": "none",
+                    "border_width": 0,
+                    "border_opacity": 0,
+                    "border_radius": 0,
                     "toggle_overlay": false,
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
-                    "padding-block-start": 10,
-                    "padding-block-end": 10,
-                    "padding-inline-start": 8,
-                    "padding-inline-end": 8
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {
                     "icon": {
                       "type": "icon",
                       "settings": {
-                        "icon": "plant",
-                        "width": 24,
+                        "icon": "map_pin",
+                        "width": 16,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -336,10 +337,10 @@
                     "copy": {
                       "type": "product-usp-metafield",
                       "settings": {
-                        "text": "<p><strong>Easy place</strong></p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "center",
+                        "text": "<p>Placement</p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "0.8125rem",
@@ -355,7 +356,8 @@
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0,
-                        "metafield_key": "pdp_usp_2"
+                        "metafield_key": "pdp_usp_2",
+                        "emphasize": false
                       },
                       "blocks": {}
                     }
@@ -367,18 +369,18 @@
                 },
                 "usp_easy": {
                   "type": "group",
-                  "name": "Use cue",
+                  "name": "Routine",
                   "settings": {
                     "open_in_new_tab": false,
-                    "content_direction": "column",
+                    "content_direction": "row",
                     "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "center",
+                    "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 6,
-                    "width": "fill",
+                    "gap": 5,
+                    "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
@@ -389,25 +391,25 @@
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
-                    "border": "solid",
-                    "border_width": 1,
-                    "border_opacity": 16,
-                    "border_radius": 8,
+                    "border": "none",
+                    "border_width": 0,
+                    "border_opacity": 0,
+                    "border_radius": 0,
                     "toggle_overlay": false,
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
-                    "padding-block-start": 10,
-                    "padding-block-end": 10,
-                    "padding-inline-start": 8,
-                    "padding-inline-end": 8
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {
                     "icon": {
                       "type": "icon",
                       "settings": {
-                        "icon": "perfume",
-                        "width": 24,
+                        "icon": "plant",
+                        "width": 16,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -416,10 +418,10 @@
                     "copy": {
                       "type": "product-usp-metafield",
                       "settings": {
-                        "text": "<p><strong>Daily use</strong></p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "center",
+                        "text": "<p>Routine</p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "0.8125rem",
@@ -435,7 +437,8 @@
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0,
-                        "metafield_key": "pdp_usp_3"
+                        "metafield_key": "pdp_usp_3",
+                        "emphasize": false
                       },
                       "blocks": {}
                     }
@@ -447,18 +450,18 @@
                 },
                 "usp_safe": {
                   "type": "group",
-                  "name": "Care cue",
+                  "name": "Care",
                   "settings": {
                     "open_in_new_tab": false,
-                    "content_direction": "column",
+                    "content_direction": "row",
                     "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "center",
+                    "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "center",
-                    "gap": 6,
-                    "width": "fill",
+                    "gap": 5,
+                    "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
@@ -469,25 +472,25 @@
                     "background_media": "none",
                     "video_position": "cover",
                     "background_image_position": "cover",
-                    "border": "solid",
-                    "border_width": 1,
-                    "border_opacity": 16,
-                    "border_radius": 8,
+                    "border": "none",
+                    "border_width": 0,
+                    "border_opacity": 0,
+                    "border_radius": 0,
                     "toggle_overlay": false,
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
-                    "padding-block-start": 10,
-                    "padding-block-end": 10,
-                    "padding-inline-start": 8,
-                    "padding-inline-end": 8
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {
                     "icon": {
                       "type": "icon",
                       "settings": {
                         "icon": "check_box",
-                        "width": 24,
+                        "width": 16,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -496,10 +499,10 @@
                     "copy": {
                       "type": "product-usp-metafield",
                       "settings": {
-                        "text": "<p><strong>Care notes</strong></p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "center",
+                        "text": "<p>Care</p>",
+                        "width": "fit-content",
+                        "max_width": "none",
+                        "alignment": "left",
                         "type_preset": "custom",
                         "font": "var(--font-body--family)",
                         "font_size": "0.8125rem",
@@ -515,7 +518,8 @@
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0,
-                        "metafield_key": "pdp_usp_4"
+                        "metafield_key": "pdp_usp_4",
+                        "emphasize": false
                       },
                       "blocks": {}
                     }

@@ -108,7 +108,7 @@
               "type": "text",
               "name": "Subheading",
               "settings": {
-                "text": "<p>Curated incense, holders, storage, candle pieces and room-fragrance essentials for calmer everyday spaces.</p>",
+                "text": "<p>Curated incense, holders, candle cups, storage and room-fragrance essentials for calmer everyday spaces.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -726,7 +726,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>Different products solve different problems. Start with scent, add a proper holder, then keep the pieces you use often stored neatly.</p>",
+                "text": "<p>Different products solve different problems. Start with scent, add a proper holder, then keep incense and supplies stored neatly.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -986,7 +986,7 @@
               "type": "text",
               "name": "Copy",
               "settings": {
-                "text": "<p>Use room collections as a shortcut, or browse holders, incense, storage and home-fragrance pieces directly.</p>",
+                "text": "<p>Use room collections as a shortcut, or browse holders, incense, storage and odour-care products directly.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1322,7 +1322,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Build from there</h3><p>Start with one room you care about most, then add pieces for the rest of the home as the range grows.</p>",
+                "text": "<p><strong>Build from there</strong><br/>Start with one room you care about most, then add products for the rest of the home as the range grows.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1392,7 +1392,7 @@
           "type": "text",
           "name": "FAQ heading",
           "settings": {
-            "text": "<h2>Choosing the right piece</h2>",
+            "text": "<h2>Choosing the right product</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -1641,7 +1641,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<h2>Start with one useful piece</h2>",
+            "text": "<h2>Start with one room</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1667,7 +1667,7 @@
           "type": "text",
           "name": "Copy",
           "settings": {
-            "text": "<p>Choose incense for scent, a holder for safer placement, or storage if you already have sticks and want the setup to look more intentional.</p>",
+            "text": "<p>Choose incense for scent, a holder for safer placement, or storage for a cleaner setup.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
